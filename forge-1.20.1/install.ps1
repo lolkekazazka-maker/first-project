@@ -100,6 +100,7 @@ $enable = @()
 if ($mizuno) { $enable += '@mizuno' }
 $enable += @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension')
 if ($mizuno) { $enable += 'mizuno-x-fresh-animations' }
+$enable += @('actually-3d-blocks-and-items', '3d-equipment', '3d-workbenches')
 $enable += @('better-lanterns', 'fancy-crops', '3d-crops')
 if ($mizuno) { $enable += 'mizunos-better-crops' }
 $enable += @('rays-3d-ladders', 'rays-3d-rails', 'simple-grass-flowers')

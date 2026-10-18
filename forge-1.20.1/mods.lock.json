@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-18-r8",
+ "build": "2026-10-18-r9",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -940,6 +940,14 @@
    "size": 87551
   },
   {
+   "slug": "globalpacks",
+   "version": "19.3.7",
+   "file": "globalpacks-forge-1.20.1-19.3.7.jar",
+   "url": "https://cdn.modrinth.com/data/NRLPy2mk/versions/ULFP5OQn/globalpacks-forge-1.20.1-19.3.7.jar",
+   "sha512": "c011fa5e3e7c6f5431fe17980b2d9f5ab4e080351ff1a23e49a0419c6dbf4684c5f7461dd22b8bdb0ff1f674fa1f3d43d2ffb46dc146d3256d780d0d88b9c5af",
+   "size": 25101
+  },
+  {
    "slug": "gml",
    "version": "4.0.10",
    "file": "gml-4.0.10-all.jar",
@@ -1130,6 +1138,150 @@
    "url": "https://cdn.modrinth.com/data/9Pk89J3g/versions/OYD67lHL/justenoughbreeding-forge-1.20.1-3.1.2.jar",
    "sha512": "c3ef7c2d69c7953dd79895c357dbe8392a2a07bb53ffe14592cf17d372af011f6958bece03e606d1b0088aff8884c6a27bac747aa0a7fdefb847b385c7e18b8b",
    "size": 601762
+  },
+  {
+   "slug": "kaleidoscope-addons",
+   "version": "1.0.1-1.20.1",
+   "file": "kaleidoscope_addons-1.0.1-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/Fv5Ox14V/versions/J8PEHAHk/kaleidoscope_addons-1.0.1-1.20.1.jar",
+   "sha512": "a5282a3a90710e9901c388c209772b87b7f055a2ee5c07140c6ce42d5d59e358004c81c36ea25eb2e7c5b35f32c9f78c4b36357eb746fcecf6ec4d1caf43eb11",
+   "size": 127602
+  },
+  {
+   "slug": "kaleidoscope-compat",
+   "version": "2.6.5-forge+mc1.20.1-Patch.2",
+   "file": "kaleidoscope_compat-2.6.5-forge mc1.20.1-Patch.2.jar",
+   "url": "https://cdn.modrinth.com/data/Xm1eP54z/versions/HvOVFiEQ/kaleidoscope_compat-2.6.5-forge%20mc1.20.1-Patch.2.jar",
+   "sha512": "01c3f45ee6998d16c1da27f379353a794b0e3d6c9273fec691d1140a3ce5468d0487867ab2bad24a0367577b8e65b2c27133c96da564eb1a91f1afe88ae1b388",
+   "size": 854577
+  },
+  {
+   "slug": "kaleidoscope-cookery",
+   "version": "1.6.0-forge+mc1.20.1",
+   "file": "kaleidoscopecookery-1.6.0-forge+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/v17FatAc/versions/Ghp0qCKY/kaleidoscopecookery-1.6.0-forge%2Bmc1.20.1.jar",
+   "sha512": "32928f0af7e1047f6f2b268cda947476608c49b547f094ab71d6ee1498566f68d6777d852ed3d0399d5715d202e9cc3ac03dbc85a5671ee101a99661fd8ed84f",
+   "size": 3607215
+  },
+  {
+   "slug": "kaleidoscope-doll",
+   "version": "1.4.2-forge+mc1.20.1",
+   "file": "kaleidoscopedoll-1.4.2-forge+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/vQLjjxNs/versions/BO8Unw2n/kaleidoscopedoll-1.4.2-forge%2Bmc1.20.1.jar",
+   "sha512": "7c5fa010d55350ea6acf750da2055fd7c54183a9ab2443cbadaae7c5099c6b37a8d1bee23ff3e3a9f46b14c1b41d77df05adad259c680ddf549ad2016ca8e020",
+   "size": 3755483
+  },
+  {
+   "slug": "kaleidoscope-doll-workshop",
+   "version": "1.0.5b-forge+mc1.20.1",
+   "file": "kaleidoscope_doll_workshop-1.0.5b-forge+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/a0N5leR0/versions/IzcLF85S/kaleidoscope_doll_workshop-1.0.5b-forge%2Bmc1.20.1.jar",
+   "sha512": "96da6e410d52103ca45d3e33e241d332249535df52c58673f20d4ea07cfa2a66fe00cbe187f7980cd060175f5d93bb1723f039b534f607ba3922c27f397a6a90",
+   "size": 91060
+  },
+  {
+   "slug": "kaleidoscope-end",
+   "version": "1.0.14-forge+mc1.20.1",
+   "file": "kaleidoscope_end-1.0.14-forge+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/8GKUHBM6/versions/YS2tfy6v/kaleidoscope_end-1.0.14-forge%2Bmc1.20.1.jar",
+   "sha512": "1fd1042dfed9319dc862fa7e840fff9024989adb821614ec2972e54ab885598c825c48af738050d25c10a8b407e7ca33c7ec0d4307468d82274dfb8abc27313d",
+   "size": 1106181
+  },
+  {
+   "slug": "kaleidoscope-grilling",
+   "version": "1.1.1",
+   "file": "kaleidoscope_grilling-1.1.1-forge1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/LPZkep5R/versions/dwwwzjdV/kaleidoscope_grilling-1.1.1-forge1.20.1.jar",
+   "sha512": "b7792ed45fa4202d2a4e2713c0397b25a3625e5bd9c7d45c83eca27fdebb4de27a1c33bb4d39f604941fbd7d1131cc76e665afec0b1ee7cb4d4774f377b186a5",
+   "size": 3269084
+  },
+  {
+   "slug": "kaleidoscope-jei-extension",
+   "version": "1.0.1-1.20.1",
+   "file": "kaleidoscope_extension-1.0.1-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/mNKl9uIp/versions/S2elcFOu/kaleidoscope_extension-1.0.1-1.20.1.jar",
+   "sha512": "84022dd1716fc568d4189fdea3b71d4bfdad135ba82c90ac4fb1d8ae0aae4d8bb5f8b855294cd71d418b8978f005e0f3b9e750b5845a0be9bf2e1c7d46cd2482",
+   "size": 23325
+  },
+  {
+   "slug": "kaleidoscope-nether",
+   "version": "1.1.8-forge+mc1.20.1",
+   "file": "kaleidoscope_nether-1.1.8-forge+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/O4YuhMsI/versions/kn43NNqm/kaleidoscope_nether-1.1.8-forge%2Bmc1.20.1.jar",
+   "sha512": "2a0ba149dde449be105f7960a1e77f96354267d2bbf6c3407cf9d1a5ccfead160f5aa8ce5fb55fbbbbe499ab9f14f11b57b4d56ccaf452029f3b17a30a783a19",
+   "size": 1022391
+  },
+  {
+   "slug": "kaleidoscope-painting-extension",
+   "version": "2.0.0",
+   "file": "kaleidoscope_painting_extension-2.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/BUw82Vn5/versions/26CxRXXy/kaleidoscope_painting_extension-2.0.0.jar",
+   "sha512": "8e9f98a5c9bcfd22d851bb8acaa603c4fa8845281ab868e53004ea33a3f2c09dcc49fbcc4eebf33593c508006158d0e85e76f87d6488618cc1beeb3bb328b413",
+   "size": 50467
+  },
+  {
+   "slug": "kaleidoscope-sauce",
+   "version": "0.1.0",
+   "file": "kaleidoscope_sauce-0.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/nyVCtCaV/versions/VHYQdaQD/kaleidoscope_sauce-0.1.0.jar",
+   "sha512": "2b2e0909824ebcf3d9d5e8b5fc52b6794ff008fab1c85cd92a32276b739d42012e73ee5f99410dbc2b6dbcbb5572f4acf449c81182c1af76e591ec2731178f20",
+   "size": 215204
+  },
+  {
+   "slug": "kaleidoscope-texture-expansion",
+   "version": "Forge-2.12.0-1.20.1",
+   "file": "Kaleidoscope Texture Expansion-Forge-1.20.1-2.12.0.jar",
+   "url": "https://cdn.modrinth.com/data/sOzI21iF/versions/9hPGtjcN/Kaleidoscope%20Texture%20Expansion-Forge-1.20.1-2.12.0.jar",
+   "sha512": "0311e80cdb479bc2c17e62278bd521d16a9435fca0f8081f9385474af74e113bce3e4c35f0ba0ea7d5cfcccbdbe1f8126643ddfc9b322cd90cf7b44d7bdf170f",
+   "size": 491331
+  },
+  {
+   "slug": "kaleidoscope-world-liquor",
+   "version": "1.1.13-forge+mc1.20.1",
+   "file": "kaleidoscope_world_liquor-1.1.13-forge+mc1.20.1-all.jar",
+   "url": "https://cdn.modrinth.com/data/ePVLCraM/versions/Nqt9RpSa/kaleidoscope_world_liquor-1.1.13-forge%2Bmc1.20.1-all.jar",
+   "sha512": "9f63a744e49a30a90fb8ff8d06d10c6f28b312ab55fa4cce8c263c4a83a1e6f48796e1853a0204d9316f475e92ff2f6f1e1859a32cc0e19875ebc82f439cca20",
+   "size": 7462340
+  },
+  {
+   "slug": "kaleidoscope_bloodwine",
+   "version": "1.1.0",
+   "file": "kaleidoscope_bloodwine-1.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/CrMZMaFM/versions/TooGZbwH/kaleidoscope_bloodwine-1.1.0.jar",
+   "sha512": "7c88a1db036ba54a18943eedce376f83f373c1d4a524cf9b6b7fea7c2495d7143b4bf066f8c82d7539278c7e72aa2036cb1c33323182e93c540e53b42730719f",
+   "size": 154307
+  },
+  {
+   "slug": "kaleidoscope_sculk",
+   "version": "1.4.2",
+   "file": "kaleidoscope_sculk-1.20.1-forge-1.4.2.jar",
+   "url": "https://cdn.modrinth.com/data/ymmPNml2/versions/S0pVTdB0/kaleidoscope_sculk-1.20.1-forge-1.4.2.jar",
+   "sha512": "c7779fb89757c3d5afb3c3e39af80003c67ea6f6470d45a2df9e98e249941d6367fb8e67c933f15794f73eddd33e638a7d0568e5a44b7a8e8c1ed66c405ed171",
+   "size": 329764
+  },
+  {
+   "slug": "kaleidoscopechinesefood",
+   "version": "1.1.15-1.20.1",
+   "file": "kaleidoscope_chinesefood-1.1.15-1.20.1-all.jar",
+   "url": "https://cdn.modrinth.com/data/cuIIkdlx/versions/QnA8SbZs/kaleidoscope_chinesefood-1.1.15-1.20.1-all.jar",
+   "sha512": "28959e927c2ca73cc8d479d197afe2155e0efb022990653b5b1f6fa1e8486a1e9b5811ebdf41f137dffecb55591ad6dfb171ab2084e79268d271f7c4767b10c8",
+   "size": 9465043
+  },
+  {
+   "slug": "kaleidoscopedimensions-wine",
+   "version": "1.1.9-mc1.20.1-forge",
+   "file": "kaleidoscope_dim_wine-1.1.9-mc1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/BrGJp2pm/versions/LzsjIFzR/kaleidoscope_dim_wine-1.1.9-mc1.20.1-forge.jar",
+   "sha512": "a17fd9b1b65b514f8abc17fd6b0f05f20d5ae2a5538f36171d9cf6f0b6c484ffcf179a11da23b82d274760f89344f82b12d36c9c0251cdf330783511f5bb3f91",
+   "size": 1017037
+  },
+  {
+   "slug": "kaleidoscopetavern",
+   "version": "1.2.0-forge+mc1.20.1",
+   "file": "kaleidoscopetavern-1.2.0-forge+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/r9RZvhiJ/versions/mUnU2u9e/kaleidoscopetavern-1.2.0-forge%2Bmc1.20.1.jar",
+   "sha512": "485bcee9241e97856bb4bdf52d9752911a12c68d770048bbbb8400a8043ba02b312df94aa98d240abe03a94dc2ad0b627327a0029dd2dfa209d82cd1a6677865",
+   "size": 1749797
   },
   {
    "slug": "kiwi",
@@ -2564,6 +2716,30 @@
    "url": "https://cdn.modrinth.com/data/P68E97Zb/versions/5eYW0lNd/3D%20FOOD.zip",
    "sha512": "54a2e252b130696fdd617561c23f82743a92fe72d60ef7e83ba0f15432748db293733dbcdab466b481c4f679839986b6998df8c06a2228eb16e51cefa0f654a2",
    "size": 318512
+  },
+  {
+   "slug": "actually-3d-blocks-and-items",
+   "version": "r1.8",
+   "file": "§f§lActually §6§l3D §fBlocks & Items!§7.zip",
+   "url": "https://cdn.modrinth.com/data/5048Qu03/versions/IKDr9x0v/%C2%A7f%C2%A7lActually%20%C2%A76%C2%A7l3D%20%C2%A7fBlocks%20%26%20Items%21%C2%A77.zip",
+   "sha512": "06294b00c286e1d01704752cbdd59ccba5dc07a8f35ed5ad6e4c97f8f7c2033290e1077b798747f1edfe504067ed5489d53afce3868267f3c25aed93059bc6ef",
+   "size": 8583104
+  },
+  {
+   "slug": "3d-equipment",
+   "version": "r1.0-beta1",
+   "file": "§f§lActually §6§l3D §bEquipment!§7.zip",
+   "url": "https://cdn.modrinth.com/data/GhyYdw4D/versions/VWdKm3Nx/%C2%A7f%C2%A7lActually%20%C2%A76%C2%A7l3D%20%C2%A7bEquipment%21%C2%A77.zip",
+   "sha512": "30b9a7cdf61e7e08b895401b608f8112b3a7f3de3026132696b43d2516e0a0a07a62eb9c6c4e28c9948e10fd32e1cebf6cc5112c47b971ac6197e0699e8db4bf",
+   "size": 534279
+  },
+  {
+   "slug": "3d-workbenches",
+   "version": "1.0.2",
+   "file": "§f§lActually §6§l3D §r§2Workbenches§7.zip",
+   "url": "https://cdn.modrinth.com/data/cd22pBZc/versions/ZvBEZ52U/%C2%A7f%C2%A7lActually%20%C2%A76%C2%A7l3D%20%C2%A7r%C2%A72Workbenches%C2%A77.zip",
+   "sha512": "0d23b4220c0330978a9bef6d32d887fe5dc110e6f29337bb4ba9e7f851455425e130bf7249d266d61bd9ddd5fe0a0d79f4363280b1518dd04b47c0debfffce72",
+   "size": 225451
   }
  ],
  "shaderpacks": [
