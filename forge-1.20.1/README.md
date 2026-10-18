@@ -13,9 +13,16 @@
 5. В настройках TLauncher: память около 9000 МБ.
 6. Создай новый мир.
 
-Чужие моды из `%appdata%\.minecraft\mods` (например, от 1.21.1) переносятся в `mods_backup_…`.
+Всё, чего нет в `mods.lock.json` (моды от 1.21.1, вылетающие Feature Recycler, Chunky, Distraction Free Recipes и т.п.),
+`install.bat` переносит в `%appdata%\.minecraft\mods_backup_…`. При запуске он печатает «Версия сборки: 2026-10-18-r4»:
+если такой строки нет, у тебя старый ZIP — скачай ветку заново.
 Сами jar в git не лежат: список и контрольные суммы в `mods.lock.json`, собирается `tools/build_lock.py`.
+
+## Обновление с прошлой версии
+
+Скачай ветку заново (Code → Download ZIP), распакуй и ещё раз запусти `forge-1.20.1\install.bat`. Уже скачанное не качается повторно.
+После запуска в `mods` должно быть 246 jar, а в `latest.log` — не 307 модов, как раньше.
 
 ## Не проверено
 
-Запуск игры и FPS не проверялись: если вылет, пришли `latest.log` или crash-report из `%appdata%\.minecraft`.
+FPS на RTX 3070 не измерялся. Если вылет, пришли `latest.log` или crash-report из `%appdata%\.minecraft`.

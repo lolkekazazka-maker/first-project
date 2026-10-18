@@ -14,6 +14,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
+BUILD = "2026-10-18-r4"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):
@@ -160,7 +161,7 @@ def packs(slugs, loaders, game):
 cfg = json.loads((HERE / "slugs.json").read_text("utf-8"))
 rp, rp_missing = packs(cfg.get("resourcepacks", []), ["minecraft"], "1.20.1")
 sp, sp_missing = packs(cfg.get("shaderpacks", []), ["iris"], None)
-OUT.write_text(json.dumps({"minecraft": "1.20.1", "forge": FORGE, "mods": lock, "resourcepacks": rp,
+OUT.write_text(json.dumps({"minecraft": "1.20.1", "forge": FORGE, "build": BUILD, "mods": lock, "resourcepacks": rp,
                            "shaderpacks": sp}, ensure_ascii=False, indent=1), "utf-8")
 print(f"в lock: {len(lock)} модов, {sum(m['size'] for m in lock) / 1e6:.0f} МБ; ресурспаков {len(rp)}, шейдеров {len(sp)}")
 print("выброшено:", *dropped, sep="\n  ")

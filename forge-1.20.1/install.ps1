@@ -31,17 +31,22 @@ function Install-List($items, $folder, $title) {
   }
 }
 
-# старые моды (например, от 1.21.1) уносим в бэкап: Forge 1.20.1 их не загрузит
+# версия установщика: по ней видно, что запущен свежий скрипт, а не старый из прежнего ZIP
+$build = $lock.build
+Write-Host "  Версия сборки: $build  (модов в списке: $(@($lock.mods).Count))"
+
+# всё, чего нет в списке (моды от 1.21.1, снятые с поддержки Feature Recycler, Chunky и т.п.), уносим в бэкап:
+# сравнение по точному имени файла
 $mods = Join-Path $Mc 'mods'
-if ((Test-Path $mods) -and (Get-ChildItem $mods -Filter *.jar -ErrorAction SilentlyContinue)) {
-  $names = Get-Content (Join-Path $PSScriptRoot 'mods.lock.json') -Raw -Encoding UTF8
-  $stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
-  $foreign = Get-ChildItem $mods -Filter *.jar | Where-Object { -not $names.Contains($_.Name) }
-  if ($foreign) {
-    $bak = Join-Path $Mc ("mods_backup_" + $stamp)
+if (Test-Path $mods) {
+  $names = @{}
+  foreach ($m in $lock.mods) { $names[$m.file] = $true }
+  $foreign = @(Get-ChildItem $mods -Filter *.jar -ErrorAction SilentlyContinue | Where-Object { -not $names.ContainsKey($_.Name) })
+  if ($foreign.Count -gt 0) {
+    $bak = Join-Path $Mc ("mods_backup_" + (Get-Date -Format 'yyyyMMdd_HHmmss'))
     New-Item -ItemType Directory -Force -Path $bak | Out-Null
-    $foreign | Move-Item -Destination $bak
-    Write-Host "  Чужие моды перенесены в $bak"
+    $foreign | ForEach-Object { Write-Host "  Убираю лишний мод: $($_.Name)"; Move-Item -LiteralPath $_.FullName -Destination $bak }
+    Write-Host "  Лишние моды ($($foreign.Count) шт.) перенесены в $bak"
   }
 }
 
@@ -100,5 +105,11 @@ if ($failed.Count -gt 0) {
   $failed | ForEach-Object { Write-Host "  $_" }
   exit 1
 }
+$stale = @(Get-ChildItem $mods -Filter *.jar | Where-Object { $_.Name -match 'Feature-?Recycler|^Chunky|distraction_free_recipes' })
+if ($stale.Count -gt 0) {
+  Write-Host "В папке mods остались вылетающие моды:" -ForegroundColor Red
+  $stale | ForEach-Object { Write-Host "  $($_.Name)" }
+  exit 1
+}
 New-Item -ItemType File -Force -Path $marker | Out-Null
-Write-Host "Всё скачано и проверено."
+Write-Host ("Всё скачано и проверено. Модов в папке: {0}" -f @(Get-ChildItem $mods -Filter *.jar).Count)
