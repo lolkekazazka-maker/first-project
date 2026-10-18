@@ -1,0 +1,33 @@
+{
+  "_comment": "Моды для добавления в сборку. Все slug проверены на Modrinth: есть сборки NeoForge 1.21.1. enabled=false — по желанию, ставятся флагом --all или если поменять на true.",
+  "remove": [
+    {"file_prefix": "youre-in-grave-danger", "why": "конфликтует с Corpse (оба обрабатывают вещи после смерти)"},
+    {"file_prefix": "particle_core", "why": "с ним мерцают эффекты Particle Rain (сказано на странице Particle Rain)"}
+  ],
+  "mods": [
+    {"slug": "distanthorizons",          "enabled": true,  "what": "дальняя прорисовка (LOD)"},
+    {"slug": "particle-rain",            "enabled": true,  "what": "туман, дождь, пыль, метели"},
+    {"slug": "cravencrafts-bloody-bits", "enabled": true,  "what": "кровь"},
+    {"slug": "ribbits",                  "enabled": true,  "what": "рибитсы — деревни лягушек"},
+    {"slug": "corpse",                   "enabled": true,  "what": "трупы с вещами после смерти"},
+    {"slug": "ambientsounds",            "enabled": true,  "what": "звуки природы"},
+    {"slug": "fallingleavesforge",       "enabled": true,  "what": "падающие листья"},
+    {"slug": "naturalist",               "enabled": true,  "what": "реалистичные животные"},
+    {"slug": "guard-villagers",          "enabled": true,  "what": "стража в деревнях"},
+    {"slug": "better-combat",            "enabled": true,  "what": "нормальная боёвка"},
+    {"slug": "combat-roll",              "enabled": true,  "what": "перекат"},
+    {"slug": "exposure",                 "enabled": true,  "what": "фотоаппарат"},
+    {"slug": "simple-voice-chat",        "enabled": true,  "what": "голосовой чат"},
+    {"slug": "wavey-capes",              "enabled": true,  "what": "развевающиеся плащи"},
+    {"slug": "chunky",                   "enabled": true,  "what": "предгенерация мира под Distant Horizons"},
+    {"slug": "nullscape",                "enabled": true,  "what": "новый рельеф Энда"},
+
+    {"slug": "incendium",                "enabled": false, "what": "новый Незер (может спорить с Eternal Nether — проверить запуск)"},
+    {"slug": "tectonic",                 "enabled": false, "what": "эпичный рельеф, с Dynamic Trees совместим"},
+    {"slug": "terralith",                "enabled": false, "what": "85+ биомов (часть фэнтезийные) — ставить только вместе с dynamic-trees-terralith"},
+    {"slug": "dynamic-trees-terralith",  "enabled": false, "what": "динамические деревья для Terralith"},
+    {"slug": "towns-and-towers",         "enabled": false, "what": "больше деревень и аванпостов"},
+    {"slug": "minecraft-comes-alive-reborn", "enabled": false, "what": "MCA: живые жители, семьи. Fresh Animations на жителях работать перестанет"},
+    {"slug": "physicsmod",               "enabled": false, "what": "физика (тяжёлый мод, только для мощного ПК)"}
+  ]
+}
