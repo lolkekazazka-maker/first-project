@@ -45,6 +45,21 @@ if ((Test-Path $mods) -and (Get-ChildItem $mods -Filter *.jar -ErrorAction Silen
   }
 }
 
+# настройки от сборки 1.21.1 (заставка FancyMenu, названия окна и т.п.) на Forge 1.20.1 не нужны и мешают:
+# при первой установке уносим их в бэкап, мод создаст свои настройки заново
+$marker = Join-Path $Mc '.bmc5_forge_1.20.1'
+if (-not (Test-Path $marker)) {
+  $oldCfg = Join-Path $Mc ("config_backup_" + (Get-Date -Format 'yyyyMMdd_HHmmss'))
+  foreach ($d in @('config', 'defaultconfigs', 'configureddefaults', 'paxi')) {
+    $src = Join-Path $Mc $d
+    if (Test-Path $src) {
+      New-Item -ItemType Directory -Force -Path $oldCfg | Out-Null
+      Move-Item -LiteralPath $src -Destination (Join-Path $oldCfg $d)
+    }
+  }
+  if (Test-Path $oldCfg) { Write-Host "  Старые настройки перенесены в $oldCfg" }
+}
+
 Install-List $lock.mods 'mods' 'мод'
 Install-List $lock.resourcepacks 'resourcepacks' 'ресурспак'
 Install-List $lock.shaderpacks 'shaderpacks' 'шейдер'
@@ -78,4 +93,5 @@ if ($failed.Count -gt 0) {
   $failed | ForEach-Object { Write-Host "  $_" }
   exit 1
 }
+New-Item -ItemType File -Force -Path $marker | Out-Null
 Write-Host "Всё скачано и проверено."
