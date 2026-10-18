@@ -1,0 +1,55 @@
+
+#Stalk Settings
+[stalk]
+	#Minutes between each spawn roll after the grace period.
+	#Range: 1 ~ 120
+	roll_interval_minutes = 15
+	#How far away (blocks) distant stalk spawns.
+	#Range: 1.0 ~ 200.0
+	distant_stalk_distance = 30.0
+	#How far away (blocks) close stalk spawns.
+	#Range: 1.0 ~ 100.0
+	close_stalk_distance = 10.0
+	#Distance in blocks at which the stalker despawns during a stalk and applies Darkness.
+	#Range: 1.0 ~ 20.0
+	proximity_despawn_distance = 3.0
+
+#Behind Scare Settings
+[behind_scare]
+	#Minutes between behind scares.
+	#Range: 1 ~ 300
+	cooldown_minutes = 25
+
+#Chase Settings
+[chase]
+	#Minutes between chases.
+	#Range: 1 ~ 300
+	cooldown_minutes = 36
+	#How many seconds the chase lasts before the entity despawns.
+	#Range: 5 ~ 600
+	duration_seconds = 60
+	#How far away (blocks) the chase entity spawns.
+	#Range: 5.0 ~ 100.0
+	spawn_distance = 20.0
+	#How many blocks closer the entity teleports each interval when out of sight.
+	#Range: 1.0 ~ 50.0
+	teleport_step_blocks = 10.0
+	#How many seconds between each teleport attempt during a chase.
+	#Range: 1 ~ 30
+	teleport_interval_seconds = 2
+	#Distance in blocks at which the chase entity deals damage.
+	#Range: 0.5 ~ 10.0
+	attack_range_blocks = 2.0
+	#How much damage the chase entity deals per hit.
+	#Range: 0.0 ~ 100.0
+	damage = 10.0
+	#Angle in degrees within which the entity counts as visible to the player.
+	#Range: 10.0 ~ 180.0
+	fov_threshold_degrees = 60.0
+
+#Break Event Sounds
+[break_events]
+	#Minutes between random break event sounds. Active from the moment you join (ignores grace period).
+	#Range: 1 ~ 120
+	interval_minutes = 10
+

@@ -1,0 +1,15 @@
+
+[ChaseMechanics]
+	#The amount of ticks he takes to disappear when he gives chase
+	disappeartimer = 600.0
+
+[errorguitoggle]
+	#toggle the windows error gui on or off
+	errorguitoggle = true
+
+[SpawningMechanics]
+	#the minimum amount of ticks he takes to spawn
+	spawnmin = 20000.0
+	#the maximum amount of ticks he takes to spawn
+	spawnmax = 40000.0
+

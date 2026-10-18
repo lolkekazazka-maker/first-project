@@ -1,0 +1,393 @@
+
+["SPAWN CONDITIONS"]
+	#The spawn chance per tick (once the spawn timer is finished)
+	#Range: 0.0 ~ 1.0
+	spawn_chance_per_tick = 0.05
+	#Depth at which the GoatMan can start to spawn
+	spawn_height = 500
+	#Allow GoatMan to spawn underground
+	spawn_in_caves = true
+	#Whether the GoatMan can spawn on the surface or not
+	allow_surface_spawn = true
+	#The maximum sky light level the GoatMan can spawn at
+	#Range: 0 ~ 15
+	sky_light_level = 14
+	#The maximum block light level the GoatMan can spawn at
+	#Range: 0 ~ 15
+	block_light_level = 7
+	#The maximum amount of GoatMan which can exist at the same time
+	#Range: 0 ~ 100
+	maximum_amount = 1
+	#How close to players the GoatMan is allowed to spawn (in blocks)
+	#Range: 0 ~ 64
+	spawn_distance = 24
+	#If set to true the GoatMan will try to find a spawn position with a possible path to the player
+	check_path_to_spawn = true
+
+	["SPAWN CONDITIONS".DIMENSIONS]
+		#The dimensions where the GoatMan can spawn in (Whitelist)
+		dimension_whitelist = ["minecraft:overworld"]
+
+	["SPAWN CONDITIONS".BIOMES]
+		#If you don't want to create a datapack to configure the biomes
+		override_biome_datapack_config = true
+		#Use the surface biome list either as white- or blacklist
+		surface_biomes_is_whitelist = false
+		#Either white- or blacklist of the surface biomes the GoatMan can spawn in (Syntax: modid:biome, e.g. `minecraft:plains`)
+		surface_biomes = ["minecraft:desert", "minecraft:badlands", "minecraft:eroded_badlands", "minecraft:wooded_badlands", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:windswept_savanna", "minecraft:swamp", "minecraft:mangrove_swamp", "minecraft:mushroom_fields", "minecraft:ocean", "minecraft:deep_ocean", "minecraft:cold_ocean", "minecraft:deep_cold_ocean", "minecraft:frozen_ocean", "minecraft:deep_frozen_ocean", "minecraft:ice_spikes", "minecraft:lukewarm_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:warm_ocean", "minecraft:beach", "minecraft:snowy_beach", "minecraft:stony_shore", "minecraft:river", "minecraft:frozen_river", "minecraft:deep_dark"]
+
+	["SPAWN CONDITIONS"."SPAWN/NOISE/LEAVE TIMERS"]
+		#Increases how often the GoatMan can spawn at night
+		#Range: 1.0 ~ 100.0
+		night_spawn_timer_multiplier = 1.5
+		#Increases how often the GoatMan makes random noises at night
+		#Range: 1.0 ~ 100.0
+		night_noise_timer_multiplier = 2.0
+		#Modify the timers for the surface, based on the general timer set (e.g. spawn timer of 300 seconds -> 0.3 turns it into 90 seconds and 1.7 turns it into 510 seconds for the surface)
+		#Range: 0.0 ~ 5.0
+		surface_timer_multiplier = 1.0
+
+		["SPAWN CONDITIONS"."SPAWN/NOISE/LEAVE TIMERS"."SPAWN TIMER"]
+			#Minimum SECONDS between spawns
+			#Range: 0 ~ 86400
+			can_spawn_min = 800
+			#Maximum SECONDS between spawns
+			#Range: 0 ~ 86400
+			can_spawn_max = 2400
+			#Chance for a spawn cooldown to occur
+			#Range: 0.0 ~ 1.0
+			can_spawn_cooldown_chance = 0.05
+			#Spawn cooldown length in seconds
+			#Range: 0 ~ 86400
+			can_spawn_cooldown = 1200
+
+		["SPAWN CONDITIONS"."SPAWN/NOISE/LEAVE TIMERS"."NOISE TIMER"]
+			#Minimum SECONDS between noise occurrences
+			#Range: 0 ~ 86400
+			reset_noise_min = 600
+			#Maximum SECONDS between noise occurrences
+			#Range: 0 ~ 86400
+			reset_noise_max = 3600
+
+		["SPAWN CONDITIONS"."SPAWN/NOISE/LEAVE TIMERS"."LEAVE TIMER"]
+			#Time it takes for the GoatMan to leave
+			#Range: 1 ~ 6000
+			time_until_leave = 200
+			#Time it takes for the GoatMan to leave once a chase begins
+			#Range: 1 ~ 600
+			time_until_leave_chase = 25
+
+[BEHAVIOR]
+	#Whether GoatMan can grab a player instead of killing them
+	abduction_enabled = true
+	#The distance in blocks at which the GoatMan can detect whether a player is looking at it or not
+	#Range: 0 ~ 128
+	spotting_range = 100
+	#Whether the GoatMan can climb or not
+	can_climb = true
+	#Allow the GoatMan to follow vanilla riding logic (e.g. boats)
+	allow_riding = false
+	#Whether invisible players can be targets or not
+	target_invisible = false
+	#Whether the GoatMan can charge
+	charge = true
+	#Whether the GoatMan can charge on mobs
+	charge_on_mobs = true
+	#Ignores range charge trigger and immediately charges a player using a shield
+	charge_shield_rush = true
+	#Whether the GoatMan can leap directly at the player
+	leap = true
+	#Whether the GoatMan can leap on mobs
+	leap_on_mobs = true
+	#Whether the GoatMan mimics mob sounds during calm and stalking phases (mimics the last mob it killed)
+	mimic_sounds = true
+	#Whether the GoatMan attacks isolated villagers, wandering traders, and wolves that are separated from their group
+	pick_off_stragglers = true
+	#Whether the GoatMan can destroy crops
+	destroy_crops = true
+
+	[BEHAVIOR.CREEP-STALK]
+		#Chance a GoatMan spawns in creep-stalk mode when underground
+		#Range: 0.0 ~ 1.0
+		creep_stalk_chance_cave = 0.5
+		#Chance a GoatMan spawns in creep-stalk mode on the surface
+		#Range: 0.0 ~ 1.0
+		creep_stalk_chance_surface = 0.3
+		#Distance at which the creep-stalk hands off to chase/flee
+		#Range: 1.0 ~ 10.0
+		creep_stalk_trigger_distance = 1.0
+		#How fast the GoatMan moves in creep-stalk
+		#Range: 0.03 ~ 1.0
+		creep_stalk_speed = 0.4
+
+	[BEHAVIOR.CHARGE]
+		#Minimum duration in seconds — shield charge stun / leap shield-disable when GoatMan hits a blocking player
+		#Range: 1 ~ 60
+		shield_stun_disable_min = 5
+		#Maximum duration in seconds — shield charge stun / leap shield-disable when GoatMan hits a blocking player
+		#Range: 1 ~ 60
+		shield_stun_disable_max = 10
+		#Blocks broken around entities hit by a charge
+		#Range: 0 ~ 3
+		charge_impact_radius = 2
+		#How many blocks GoatMan can break when a charge hits a wall
+		#Range: 0 ~ 4
+		charge_break_blocks = 3
+		#Minimum distance to start a charge
+		#Range: 1.0 ~ 32.0
+		charge_min_range = 4.0
+		#Maximum distance to start a charge
+		#Range: 1.0 ~ 64.0
+		charge_max_range = 12.0
+		#How fast the GoatMan charges
+		#Range: 0.1 ~ 5.0
+		charge_speed = 4.0
+		#Time it takes for a charge to last
+		#Range: 10 ~ 20
+		charge_duration = 10
+		#Time it takes for GoatMan to take a brief pause before it charges
+		#Range: 0 ~ 5
+		pause_before_charge = 3
+		#Base damage radius during charge
+		#Range: 0.0 ~ 8.0
+		charge_damage_radius = 2.0
+		#Extra forward damage reach during charge
+		#Range: 0.0 ~ 8.0
+		charge_forward_reach = 2.0
+		#Minimum seconds between charges
+		#Range: 1 ~ 120
+		charge_cooldown_min = 3
+		#Maximum seconds between charges
+		#Range: 1 ~ 120
+		charge_cooldown_max = 6
+
+	[BEHAVIOR.LEAP]
+		#Maximum distance to trigger a leap
+		#Range: 1.0 ~ 32.0
+		leap_range = 30.0
+		#Minimum distance to trigger a leap (too close = just melee instead)
+		#Range: 0.5 ~ 16.0
+		leap_min_range = 9.5
+		#Speed of the leap
+		#Range: 0.1 ~ 5.0
+		leap_speed = 4.0
+		#Minimum seconds between leap
+		#Range: 1 ~ 120
+		leap_cooldown_min = 4
+		#Maximum seconds between leap
+		#Range: 1 ~ 120
+		leap_cooldown_max = 8
+		#Radius in blocks around the GoatMan that deals damage while leaping (0 = uses normal melee only)
+		#Range: 0.0 ~ 8.0
+		leap_damage_radius = 3.0
+		#Radius in blocks around the GoatMan that breaks blocks when leaping into them
+		#Range: 0 ~ 5
+		leap_break_radius = 3
+
+	[BEHAVIOR.ABDUCTION]
+		#Once a player has already 2 strikes, chance the 3rd chase GoatMan will kill you instead of abducted (Strikes 1 and 2 are always guaranteed abductions)
+		#Range: 0.0 ~ 1.0
+		third_abduction_chance = 0.5
+		#Chance the 2nd abduction's chest rigged with TNT underneath (1st abduction is never rigged; 3rd is ALWAYS rigged)
+		#Range: 0.0 ~ 1.0
+		abduction_tnt_chance = 0.5
+		#Health the player wakes up with after abduction
+		#Range: 1.0 ~ 20.0
+		abduction_wake_health = 5.0
+		#Seconds the player's screen goes black on the 1st abduction
+		#Range: 1 ~ 60
+		abduction_blackout_seconds = 10
+		#Seconds the player's screen goes TRUE BLACK on the 2nd abduction
+		#Range: 1 ~ 60
+		second_abduction_blackout_seconds = 15
+		#Seconds the player's screen goes TRUE BLACK on the 3rd+ abduction
+		#Range: 1 ~ 60
+		third_abduction_blackout_seconds = 20
+		#Seconds of Blindness/Slowness/Nausea applied AFTER the black screen ends on the 1st abduction
+		#Range: 1 ~ 600
+		abduction_effect_seconds = 60
+		#Seconds of Blindness/Slowness/Nausea applied AFTER the black screen ends on the 2nd abduction (Play)
+		#Range: 1 ~ 600
+		second_abduction_effect_seconds = 120
+		#Seconds of Blindness/Slowness/Nausea applied AFTER the black screen ends on the 3rd+ abduction
+		#Range: 1 ~ 600
+		third_abduction_effect_seconds = 180
+		#Minimum teleport distance on the 1st abduction
+		#Range: 1 ~ 500
+		abduction_teleport_min = 20
+		#Maximum teleport distance on the 1st abduction
+		#Range: 1 ~ 500
+		abduction_teleport_max = 48
+		#Minimum teleport distance on the 2nd abduction
+		#Range: 1 ~ 1000
+		second_abduction_teleport_min = 48
+		#Maximum teleport distance on the 2nd abduction
+		#Range: 1 ~ 1000
+		second_abduction_teleport_max = 96
+		#Minimum teleport distance on the 3rd abduction
+		#Range: 1 ~ 1000
+		third_abduction_teleport_min = 96
+		#Maximum teleport distance on the 3rd abduction
+		#Range: 1 ~ 1000
+		third_abduction_teleport_max = 160
+		#Number of valuable item stacks stolen on the 1st abduction
+		#Range: 0 ~ 2304
+		abduction_item_count = 15
+		#Number of valuable item stacks stolen on the 2nd abduction
+		#Range: 0 ~ 2304
+		second_abduction_item_count = 30
+		#Number of valuable item stacks stolen on the 3rd abduction
+		#Range: 0 ~ 2304
+		third_abduction_item_count = 45
+		#Whether equipped armor can be stolen on the 2nd abduction
+		second_abduction_steals_armor = true
+		#Whether equipped armor can be stolen on the 3rd abduction
+		third_abduction_steals_armor = true
+		#Reduces the durability of a stolen item (never fully breaks it)
+		#Range: 0.0 ~ 0.95
+		abduction_durability_loss_percent = 0.35
+		#Amount of days a player must go without interacting with the GoatMan to decay the abduction strike
+		#Range: 1 ~ 30
+		abduction_decay_days = 8
+		#Radius searched for valid ground to place the stash chest near the abduction site
+		#Range: 4 ~ 64
+		abduction_chest_search_radius = 12
+		#DEBUG: after an abduction, send the abducted player a chat message with the stash chest's coordinates. The coordinates are clickable — clicking them teleports you there (like the /locate command). Meant for testing; leave off for normal play
+		abduction_debug_chest_location = false
+
+[ATTRIBUTES]
+	#Maximum Armor
+	#Range: 0.0 ~ 20.0
+	maximum_armor = 20.0
+	#Maximum Health
+	#Range: 1.0 ~ 500.0
+	maximum_health = 100.0
+	#Attack Damage
+	#Range: 0.0 ~ 50.0
+	attack_damage = 4.0
+	#Movement Speed
+	#Range: 0.0 ~ 5.0
+	movement_speed = 0.6
+	#Depth Strider (movement speed in water) Bonus
+	#Range: 1.0 ~ 3.0
+	depth_strider_bonus = 1.5
+
+[EVENTS]
+	#Whether goats spawn independently in the world as an omen
+	omen_goat_enabled = true
+	#Whether the GoatMan randomly summons a herd of goats
+	summon_herd = true
+	#Nearby goats silently stare at the nearest player
+	event_watch_enabled = true
+	#A goat silently follows the player at a distance, then rushes at you
+	event_follow_enabled = true
+	#Seconds of buffer before GoatMan spawns during which no goat event will start, and while one is present
+	#Range: 0 ~ 600
+	event_buffer = 20
+	#Multiplier applied to BOTH events' frequency at night
+	#Range: 1.0 ~ 10.0
+	event_night_frequency_multiplier = 3.5
+
+	[EVENTS.WATCHED]
+		#How often Watched event occurs
+		#Range: 0.0 ~ 1.0
+		event_watch_frequency = 0.012
+		#Radius around each player within which goats join the stare
+		#Range: 4.0 ~ 128.0
+		event_watch_radius = 100.0
+		#Minimum seconds the stare holds before goats return to normal
+		#Range: 1 ~ 600
+		event_watch_duration_min = 30
+		#Maximum seconds the stare holds before goats return to normal
+		#Range: 1 ~ 600
+		event_watch_duration_max = 60
+		#Chance that hurting one of the staring goats replaces it with GoatMan
+		#Range: 0.0 ~ 1.0
+		event_watch_goatman_chance = 0.5
+		#Seconds a goat is immune from being picked for The Watch again after being released (hit, fed/milked, or the event ending). Prevents the same goat getting swept into a fresh event moments later
+		#Range: 0 ~ 3600
+		event_watch_release_cooldown = 120
+
+	[EVENTS.FOLLOWED]
+		#how often Followed event occurs
+		#Range: 0.0 ~ 1.0
+		event_followed_frequency = 0.006
+		#Radius within which a goat may be chosen to follow a player
+		#Range: 4.0 ~ 128.0
+		event_followed_radius = 48.0
+		#Movement speed multiplier while it follows the player at a distance
+		#Range: 0.1 ~ 5.0
+		event_followed_walk_speed = 1.0
+		#Distance it keeps from the player while following
+		#Range: 1.0 ~ 20.0
+		event_follow_distance = 8.0
+		#Minimum seconds it silently follows at a distance before it rushes the player
+		#Range: 1 ~ 600
+		event_followed_duration_min = 30
+		#Maximum seconds it silently follows at a distance before it rushes the player
+		#Range: 1 ~ 600
+		event_followed_duration_max = 60
+		#Movement speed multiplier once it rushes the player
+		#Range: 0.1 ~ 5.0
+		event_followed_rush_speed = 2.8
+		#Damage dealt to the player
+		#Range: 0.0 ~ 20.0
+		event_followed_damage = 2.0
+		#Duration of Darkness applied to the player
+		#Range: 1 ~ 60
+		event_followed_darkness_duration = 5
+		#Chance the GoatMan spawns in place of the goat
+		#Range: 0.0 ~ 1.0
+		event_followed_goatman_chance = 0.08
+
+	[EVENTS."GOAT HERD"]
+		#Whether goats from the herd can only spawn on the surface and not in caves
+		summon_herd_surface_only = false
+		#Minimum number of goats in the summoned herd
+		#Range: 1 ~ 20
+		summon_herd_size_min = 6
+		#Maximum number of goats in the summoned herd
+		#Range: 1 ~ 20
+		summon_herd_size_max = 12
+		#Chance that GoatMan spawns with a herd of goats
+		#Range: 0.0 ~ 1.0
+		summon_herd_chance = 0.5
+
+	[EVENTS."GOAT OMEN"]
+		#Spawn frequency for omen goats (1.0 = normal animal rate, 0.5 = rare, 0.0 = disabled)
+		#Range: 0.0 ~ 1.0
+		omen_goat_frequency = 1.0
+		#Minimum number of omen goats per spawn
+		#Range: 1 ~ 20
+		omen_goat_size_min = 2
+		#Maximum number of omen goats per spawn
+		#Range: 1 ~ 20
+		omen_goat_size_max = 4
+
+[MUSIC]
+	#Plays music during stalk and chase
+	music_enabled = true
+	#Volume for stalk phase and chase phase (0.0 = silent, 1.0 = full)
+	#Range: 0.0 ~ 1.0
+	music_volume = 1.0
+
+	[MUSIC."Legacy Music"]
+		#Use legacy chase sounds
+		chase_sound_legacy = false
+		#Volume for legacy sounds
+		#Range: 0.0 ~ 1.0
+		legacy_chase_volume = 1.0
+
+[MISC]
+	#Only play the ambient noises to the current target
+	only_play_noise_to_target = false
+	#Whether the charge and leap applies blindness, weakness and nausea on hit
+	charge_and_leap_apply_effects = true
+	#Duration in seconds of charge and leap status effects
+	#Range: 1 ~ 30
+	charge_and_leap_effect_duration = 3
+	#Whether the GoatMan can break blocks (fences, doors, glass, etc.)
+	break_block = true
+	#Whether the GoatMan drops blocks
+	drop_block = true
+

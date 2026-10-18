@@ -1,0 +1,32 @@
+{
+	"abyssal_ruins": {
+		"abyssal_ruins": true
+	},
+	"archives": {
+		"archives": true
+	},
+	"chillager_outposts": {
+		"chillager_outpost": true
+	},
+	"desert_pyramids": {
+		"desert_pyramid": true
+	},
+	"ice_dungeons": {
+		"ice_dungeon": true
+	},
+	"jungle_temples": {
+		"jungle_temple": true
+	},
+	"jungle_treehouses": {
+		"jungle_treehouse": true
+	},
+	"spider_caves_houses": {
+		"spider_caves_house": true
+	},
+	"swamp_houses": {
+		"swamp_house": true
+	},
+	"tundra_houses": {
+		"tundra_house": true
+	}
+}

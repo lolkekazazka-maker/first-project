@@ -1,0 +1,52 @@
+{
+	"brigantine": {
+		"salt": 294215156,
+		"separation": 25,
+		"spacing": 50
+	},
+	"frigate_large": {
+		"salt": 354415156,
+		"separation": 25,
+		"spacing": 50
+	},
+	"frigate_medium": {
+		"salt": 474155156,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_cage": {
+		"salt": 1224667080,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_quad": {
+		"salt": 1334667080,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_ruin_pillager": {
+		"salt": 1692267080,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_ruin_vanilla_temple": {
+		"salt": 1694663380,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_temple_quad": {
+		"salt": 1694557080,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_the_column_temple": {
+		"salt": 1696667080,
+		"separation": 25,
+		"spacing": 50
+	},
+	"ocean_warn_temple": {
+		"salt": 1694665680,
+		"separation": 25,
+		"spacing": 50
+	}
+}

@@ -1,0 +1,18 @@
+#Multiplier applied to the raw value ratio. 1.0 = fair odds, 0.9 = 10% house edge.
+#Range: 0.01 ~ 1.0
+houseEdge = 0.9
+#Lowest possible success chance (0.001 = 0.1%).
+#Range: 0.0 ~ 1.0
+minChance = 0.001
+#Highest possible success chance. Keeps 'downgrades' from being a free win.
+#Range: 0.01 ~ 1.0
+maxChance = 0.9
+#How long the wheel spins before the result is applied, in ticks (20 = 1 second).
+#Range: 20 ~ 600
+spinDurationTicks = 70
+#Hard-coded item values, format 'modid:item=value'. These win over the built-in table
+#and over any value derived from crafting recipes.
+valueOverrides = []
+#Items that can never be used as an input or picked as a target.
+blacklist = []
+

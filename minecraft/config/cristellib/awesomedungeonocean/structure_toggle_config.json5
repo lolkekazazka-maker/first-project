@@ -1,0 +1,32 @@
+{
+	"brigantine": {
+		"brigantine": true
+	},
+	"frigate_large": {
+		"frigate_large": true
+	},
+	"frigate_medium": {
+		"frigate_medium": true
+	},
+	"ocean_cage": {
+		"ocean_cage": true
+	},
+	"ocean_quad": {
+		"ocean_quad": true
+	},
+	"ocean_ruin_pillager": {
+		"ocean_ruin_pillager": true
+	},
+	"ocean_ruin_vanilla_temple": {
+		"ocean_ruin_vanilla_temple": true
+	},
+	"ocean_temple_quad": {
+		"ocean_temple_quad": true
+	},
+	"ocean_the_column_temple": {
+		"ocean_the_column_temple": true
+	},
+	"ocean_warn_temple": {
+		"ocean_warn_temple": true
+	}
+}

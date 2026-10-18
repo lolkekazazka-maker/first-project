@@ -1,0 +1,52 @@
+{
+	"abyssal_ruins": {
+		"salt": 1241235,
+		"separation": 96,
+		"spacing": 128
+	},
+	"archives": {
+		"salt": 24023271,
+		"separation": 96,
+		"spacing": 128
+	},
+	"chillager_outposts": {
+		"salt": 4897754,
+		"separation": 8,
+		"spacing": 32
+	},
+	"desert_pyramids": {
+		"salt": 75840175,
+		"separation": 8,
+		"spacing": 24
+	},
+	"ice_dungeons": {
+		"salt": 2359143,
+		"separation": 8,
+		"spacing": 24
+	},
+	"jungle_temples": {
+		"salt": 20083232,
+		"separation": 8,
+		"spacing": 24
+	},
+	"jungle_treehouses": {
+		"salt": 12432,
+		"separation": 4,
+		"spacing": 16
+	},
+	"spider_caves_houses": {
+		"salt": 20083232,
+		"separation": 2,
+		"spacing": 6
+	},
+	"swamp_houses": {
+		"salt": 12432,
+		"separation": 4,
+		"spacing": 16
+	},
+	"tundra_houses": {
+		"salt": 20083232,
+		"separation": 4,
+		"spacing": 12
+	}
+}
