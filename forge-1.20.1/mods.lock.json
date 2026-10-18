@@ -267,14 +267,6 @@
    "size": 15060263
   },
   {
-   "slug": "chunky",
-   "version": "1.3.146",
-   "file": "Chunky-1.3.146.jar",
-   "url": "https://cdn.modrinth.com/data/fALzjamp/versions/4FTDk9wv/Chunky-1.3.146.jar",
-   "sha512": "13ef9d5bfea1895118eec45aa3071e2d79408241f29990624f67e157d4c525391753b0a1539ff3359dad79a6e5ab5e0b84fffbe528bdefcaaefd579ec794d9c9",
-   "size": 341451
-  },
-  {
    "slug": "clientsort",
    "version": "3.82.2+1.20.1",
    "file": "clientsort-forge-3.82.2+1.20.1.jar",
@@ -465,14 +457,6 @@
    "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/6UnEfsRQ/DistantHorizons-3.3.3-1.20.1-fabric-forge.jar",
    "sha512": "2ac0a2fd34fe17bb3a3764bb53838f00595998a7e0b4bd70c5068aa9244626c6b0e622af548f97a1614dbb0b7c3df29b6d313edfc890d572dc361591c2a176c0",
    "size": 27700542
-  },
-  {
-   "slug": "distraction-free-recipes",
-   "version": "1.2.1",
-   "file": "distraction_free_recipes-forge-1.2.1-1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/gbJLUhZP/versions/tmdAnJOP/distraction_free_recipes-forge-1.2.1-1.20.1.jar",
-   "sha512": "5d5a10b33b597a0eb2d4204f3b5db3aff17fbec9d4480845446f168ce01a4be856890e96c82c8d762bd9d58b5d7b7ffae7db1fd5890f44ec95aca4bd279606c7",
-   "size": 241822
   },
   {
    "slug": "double-doors",
@@ -721,14 +705,6 @@
    "url": "https://cdn.modrinth.com/data/z3TzcquW/versions/Bvjyyy1T/fastpaintings-1.20-1.2.7.jar",
    "sha512": "917595dfe0834d765751ee7272ef212df3d5077a651483b285d4e252819f56db5628e174c22a419b9038c25aa36f85bf22964e862920d2835f77bbd9baa87168",
    "size": 309400
-  },
-  {
-   "slug": "feature-recycler",
-   "version": "1.0.0",
-   "file": "Feature-Recycler-forge-1.0.0.jar",
-   "url": "https://cdn.modrinth.com/data/IAzu52kG/versions/3FYH4FtT/Feature-Recycler-forge-1.0.0.jar",
-   "sha512": "af48d9f56d5b20825dac7bf20ff4ce5d6900619b852f5f8c8fbcbfe342591870153ded25f564b99678fe3c38260ecd2c6779b894c53520c4c94010d232bab07e",
-   "size": 9940
   },
   {
    "slug": "ferrite-core",

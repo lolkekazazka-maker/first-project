@@ -86,7 +86,14 @@ foreach ($s in $enable) {
 }
 Set-Lines (Join-Path $Mc 'options.txt') ([ordered]@{ 'lang' = 'ru_ru'; 'renderDistance' = '12'; 'resourcePacks' = ('[' + ($packs -join ',') + ']') }) ':'
 New-Item -ItemType Directory -Force -Path (Join-Path $Mc 'config') | Out-Null
-Set-Lines (Join-Path $Mc 'config\oculus.properties') ([ordered]@{ 'enableShaders' = 'true'; 'shaderPack' = @($lock.shaderpacks)[0].file }) '='
+$cfg = Join-Path $Mc 'config'
+Set-Lines (Join-Path $cfg 'oculus.properties') ([ordered]@{ 'enableShaders' = 'true'; 'shaderPack' = @($lock.shaderpacks)[0].file }) '='
+# панель редактора FancyMenu сверху экрана не нужна
+$fm = Join-Path $cfg 'fancymenu'
+New-Item -ItemType Directory -Force -Path $fm | Out-Null
+if (-not (Test-Path (Join-Path $fm 'options.txt'))) {
+  [IO.File]::WriteAllLines((Join-Path $fm 'options.txt'), @("B:show_customization_overlay = 'false';"), $utf8)
+}
 
 if ($failed.Count -gt 0) {
   Write-Host "НЕ СКАЧАЛОСЬ:" -ForegroundColor Red
