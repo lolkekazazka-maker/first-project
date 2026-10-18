@@ -12,6 +12,21 @@ def toml_of(z):
     return ""
 
 
+def own_versions(text, manifest):
+    """modId -> версия (${file.jarVersion} берём из MANIFEST)."""
+    out = {}
+    jv = re.search(r"^Implementation-Version:\s*(\S+)", manifest, flags=re.M)
+    for block in re.split(r"^\s*\[\[", text, flags=re.M):
+        if block.startswith("mods]]"):
+            mid = re.search(r'^\s*modId\s*=\s*["\']([^"\']+)["\']', block, flags=re.M)
+            v = re.search(r'^\s*version\s*=\s*["\']([^"\']+)["\']', block, flags=re.M)
+            if mid and v:
+                out[mid.group(1)] = (jv.group(1) if jv and "jarVersion" in v.group(1) else v.group(1))
+    for m in re.finditer(r"\{\s*modId\s*=\s*['\"]([^'\"]+)['\"][^}]*?version\s*=\s*['\"]([^'\"]+)['\"]", text):
+        out.setdefault(m.group(1), m.group(2))
+    return out
+
+
 def parse(text):
     own, deps = [], []
     for block in re.split(r"^\s*\[\[", text, flags=re.M):
@@ -33,9 +48,19 @@ def parse(text):
     return sorted(set(own)), deps
 
 
+vers, loader = {}, ['', '']
+
+
 def ids_with_nested(z, depth=0):
-    own, deps = parse(toml_of(z))
+    text = toml_of(z)
+    own, deps = parse(text)
     top = list(own)
+    manifest = z.read("META-INF/MANIFEST.MF").decode("utf-8", "ignore") if "META-INF/MANIFEST.MF" in z.namelist() else ""
+    vers.update(own_versions(text, manifest))
+    loader[0] = re.search(r'^\s*loaderVersion\s*=\s*["\']([^"\']+)["\']', text, flags=re.M)
+    loader[0] = loader[0].group(1) if loader[0] else ""
+    ml = re.search(r'^\s*modLoader\s*=\s*["\']([^"\']+)["\']', text, flags=re.M)
+    loader[1] = ml.group(1) if ml else ""
     if depth < 2:
         for n in z.namelist():
             if n.startswith("META-INF/jarjar/") and n.endswith(".jar"):
@@ -74,13 +99,19 @@ def in_range(version, rng):
 def run(folder, forge):
     jars = sorted(Path(folder).glob("*.jar"))
     provided, tops, per_jar, problems = {}, {}, {}, []
+    versions = {}
     for j in jars:
         try:
             z = zipfile.ZipFile(j)
         except zipfile.BadZipFile:
             problems.append(f"{j.name}: битый jar")
             continue
+        vers.clear()
         own, deps, top = ids_with_nested(z)
+        for k, v in vers.items():
+            versions.setdefault(k, v)
+        if loader[1] == "javafml" and loader[0] and not in_range("47.4.10", loader[0]):
+            problems.append(f"{j.name}: нужен javafml {loader[0]}, у Forge 1.20.1 — 47")
         if not top:
             print(f"предупреждение: {j.name}: нет mods.toml (библиотека?)")
         per_jar[j.name] = (own, deps)
@@ -91,6 +122,9 @@ def run(folder, forge):
     for mid, fs in tops.items():
         if len(set(fs)) > 1:
             problems.append(f"дубликат modId {mid}: {', '.join(sorted(set(fs)))}")
+    for name in per_jar:
+        if re.search(r"1\.(21|20\.[2-6])(?!\d)", name) and "1.20.1" not in name and not re.search(r"1\.\d+(\.\d+)?-1\.20\.[2-6]", name):
+            problems.append(f"{name}: в имени файла другая версия игры")
     for name, (own, deps) in per_jar.items():
         for _, mid, rng, required, incompatible in deps:
             if mid in ("forge",) and not in_range(forge, rng):
@@ -101,6 +135,8 @@ def run(folder, forge):
                 continue
             if required and mid not in provided:
                 problems.append(f"{name}: нет обязательной зависимости {mid}")
+            elif rng and mid in versions and re.search(r"\d", versions[mid]) and not in_range(versions[mid], rng) and not incompatible:
+                problems.append(f"{name}: нужен {mid} {rng}, а стоит {versions[mid]}" + ("" if required else " (необязательная зависимость, но Forge проверяет)"))
             if incompatible and mid in provided:
                 problems.append(f"{name}: несовместим с {mid} ({', '.join(provided[mid])})")
     print(f"проверено {len(jars)} jar, modId: {len(provided)}")

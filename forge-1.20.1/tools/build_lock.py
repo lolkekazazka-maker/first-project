@@ -33,6 +33,13 @@ def jget(url):
 # на Forge 1.20.1 конфиг встроен в Forge; Modrinth требует этот мод только для Fabric-связки
 IGNORE = {"ohNO6lps"}  # forge-config-api-port
 
+def wrong_game(name):
+    """В имени файла указана другая версия игры (Modrinth иногда ошибочно ставит метку 1.20.1)."""
+    if re.search(r"1\.\d+(\.\d+)?-1\.20\.[2-6]", name):  # диапазон вроде 1.18-1.20.4 покрывает и 1.20.1
+        return False
+    return bool(re.search(r"(?<![\d.])1\.(21|20\.[2-6])(?![\d])", name)) and "1.20.1" not in name
+
+
 cache = {}
 
 
@@ -46,8 +53,9 @@ def best(project):
     except Exception:  # noqa: BLE001
         vs = []
     pick = None
-    for kind in ("release", "beta", "alpha"):
-        pick = next((v for v in vs if v["version_type"] == kind), None)
+    good = [v for v in vs if not wrong_game(next((x for x in v["files"] if x["primary"]), v["files"][0])["filename"])]
+    for kinds in (("release", "beta"), ("alpha",)):  # JEI и др. выпускают только beta: берём самую новую
+        pick = next((v for v in good if v["version_type"] in kinds), None)
         if pick:
             break
     cache[project] = pick
