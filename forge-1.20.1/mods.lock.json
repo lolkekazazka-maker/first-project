@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-18-r9",
+ "build": "2026-10-18-r10",
  "mods": [
   {
    "slug": "3dskinlayers",

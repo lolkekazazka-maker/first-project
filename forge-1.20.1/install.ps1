@@ -125,6 +125,20 @@ if (-not (Test-Path (Join-Path $fm 'options.txt'))) {
   [IO.File]::WriteAllLines((Join-Path $fm 'options.txt'), @("B:show_customization_overlay = 'false';"), $utf8)
 }
 
+# Physics Mod: осколки у сломанных блоков оставляем, а цепные обвалы пещер (collapse) выключаем;
+# остальные значения из уже существующего файла сохраняем
+$pm = Join-Path $cfg 'physicsmod'
+New-Item -ItemType Directory -Force -Path $pm | Out-Null
+$srv = Join-Path $pm 'physics_server_config.json'
+$phys = [ordered]@{ collapse = $false; maxCollapseObjects = 100; collapseSpeed = 10; dropBlocks = $true }
+if (Test-Path -LiteralPath $srv) {
+  try {
+    $cur = Get-Content -LiteralPath $srv -Raw -Encoding UTF8 | ConvertFrom-Json
+    foreach ($p in $cur.PSObject.Properties) { if ($p.Name -ne 'collapse') { $phys[$p.Name] = $p.Value } }
+  } catch { }
+}
+[IO.File]::WriteAllText($srv, ($phys | ConvertTo-Json), $utf8)
+
 if ($failed.Count -gt 0) {
   Write-Host "НЕ СКАЧАЛОСЬ:" -ForegroundColor Red
   $failed | ForEach-Object { Write-Host "  $_" }
