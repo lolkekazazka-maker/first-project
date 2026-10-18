@@ -1,7 +1,7 @@
 # Better MC 5 на Forge 1.20.1
 
 Сборка для **Minecraft 1.20.1 + Forge 47.4.10**: Dynamic Trees + Better Leaves, Distant Horizons, Embeddium + Oculus,
-шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport и спутники, Corpse, кровь, Neat, Physics Mod, MCA Reborn и др.
+шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport и спутники, Corpse, кровь, Neat, MCA Reborn и др.
 
 ## Установка (Windows + TLauncher)
 
@@ -14,14 +14,14 @@
 6. Создай новый мир.
 
 Всё, чего нет в `mods.lock.json` (моды от 1.21.1, вылетающие Feature Recycler, Chunky, Distraction Free Recipes и т.п.),
-`install.bat` переносит в `%appdata%\.minecraft\mods_backup_…`. При запуске он печатает «Версия сборки: 2026-10-18-r10»:
+`install.bat` переносит в `%appdata%\.minecraft\mods_backup_…`. При запуске он печатает «Версия сборки: 2026-10-18-r11»:
 если такой строки нет, у тебя старый ZIP — скачай ветку заново.
 Сами jar в git не лежат: список и контрольные суммы в `mods.lock.json`, собирается `tools/build_lock.py`.
 
 ## Обновление с прошлой версии
 
 Скачай ветку заново (Code → Download ZIP), распакуй и ещё раз запусти `forge-1.20.1\install.bat`. Уже скачанное не качается повторно.
-После запуска в `mods` должно быть 307 jar, а в `latest.log` не должно быть Feature Recycler, Chunky и Distraction Free Recipes.
+После запуска в `mods` должно быть 306 jar, а в `latest.log` не должно быть Feature Recycler, Chunky и Distraction Free Recipes.
 
 ## Ресурспаки
 
@@ -41,11 +41,6 @@ Overgrown Flowery GUI + Overgrown Flowery Hotbar, Better Leaves. Villagers и Ir
 
 Версии «Actually 3D Stuff» под 1.20.1 нет, поэтому стоит его предшественник из той же серии: Actually 3D Blocks & Items, плюс Equipment и Workbenches.
 Они лежат ниже остальных 3D-паков (3D Crops, 3D FOOD, грибы, лестницы), поэтому в спорных местах побеждают эти паки.
-
-## Physics Mod
-
-Установщик ставит `collapse: false` в `config/physicsmod/physics_server_config.json`: блоки при ломании разлетаются осколками, но цепных обвалов пещер нет.
-Остальные значения в этом файле он не трогает. Чтобы вернуть обвалы, поставь `"collapse": true`.
 
 ## Kaleidoscope
 

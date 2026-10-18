@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-18-r10",
+ "build": "2026-10-18-r11",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -1786,14 +1786,6 @@
    "url": "https://cdn.modrinth.com/data/CU0PAyzb/versions/C7buFh0l/Paxi-1.20-Forge-4.0.jar",
    "sha512": "50ed8c99981b9860c846a18cda215d388b67019b76a172833fa4e4b52cbd122eb8e49e594e5789790f95af06e0a98dcf2433b001b1f559b3e7071d2e6b7c1dd7",
    "size": 96892
-  },
-  {
-   "slug": "physicsmod",
-   "version": "3.0.20",
-   "file": "physics-mod-3.0.20-mc-1.20.1-forge.jar",
-   "url": "https://cdn.modrinth.com/data/Xy8aRQKS/versions/binwAk5d/physics-mod-3.0.20-mc-1.20.1-forge.jar",
-   "sha512": "2210fc12337d986917c7fd1e5017da5f8036ec86d185f10070e5a9aa3e4e3eaf915c9bba595f057f0852133fec95388e7b9d2937c7890775fae19bea707c58b0",
-   "size": 60624148
   },
   {
    "slug": "pick-up-notifier",
