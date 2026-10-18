@@ -11,6 +11,7 @@
 - Шейдеры: **Complementary Unbound r5.5.1** + **Euphoria Patches 1.6.4**, настроены на высокий FPS. Клавиша **K** (переключение шейдеров) отключена.
 - Добавлены моды, которых нет на Modrinth (Twilight Forest, Deeper Darker, Deep Aether, Supplementaries, FTB Quests и др.).
 - Русский язык, рендер 12 чанков, без ограничения FPS (260).
+- Добавлены **Distant Horizons**, **Particle Rain**, **Ribbits**, **Corpse** (заменил You're in Grave Danger), **AmbientSounds**, **Falling Leaves**, **Guard Villagers**, **Better Combat**, **Combat Roll**, **Exposure**, **Simple Voice Chat**, **Wavey Capes**, **Chunky**, **Nullscape** (+ CreativeCore и playerAnimator). Убран Particle Core: с ним мерцает Particle Rain.
 
 ## Установка на новом компьютере
 
@@ -33,7 +34,7 @@
 
 | Путь | Что это |
 |---|---|
-| `minecraft/mods` | все 285 модов |
+| `minecraft/mods` | все 299 модов |
 | `minecraft/config`, `defaultconfigs`, `configureddefaults` | настройки модов |
 | `minecraft/resourcepacks` | ресурспаки |
 | `minecraft/shaderpacks` | Complementary + настройки Euphoria |
