@@ -95,12 +95,30 @@ if ($mizuno) {
   Write-Host "  Mizuno's 16 Craft не найден (он только на CurseForge): скачай zip вручную, положи в папку forge-1.20.1 и запусти install.bat ещё раз" -ForegroundColor Yellow
 }
 
+# Overgrown Flowery GUI/Hotbar рисуют здоровье цветами, а голод каплями воды: делаем копии без icons.png (иконки будут обычные)
+Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
+function New-PackWithout($slug, $dstName, $entries) {
+  $p = $lock.resourcepacks | Where-Object { $_.slug -eq $slug } | Select-Object -First 1
+  if (-not $p) { return $null }
+  $dst = Join-Path $rp $dstName
+  Copy-Item -LiteralPath (Join-Path $rp $p.file) -Destination $dst -Force
+  $zip = [IO.Compression.ZipFile]::Open($dst, [IO.Compression.ZipArchiveMode]::Update)
+  try { foreach ($e in @($zip.Entries)) { if ($entries -contains $e.FullName) { $e.Delete() } } } finally { $zip.Dispose() }
+  return $dstName
+}
+$iconsEntry = @('assets/minecraft/textures/gui/icons.png')
+$override = @{
+  'overgrown-flowery-gui'    = (New-PackWithout 'overgrown-flowery-gui' 'Overgrown Flowery GUI - vanilla icons.zip' $iconsEntry)
+  'overgrown-flowery-hotbar' = (New-PackWithout 'overgrown-flowery-hotbar' 'Overgrown Flowery Hotbar - vanilla icons.zip' $iconsEntry)
+}
+
 # порядок: от нижнего слоя к верхнему (последний в списке перекрывает остальные)
 $enable = @()
 if ($mizuno) { $enable += '@mizuno' }
-$enable += @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension')
+$enable += @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension',
+             'polaris-animation-for-punchy', 'blacksea-animation-for-punchy')
 if ($mizuno) { $enable += 'mizuno-x-fresh-animations' }
-$enable += @('actually-3d-blocks-and-items', '3d-equipment', '3d-workbenches')
+$enable += @('3d-equipment', '3d-workbenches')
 $enable += @('better-lanterns', 'fancy-crops', '3d-crops')
 if ($mizuno) { $enable += 'mizunos-better-crops' }
 $enable += @('rays-3d-ladders', 'rays-3d-rails', 'simple-grass-flowers')
@@ -111,6 +129,7 @@ $enable += $(if ($mizuno) { 'mizuno-better-leaves' } else { 'better-leaves' })
 $packs = @('"vanilla"')
 foreach ($s in $enable) {
   if ($s -eq '@mizuno') { $packs += ('"file/' + $mizuno.Name + '"'); continue }
+  if ($override.ContainsKey($s)) { if ($override[$s]) { $packs += ('"file/' + $override[$s] + '"') }; continue }
   $p = $lock.resourcepacks | Where-Object { $_.slug -eq $s } | Select-Object -First 1
   if ($p) { $packs += ('"file/' + $p.file + '"') }
 }
@@ -118,6 +137,41 @@ Set-Lines (Join-Path $Mc 'options.txt') ([ordered]@{ 'lang' = 'ru_ru'; 'renderDi
 New-Item -ItemType Directory -Force -Path (Join-Path $Mc 'config') | Out-Null
 $cfg = Join-Path $Mc 'config'
 Set-Lines (Join-Path $cfg 'oculus.properties') ([ordered]@{ 'enableShaders' = 'true'; 'shaderPack' = @($lock.shaderpacks)[0].file }) '='
+# готовые настройки из старой сборки и мои правки (папка config рядом с install.bat): ставим один раз на версию набора,
+# заменённые файлы сохраняем в config_backup_*_replaced
+$cfgVer = $lock.build
+$cfgMarker = Join-Path $Mc ('.bmc5_config_' + $cfgVer)
+$bundle = Join-Path $PSScriptRoot 'config'
+if ((Test-Path $bundle) -and -not (Test-Path $cfgMarker)) {
+  $bak = Join-Path $Mc ('config_backup_' + (Get-Date -Format 'yyyyMMdd_HHmmss') + '_replaced')
+  $n = 0
+  foreach ($f in Get-ChildItem $bundle -Recurse -File) {
+    $rel = $f.FullName.Substring($bundle.Length).TrimStart('\', '/')
+    $to = Join-Path $cfg $rel
+    New-Item -ItemType Directory -Force -Path (Split-Path $to) | Out-Null
+    if (Test-Path -LiteralPath $to) {
+      $b = Join-Path $bak $rel
+      New-Item -ItemType Directory -Force -Path (Split-Path $b) | Out-Null
+      Copy-Item -LiteralPath $to -Destination $b -Force
+    }
+    Copy-Item -LiteralPath $f.FullName -Destination $to -Force
+    $n++
+  }
+  # MCA Reborn: свой скин игрока не подменяется моделью жителя (иначе сохраняется только форма, а не скин)
+  $mca = Join-Path $cfg 'mca.json'
+  if (Test-Path -LiteralPath $mca) {
+    $txt = [IO.File]::ReadAllText($mca)
+    foreach ($k in @('enableVillagerPlayerModel', 'forceVillagerPlayerModel')) {
+      if ($txt -match ('"' + $k + '"\s*:')) { $txt = [regex]::Replace($txt, '("' + $k + '"\s*:\s*)(true|false)', '${1}false') }
+      else { $txt = [regex]::Replace($txt, '^\s*\{', ('{' + [Environment]::NewLine + '  "' + $k + '": false,'), 1) }
+    }
+    [IO.File]::WriteAllText($mca, $txt, $utf8)
+  } else {
+    [IO.File]::WriteAllText($mca, "{`n  `"enableVillagerPlayerModel`": false,`n  `"forceVillagerPlayerModel`": false`n}`n", $utf8)
+  }
+  New-Item -ItemType File -Force -Path $cfgMarker | Out-Null
+  Write-Host "  Настройки скопированы: $n файлов (прежние версии, если были, в $bak)"
+}
 # панель редактора FancyMenu сверху экрана не нужна
 $fm = Join-Path $cfg 'fancymenu'
 New-Item -ItemType Directory -Force -Path $fm | Out-Null

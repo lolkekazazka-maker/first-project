@@ -15,7 +15,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
-BUILD = "2026-10-18-r11"  # меняется при каждом изменении набора модов: установщик печатает её
+BUILD = "2026-10-18-r12"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):
@@ -45,6 +45,10 @@ if OUT.exists() and "--update" not in sys.argv:
     PINNED |= {m["file"] for m in _old.get("resourcepacks", []) + _old.get("shaderpacks", [])}
 
 
+# версии, которые нельзя брать новыми (например, требуют Forge новее 47.4.10)
+MOD_VERSION = {"subtle-effects": "1.14.0"}
+
+
 def wrong_game(name):
     """В имени файла указана другая версия игры (Modrinth иногда ошибочно ставит метку 1.20.1)."""
     if re.search(r"1\.\d+(\.\d+)?-1\.20\.[2-6]", name):  # диапазон вроде 1.18-1.20.4 покрывает и 1.20.1
@@ -66,7 +70,8 @@ def best(project):
         vs = []
     pick = None
     good = [v for v in vs if not wrong_game(next((x for x in v["files"] if x["primary"]), v["files"][0])["filename"])]
-    pick = next((v for v in good if any(f["filename"] in PINNED for f in v["files"])), None)
+    pick = next((v for v in good if v["version_number"] == MOD_VERSION.get(project)), None) \
+        or next((v for v in good if any(f["filename"] in PINNED for f in v["files"])), None)
     for kinds in (() if pick else (("release", "beta"), ("alpha",))):  # JEI и др. выпускают только beta: берём самую новую
         pick = next((v for v in good if v["version_type"] in kinds), None)
         if pick:
