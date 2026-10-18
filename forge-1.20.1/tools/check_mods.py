@@ -63,7 +63,7 @@ def ids_with_nested(z, depth=0):
     loader[1] = ml.group(1) if ml else ""
     if depth < 2:
         for n in z.namelist():
-            if n.startswith("META-INF/jarjar/") and n.endswith(".jar"):
+            if n.startswith(("META-INF/jarjar/", "META-INF/jars/")) and n.endswith(".jar"):  # вложенные мода (Jar-in-Jar)
                 try:
                     o2, _, _ = ids_with_nested(zipfile.ZipFile(io.BytesIO(z.read(n))), depth + 1)
                     own += o2
@@ -108,8 +108,9 @@ def run(folder, forge):
             continue
         vers.clear()
         own, deps, top = ids_with_nested(z)
-        for k, v in vers.items():
-            versions.setdefault(k, v)
+        for k, v in vers.items():  # если мод вложен в чужие jar, Forge берёт самую новую версию
+            if k not in versions or ver(v) > ver(versions[k]):
+                versions[k] = v
         if loader[1] == "javafml" and loader[0] and not in_range("47.4.10", loader[0]):
             problems.append(f"{j.name}: нужен javafml {loader[0]}, у Forge 1.20.1 — 47")
         if not top:

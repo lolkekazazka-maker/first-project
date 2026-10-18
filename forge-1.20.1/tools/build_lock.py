@@ -1,6 +1,7 @@
 """Собирает mods.lock.json для сборки Forge 1.20.1: версии, ссылки, sha512.
 
-  python3 forge-1.20.1/tools/build_lock.py            # разрешить зависимости и записать mods.lock.json
+  python3 forge-1.20.1/tools/build_lock.py            # разрешить зависимости и записать mods.lock.json (версии уже проверенных модов не меняются)
+  python3 forge-1.20.1/tools/build_lock.py --update   # то же, но взять самые новые версии
   python3 forge-1.20.1/tools/build_lock.py --check DIR # проверить jar из DIR (modId, зависимости, версия Forge)
 
 Берутся только версии Forge + Minecraft 1.20.1. Мод, у которого обязательная зависимость
@@ -14,7 +15,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
-BUILD = "2026-10-18-r5"  # меняется при каждом изменении набора модов: установщик печатает её
+BUILD = "2026-10-18-r6"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):
@@ -34,6 +35,13 @@ def jget(url):
 # на Forge 1.20.1 конфиг встроен в Forge; Modrinth требует этот мод только для Fabric-связки
 # Sodium на Forge заменяет Embeddium: Chunks Fade In в mods.toml Sodium не требует, это метка Modrinth
 IGNORE = {"ohNO6lps", "AANobbMI"}  # forge-config-api-port, sodium
+
+# уже проверенные версии из текущего mods.lock.json остаются, пока их не просят обновить (--update):
+# иначе при каждой пересборке мод тихо переезжает на новую, не проверенную версию
+PINNED = set()
+if OUT.exists() and "--update" not in sys.argv:
+    PINNED = {m["file"] for m in json.loads(OUT.read_text("utf-8"))["mods"]}
+
 
 def wrong_game(name):
     """В имени файла указана другая версия игры (Modrinth иногда ошибочно ставит метку 1.20.1)."""
@@ -56,7 +64,8 @@ def best(project):
         vs = []
     pick = None
     good = [v for v in vs if not wrong_game(next((x for x in v["files"] if x["primary"]), v["files"][0])["filename"])]
-    for kinds in (("release", "beta"), ("alpha",)):  # JEI и др. выпускают только beta: берём самую новую
+    pick = next((v for v in good if any(f["filename"] in PINNED for f in v["files"])), None)
+    for kinds in (() if pick else (("release", "beta"), ("alpha",))):  # JEI и др. выпускают только beta: берём самую новую
         pick = next((v for v in good if v["version_type"] in kinds), None)
         if pick:
             break
