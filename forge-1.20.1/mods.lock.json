@@ -1,0 +1,2170 @@
+{
+ "minecraft": "1.20.1",
+ "forge": "47.4.10",
+ "mods": [
+  {
+   "slug": "3dskinlayers",
+   "version": "1.11.3",
+   "file": "skinlayers3d-forge-1.11.3-mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/zV5r3pPn/versions/WLmoJVE7/skinlayers3d-forge-1.11.3-mc1.20.1.jar",
+   "sha512": "1703ae352f5533680e04c5b80c26dd1c101a428ad32f6d2127fa38e5d43fa940752ee247118db9a07d3974dd86814bf2c27bf6a7c5ddc5cbfec16edc6c4451a9",
+   "size": 2093560
+  },
+  {
+   "slug": "accessories",
+   "version": "1.0.0-beta.49+1.20.1",
+   "file": "accessories-neoforge-1.0.0-beta.49+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/jtmvUHXj/versions/HkgYoWJH/accessories-neoforge-1.0.0-beta.49%2B1.20.1.jar",
+   "sha512": "faa88e445f832fbd09c236b34878a744e54c6ddb0770e6bed8481931acdbe2dc489fcc17f03447489011c6af22bed47c79efeaf971342ad15b8ced4b5d7c765e",
+   "size": 1080155
+  },
+  {
+   "slug": "adorabuild-structures",
+   "version": "2.8.0",
+   "file": "adorabuild-structures-2.8.0-forge-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/rYlnn25U/versions/lXwpMoOg/adorabuild-structures-2.8.0-forge-1.20.1.jar",
+   "sha512": "1352c985262e63e05a988029fa0a4d95a3b046e7e88303e37e971166e2ea4c5b1676b50987b996c346ea9018718ba0bbac3b4c2ad25126d68c844491f925df02",
+   "size": 617050
+  },
+  {
+   "slug": "advanced-netherite",
+   "version": "forge-2.1.3-mc1.20.1",
+   "file": "advancednetherite-forge-2.1.3-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/CFX9ftUJ/versions/DW4je0EN/advancednetherite-forge-2.1.3-1.20.1.jar",
+   "sha512": "6cd1e7bbd99a1137b0a31439569fcbfbac2932c987307325db92018d91ebd38d9dd7a4b1064ecdcd5f60ee9278bb0c9da2265b1c20fdba8c73a365f88b025e2a",
+   "size": 522473
+  },
+  {
+   "slug": "aether",
+   "version": "1.20.1-1.5.2-neoforge",
+   "file": "aether-1.20.1-1.5.2-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/YhmgMVyu/versions/2411kUqF/aether-1.20.1-1.5.2-neoforge.jar",
+   "sha512": "60b23e439b244645eafda5f3ddd620ac37e94bd75441d2deea9c328e1e154362f48b08aff1959849a7428ae7664422723fdbdb12aaeddfd56409ba4b54a7eaaf",
+   "size": 39746073
+  },
+  {
+   "slug": "aether-enhanced-extinguishing",
+   "version": "1.20.1-1.0.0-neoforge",
+   "file": "aether_enhanced_extinguishing-1.20.1-1.0.0-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/FDrEl7QY/versions/fhAMvUrG/aether_enhanced_extinguishing-1.20.1-1.0.0-neoforge.jar",
+   "sha512": "adae2b4fe214a6a8fbff6eed7f3ad699baacac1751138c75fc82b9c5b09a2976ce655c516cac93ade229416d875ac0f517c8c43df86765150114cacddddf7ddd",
+   "size": 123210
+  },
+  {
+   "slug": "aether-protect-your-moa",
+   "version": "1.20.1-1.0.0-neoforge",
+   "file": "aether_protect_your_moa-1.20.1-1.0.0-neoforge.jar",
+   "url": "https://cdn.modrinth.com/data/6KeEgbxe/versions/3LK9WMHU/aether_protect_your_moa-1.20.1-1.0.0-neoforge.jar",
+   "sha512": "4a23c021b964337bf6ade8788ca21b6017dcba8430992e9938a8146fd38968fe684c8e2f9df0121cdecb32286b464f5aa4adbf7e142a6ff92262fe38642fa9bf",
+   "size": 1226698
+  },
+  {
+   "slug": "aether-villages",
+   "version": "1.0.7",
+   "file": "AetherVillages-1.20.1-1.0.7-forge.jar",
+   "url": "https://cdn.modrinth.com/data/3P2XnNW6/versions/hoWwSyiT/AetherVillages-1.20.1-1.0.7-forge.jar",
+   "sha512": "0234eab5913eb6cfa24729244065fdaf81339811e0aa017b796b7bb58317a1f71920610dd69c80f262f6f5df24e2c67886d7b9a9e0ad0321745a077911745ff4",
+   "size": 646120
+  },
+  {
+   "slug": "alternate-current",
+   "version": "forge-mc1.20-1.7.0",
+   "file": "alternate_current-mc1.20-1.7.0.jar",
+   "url": "https://cdn.modrinth.com/data/r0v8vy1s/versions/kC6SY4Zp/alternate_current-mc1.20-1.7.0.jar",
+   "sha512": "d9ae21a3a389c63466bf22b36d4a78c859f30c901397622f1f1438737901a2c67e4d911c83831e0d4f1edabf0b86b58f4192d9980ecef8278393fd4af64a9585",
+   "size": 36703
+  },
+  {
+   "slug": "ambientsounds",
+   "version": "6.3.10",
+   "file": "AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/fM515JnW/versions/ApGAJplZ/AmbientSounds_FORGE_v6.3.10_mc1.20.1.jar",
+   "sha512": "78a8b3bf385aaebab6babb9623718c16ad746a003bbc4e36a62863bd96ae73bc6c9ee49c8b7c6a6e6c6bca3b41c9020bd6868a5b024584393d3e3762eef8d17b",
+   "size": 53432458
+  },
+  {
+   "slug": "amendments",
+   "version": "1.20-2.2.6",
+   "file": "amendments-1.20-2.2.6.jar",
+   "url": "https://cdn.modrinth.com/data/6iTJugQR/versions/nJORWvdh/amendments-1.20-2.2.6.jar",
+   "sha512": "7d35e27c65d721011cf9d1b42e37630e4bb8eddf87da4d4344ecb1cc86596ae8f7fb8c942a327c7af0f2c4d1d8a6f77ea55a93d8731295cef837e55a8bdb8503",
+   "size": 1315525
+  },
+  {
+   "slug": "another-furniture",
+   "version": "3.0.4",
+   "file": "another_furniture-forge-1.20.1-3.0.4.jar",
+   "url": "https://cdn.modrinth.com/data/ulloLmqG/versions/S9tNKT5R/another_furniture-forge-1.20.1-3.0.4.jar",
+   "sha512": "c57011a7e078cdb05ca05123d2ca3d01b1f3baca3555c067150e23d75268bb250b45a780da1488a49c08c46f6ed38e883f6cd47981babffe43b5f501984f1afc",
+   "size": 2463633
+  },
+  {
+   "slug": "architectury-api",
+   "version": "9.2.14+forge",
+   "file": "architectury-9.2.14-forge.jar",
+   "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1MKTLiiG/architectury-9.2.14-forge.jar",
+   "sha512": "cf67f2050cafa00f0bee42e6d7bef77fdb808ac4f71742f7b4d6d5c1e6ffb49561a5a252f332d2b78a9767bdb5faa284611790dba303fbdc736ae36d794f61c7",
+   "size": 580602
+  },
+  {
+   "slug": "athena-ctm",
+   "version": "3.1.2",
+   "file": "athena-forge-1.20.1-3.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/DULOQFj7/athena-forge-1.20.1-3.1.2.jar",
+   "sha512": "5a71a1c220eafbfbdb570fa204454352b48d55f238db1a5b398a8c40f6b0fbd8c09a2f6c10def330abdf3daadaa24dfa52471f8de931a93fd99dc7d85b60960b",
+   "size": 91808
+  },
+  {
+   "slug": "autochefs-delight",
+   "version": "1.0.6+forge",
+   "file": "AutochefsDelight-1.20.1-Forge-1.0.6.jar",
+   "url": "https://cdn.modrinth.com/data/HY0PMpa3/versions/GIONvu9W/AutochefsDelight-1.20.1-Forge-1.0.6.jar",
+   "sha512": "b89b7945f3839e80823e95169a1eb171d5df027c23c1accaa781210bd51f539ad81634109dcfef1616898aefcfe32a44f2f8f9b9c94a6883956370880c0fc8bb",
+   "size": 198412
+  },
+  {
+   "slug": "azurelib",
+   "version": "3.1.24",
+   "file": "azurelib-neo-1.20.1-3.1.24.jar",
+   "url": "https://cdn.modrinth.com/data/7zlUOZvb/versions/BF48e0nr/azurelib-neo-1.20.1-3.1.24.jar",
+   "sha512": "d69cdadd1e2a92e54e4b7643fd7747e4208f8388468bb15dba7d819dbb3d07d74d3090d8f1555fe3faeeee0b42952ddea93609e1fb0e6c43dcf3bf52ada46e92",
+   "size": 1163196
+  },
+  {
+   "slug": "badoptimizations",
+   "version": "2.4.1",
+   "file": "BadOptimizations-2.4.1-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/g96Z4WVZ/versions/DIugITgU/BadOptimizations-2.4.1-1.20.1.jar",
+   "sha512": "5e02d9c5a5bc3dccfccbfac4809cda4eb755c015060063b696e92568e0be3d8354a01f6ac5dae99bd27111b7e20bb680512287119459ad069dcf3e7d17cace0f",
+   "size": 460234
+  },
+  {
+   "slug": "balm",
+   "version": "7.3.44+forge-1.20.1",
+   "file": "balm-forge-1.20.1-7.3.44.jar",
+   "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/dDN38ae7/balm-forge-1.20.1-7.3.44.jar",
+   "sha512": "bdabc656c7f60d6476a7d8c3d1f7a3d174854c9c4a466a9ff9b220737b717bc8069229471f7cf7eac574ba15e1263b76da8fef2ed1a5273d53e1c9cbf041ad9b",
+   "size": 561741
+  },
+  {
+   "slug": "bartering-station",
+   "version": "v8.0.0-1.20.1-Forge",
+   "file": "BarteringStation-v8.0.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/EOig9U0j/versions/4op6LZEK/BarteringStation-v8.0.0-1.20.1-Forge.jar",
+   "sha512": "999d29b7e454865e80432da594fb155c1d77c6b2ce9f4f3f1bf1673510b732b75d2a44bce044563ba020fcbdb92fff1c2c67047c4a5a7fc9c0836a32c18744fb",
+   "size": 116777
+  },
+  {
+   "slug": "better-advancements",
+   "version": "0.6.0.73",
+   "file": "BetterAdvancements-Forge-1.20.1-0.6.0.73.jar",
+   "url": "https://cdn.modrinth.com/data/Q2OqKxDG/versions/zKOCnRdK/BetterAdvancements-Forge-1.20.1-0.6.0.73.jar",
+   "sha512": "1279a47be84e5f24c2518bd75a276e09ed5262a96573657b48d4bf0160a7f3f6749a38f8d51200cd2883e9fd90dbb4a3cbca59c09ce1b998d212db98cb677dea",
+   "size": 100436
+  },
+  {
+   "slug": "better-combat",
+   "version": "1.9.0+1.20.1-forge",
+   "file": "bettercombat-forge-1.9.0+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/5sy6g3kz/versions/rnhiaw3t/bettercombat-forge-1.9.0%2B1.20.1.jar",
+   "sha512": "0778902ce693ae56afd9a928e0629470095dff0324c6856fc45ee51a8efcfa622cc22edaa07ed40814d3b13851d62b27d144e9858e5209a6cf70fd3651f081e8",
+   "size": 1054339
+  },
+  {
+   "slug": "better-compatibility-checker",
+   "version": "build.58+mc1.20",
+   "file": "BetterCompatibilityChecker-3.0.1-build.58+mc1.20.jar",
+   "url": "https://cdn.modrinth.com/data/KJhXPbHQ/versions/auZ4x8at/BetterCompatibilityChecker-3.0.1-build.58%2Bmc1.20.jar",
+   "sha512": "4b7e47858fdc91540dcde025bf9d771a45fb9071d2a5c9d40becf045532ea19d6a517b2d8008b2d00dc4d6705a929e56ab1116cb314abb1d3b4d46710af08f3b",
+   "size": 21072
+  },
+  {
+   "slug": "better-mods-button",
+   "version": "v8.0.2-1.20.1-Forge",
+   "file": "BetterModsButton-v8.0.2-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/KUZAAwdD/versions/bSoVaTgS/BetterModsButton-v8.0.2-1.20.1-Forge.jar",
+   "sha512": "a2235c03fa59f28e2b934a325d81487b6ae7783e28177a095f109c0f453fb7327c9d74739fbfe206b82d33361c0965d633689b29bd0e5367751820aadb598634",
+   "size": 57210
+  },
+  {
+   "slug": "bettergrassify",
+   "version": "1.4.4+forge.1.20.1",
+   "file": "BetterGrassify-1.4.4+forge.1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/m5T5xmUy/versions/9bgIBvnQ/BetterGrassify-1.4.4%2Bforge.1.20.1.jar",
+   "sha512": "521f795df78fec101f56b82389df769c120572a70993716ca4cca1fae99e46ff8ad845629ed635a9d4bf79646df5b1d67174b97b9832744b5cf2e6a092736110",
+   "size": 330517
+  },
+  {
+   "slug": "bisect-mod",
+   "version": "2.4.3",
+   "file": "BHMenu-Forge-1.20.1-2.4.3.jar",
+   "url": "https://cdn.modrinth.com/data/yWSAtnfH/versions/7gRyKVFE/BHMenu-Forge-1.20.1-2.4.3.jar",
+   "sha512": "35a65741eedece4ca9dbf8243caa51a220f24b4794484461121da808bad140bcea98a3e3c2fa0839f19d4a1b04061555657ccd5525101a9fed586849582d4eda",
+   "size": 164317
+  },
+  {
+   "slug": "boat-item-view",
+   "version": "1.20.x-0.0.5-forge",
+   "file": "Boat-Item-View-Forge-1.20.1-0.0.5.jar",
+   "url": "https://cdn.modrinth.com/data/BdKIyOLe/versions/msJBWPLN/Boat-Item-View-Forge-1.20.1-0.0.5.jar",
+   "sha512": "5dae93ebea0ea6af2283223d78303e98cac68365e7ce6cae85a8ad91e40027f804bd427844fb5c7792231dc40dd75861d5ab2f1bba4afe8ebcf618934466676d",
+   "size": 27007
+  },
+  {
+   "slug": "bookshelf-lib",
+   "version": "20.2.15",
+   "file": "Bookshelf-Forge-1.20.1-20.2.15.jar",
+   "url": "https://cdn.modrinth.com/data/uy4Cnpcm/versions/7eS5OIHj/Bookshelf-Forge-1.20.1-20.2.15.jar",
+   "sha512": "b5e3d6031ea91aca65b059c84d813d248347a870fac4811cd1e9d649f2a37c857bbd32f2f071b69589c7b3940bf5bb4bdc0b82f62818bb03255be14d23cef170",
+   "size": 343925
+  },
+  {
+   "slug": "caelus",
+   "version": "3.2.0+1.20.1",
+   "file": "caelus-forge-3.2.0+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/40FYwb4z/versions/mRry0DgY/caelus-forge-3.2.0%2B1.20.1.jar",
+   "sha512": "906baad404c33288d8daf8937bc6a85d3bcc03db67a4a68395b8f01eea57f773420ff97919aadb08a7618b62b0c6c3db72270f9c3af836b822385464f509cf78",
+   "size": 40125
+  },
+  {
+   "slug": "carry-on",
+   "version": "2.1.2.7",
+   "file": "carryon-forge-1.20.1-2.1.2.7.jar",
+   "url": "https://cdn.modrinth.com/data/joEfVgkn/versions/edGQD16r/carryon-forge-1.20.1-2.1.2.7.jar",
+   "sha512": "4f75afb703dd71c322d4e2e27d28d7ab4afeb0c242bcee6d1eb5fef59ee4347352f1ca55f1826743957d2e95a951ed13884356485b0a979b14010915079e2c29",
+   "size": 439457
+  },
+  {
+   "slug": "cerulean-advancements",
+   "version": "forge-1.20.1-1.0.0",
+   "file": "cerulean-forge-1.0.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/dv57xmf9/versions/znxRjAmZ/cerulean-forge-1.0.0-1.20.1.jar",
+   "sha512": "7a1cf8ff7d5bb397503609936673ebb35fcbd8dfa789b9ac74a0f9d11dd0ad39798a811f8cf1e8dbfd77cba96ab48bcf27b0662203996a88dd699b09b367e77f",
+   "size": 524370
+  },
+  {
+   "slug": "chat-heads",
+   "version": "0.15.7",
+   "file": "chat_heads-0.15.7-forge-1.20.jar",
+   "url": "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/UJALMfLK/chat_heads-0.15.7-forge-1.20.jar",
+   "sha512": "e5e063b25986c67d1c9493d767803efc31cb94f02adb70ff95942b49d740f30802099ab8a1998727903b2f34ff4f18e311d1b7af36d27b92c94d465dd8314c10",
+   "size": 724902
+  },
+  {
+   "slug": "cherished-worlds",
+   "version": "6.1.7+1.20.1",
+   "file": "cherishedworlds-forge-6.1.7+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/3azQ6p0W/versions/Uwaq5LPL/cherishedworlds-forge-6.1.7%2B1.20.1.jar",
+   "sha512": "473b066a5765b9205c453669e43437ac5d440d7de8a42dd4b50d97a917575740a725f825cada865ecfc02914012e78295e2e67e3161dffb8254a0e22061d65e1",
+   "size": 60956
+  },
+  {
+   "slug": "chipped",
+   "version": "3.0.7",
+   "file": "chipped-forge-1.20.1-3.0.7.jar",
+   "url": "https://cdn.modrinth.com/data/BAscRYKm/versions/pi3f4er3/chipped-forge-1.20.1-3.0.7.jar",
+   "sha512": "be1871655e213cf488d5049058200e03655f63b5922b6031af142d79d8958dca6653e7fa501f1aa2fda5544ad44a4f593521a7927a516e99579406a23a187045",
+   "size": 15060263
+  },
+  {
+   "slug": "chunky",
+   "version": "1.3.146",
+   "file": "Chunky-1.3.146.jar",
+   "url": "https://cdn.modrinth.com/data/fALzjamp/versions/4FTDk9wv/Chunky-1.3.146.jar",
+   "sha512": "13ef9d5bfea1895118eec45aa3071e2d79408241f29990624f67e157d4c525391753b0a1539ff3359dad79a6e5ab5e0b84fffbe528bdefcaaefd579ec794d9c9",
+   "size": 341451
+  },
+  {
+   "slug": "clientsort",
+   "version": "3.82.2+1.20.1",
+   "file": "clientsort-forge-3.82.2+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/K0AkAin6/versions/QPYhscAG/clientsort-forge-3.82.2%2B1.20.1.jar",
+   "sha512": "c5b48d663eadbcb35a3a865ca6e920fb678a402394ae6edbbf6d59d375686aa4bbcb8de768b11486c70bdb97818f62f86cddbf8ceb16be93737aec6f008157ae",
+   "size": 952948
+  },
+  {
+   "slug": "climate-rivers",
+   "version": "v20.1.0-1.20.1-Forge",
+   "file": "ClimateRivers-v20.1.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/DzZWws4q/versions/tclzgJeT/ClimateRivers-v20.1.0-1.20.1-Forge.jar",
+   "sha512": "8a1d4f2aed6e0dca161e1dbfbb23713b5cd0d93d76a81ebf8f628a8a12e437fb298506fd58675b18011a78481ceee64e1bd87abbc82410a33ea085c3dee76df2",
+   "size": 52731
+  },
+  {
+   "slug": "cloth-config",
+   "version": "11.1.136+forge",
+   "file": "cloth-config-11.1.136-forge.jar",
+   "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/t8TXrZvZ/cloth-config-11.1.136-forge.jar",
+   "sha512": "137c4af99c53d77317cbfb1cc8c49fc2761708b49d1992f51fd846960df41dde3a83519c987e081508d4ed90c603566f3d5a6cb620ad9d85b8f4de59aa9115ef",
+   "size": 1181413
+  },
+  {
+   "slug": "clumps",
+   "version": "12.0.0.4",
+   "file": "Clumps-forge-1.20.1-12.0.0.4.jar",
+   "url": "https://cdn.modrinth.com/data/Wnxd13zP/versions/nAHGB5ls/Clumps-forge-1.20.1-12.0.0.4.jar",
+   "sha512": "ffd8ff2438e9f9d260d3926ccdd0cccc4772c6f99f29715690aed4f6e97a76035f3aeaa78168e2a458bc4cccf521e97ebdb6e0b61c819facb04af9ebb3638383",
+   "size": 20300
+  },
+  {
+   "slug": "collective",
+   "version": "1.20.1-8.58-fabric+forge+neo",
+   "file": "collective-1.20.1-8.58.jar",
+   "url": "https://cdn.modrinth.com/data/e0M1UDsY/versions/MRwG7IYA/collective-1.20.1-8.58.jar",
+   "sha512": "6962637d1f798805a430a331439b4484ae5dc57868051bb479b50a30e444aff384d50aa66b3953759a33d2e06c680228f2fdaa39533e5b52d275d666e859a0ed",
+   "size": 883006
+  },
+  {
+   "slug": "combat-roll",
+   "version": "1.3.3+1.20.1-forge",
+   "file": "combatroll-forge-1.3.3+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/532t65Zz/combatroll-forge-1.3.3%2B1.20.1.jar",
+   "sha512": "0839e7b1a83dcc7a5eb42824d46ca4544a3f4ac376bd12a85509da00ae2737d836aaebf6fed6d2aa05ebcd816cff26dc3febe3b32f531b3ca3814ba2ade9c782",
+   "size": 217962
+  },
+  {
+   "slug": "comforts",
+   "version": "6.4.0+1.20.1",
+   "file": "comforts-forge-6.4.0+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/gBDsc134/comforts-forge-6.4.0%2B1.20.1.jar",
+   "sha512": "5f8bc01de36814bbea454ad306efd6b7ae9de933117fe8c1197a13454804e4b71ddd0685a24ace45b81527a8489d4081f7e75b6c5d3f7d7c8f791520407fac09",
+   "size": 382083
+  },
+  {
+   "slug": "configured-defaults",
+   "version": "v8.0.4-1.20.1-Forge",
+   "file": "ConfiguredDefaults-v8.0.4-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/SISoSFPP/versions/5OURZGyn/ConfiguredDefaults-v8.0.4-1.20.1-Forge.jar",
+   "sha512": "ef941b912c15fb530533410a9a758bfca29603597c4bdfb9be720fe980759ce39ae1c0a6a65a0292d9a55005c83d48833b02941b5ac4749f1dfd0da2d3669475",
+   "size": 42866
+  },
+  {
+   "slug": "controlling",
+   "version": "12.0.2",
+   "file": "Controlling-forge-1.20.1-12.0.2.jar",
+   "url": "https://cdn.modrinth.com/data/xv94TkTM/versions/LH6Bi6Am/Controlling-forge-1.20.1-12.0.2.jar",
+   "sha512": "3945bf3f6d843957f13584dfc70bede253d1e48f0dcb96f647fbcc6fcd3d1748a0dd9c6ca5c882e07a41f98eb84057934f51e43ab6023ed0a19695de2e6fe9f5",
+   "size": 115280
+  },
+  {
+   "slug": "corgilib",
+   "version": "1.20.1-4.0.3.6-forge",
+   "file": "Corgilib-Forge-1.20.1-4.0.3.6.jar",
+   "url": "https://cdn.modrinth.com/data/ziOp6EO8/versions/OtJzHtsl/Corgilib-Forge-1.20.1-4.0.3.6.jar",
+   "sha512": "877085c2cab93fe23b09b3e52063fee0c2cfa83dfcd40c62c3c130b8a721e68b1b46bd7cda0b15b86e5d00aae7f0132c8438c9a3287846db2b2a1c489d20cf0b",
+   "size": 318788
+  },
+  {
+   "slug": "coroutil",
+   "version": "1.20.1-1.3.7",
+   "file": "coroutil-forge-1.20.1-1.3.7.jar",
+   "url": "https://cdn.modrinth.com/data/rLLJ1OZM/versions/6rPDKAT8/coroutil-forge-1.20.1-1.3.7.jar",
+   "sha512": "37a13eaa68579dd45204ebdfa43b2909123a2e5e875a2ca51da0d0882d4c524be1e95fce4bb26db21901b7d100ad9363968814e3566d44b5afce8fb8e8088057",
+   "size": 64187
+  },
+  {
+   "slug": "corpse",
+   "version": "forge-1.20.1-1.0.23",
+   "file": "corpse-forge-1.20.1-1.0.23.jar",
+   "url": "https://cdn.modrinth.com/data/WrpuIfhw/versions/7fc0hJN6/corpse-forge-1.20.1-1.0.23.jar",
+   "sha512": "c9ddf7d243aac2cbf88fc2fd7e71ce4470354765d602dadf0fa68105a0561cb14b482c60d9e04084845bcf2237442d913888dcfb45b392bc700b0f3470517c96",
+   "size": 245643
+  },
+  {
+   "slug": "crash-assistant",
+   "version": "1.11.12",
+   "file": "CrashAssistant-forge-1.19-1.20.1-1.11.12.jar",
+   "url": "https://cdn.modrinth.com/data/ix1qq8Ux/versions/1UfKorj6/CrashAssistant-forge-1.19-1.20.1-1.11.12.jar",
+   "sha512": "ec1e471ce72c5e920d110ef38ba6bb2d256fdca62e1a4edde1761021b394e40717943af53e64a57e332e1d2aea8fc8666d88bb8ca7bc624d526ecfc460535f3d",
+   "size": 3503813
+  },
+  {
+   "slug": "cravencrafts-bloody-bits",
+   "version": "2.1.0-1.20.1",
+   "file": "bloodybits-2.1.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/4xxMfxFO/versions/7LwRzFUd/bloodybits-2.1.0-1.20.1.jar",
+   "sha512": "95a269399060be37def6501ab81e940a2f564f5c238b8e55d4949778b0965aaa9ea1026b0c5488d6b773116e62594801d479270d3dc3a4d7e1f8ee78ab964a37",
+   "size": 165570
+  },
+  {
+   "slug": "creativecore",
+   "version": "2.12.40",
+   "file": "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/ChKayKur/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+   "sha512": "c883749ebe3825694c9d7aad6f406ca6c30de70ca7621cbafb7ebbfaa54766db065b5abd66f42827abca19b25983b2884c425934f6d04d629dc9fa731fe9aa0c",
+   "size": 1144290
+  },
+  {
+   "slug": "cristel-lib",
+   "version": "1.1.6-forge",
+   "file": "cristellib-1.1.6-forge.jar",
+   "url": "https://cdn.modrinth.com/data/cl223EMc/versions/DOsSK4NK/cristellib-1.1.6-forge.jar",
+   "sha512": "8d5c8bb59be56c49ef0fcc3593862ad09862210e5099f39bf66c29c73f1b54b637ec6e6fa01b2e1409dafe4cc3e2f2e43d9c6113c78372f49d7c2ff71d056ca0",
+   "size": 431318
+  },
+  {
+   "slug": "curios",
+   "version": "5.14.1+1.20.1",
+   "file": "curios-forge-5.14.1+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar",
+   "sha512": "1373f95fd111c977db2f6adcef8e4eb486a2d926a3e17374692dee4ac3d65857de6446c16922b531aa5ace2c23c666a7fcc28c720b2917c1e04808d15648ba87",
+   "size": 398066
+  },
+  {
+   "slug": "cut-through",
+   "version": "v8.0.2-1.20.1-Forge",
+   "file": "CutThrough-v8.0.2-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/Dk6su9JN/versions/ZD7nA4WX/CutThrough-v8.0.2-1.20.1-Forge.jar",
+   "sha512": "62a89186a53f2cb3e4bd22252dd049152053a1ae312d6421be528ac7e5fdda2883bf5bd7ec8b57b8af69c6f952cdb804d39acf5e85ddffb1e7d1a516c98d0c1c",
+   "size": 57764
+  },
+  {
+   "slug": "deeperdarker",
+   "version": "1.3.3-forge+1.20.1",
+   "file": "deeperdarker-forge-1.20.1-1.3.3.jar",
+   "url": "https://cdn.modrinth.com/data/fnAffV0n/versions/e2oirgc2/deeperdarker-forge-1.20.1-1.3.3.jar",
+   "sha512": "fcf08e2d1bfb0bf40120f426826b25e6d483a83cf7f04d221798bcc8cb46cedb9065dc5c0d33213f5c708cebd0081aba4ca7265fcd96c76b16d2f99bd4297aae",
+   "size": 17844266
+  },
+  {
+   "slug": "delete-worlds-to-trash",
+   "version": "v8.0.0-1.20.1-Forge",
+   "file": "DeleteWorldsToTrash-v8.0.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/7diJQfvM/versions/Ee8hSsMe/DeleteWorldsToTrash-v8.0.0-1.20.1-Forge.jar",
+   "sha512": "d4f5302469acbd6ab10ab603da4bbd43852157feaf4f8147125f043fcf4b9314c01b3df18cd172a5dc512702fed2fc3da92db6b21f3a9602c00a588bec0e9b5d",
+   "size": 55780
+  },
+  {
+   "slug": "despawn-tweaks",
+   "version": "forge-1.20.1-1.0.0",
+   "file": "despawntweaks-forge-1.0.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/ahQrpeXp/versions/AL5vFSzb/despawntweaks-forge-1.0.0-1.20.1.jar",
+   "sha512": "6fbd35923e395f7ae398bf3f1d97fa8754119f6db7463fc1e6efa81d40fd7eec6b8911e6b6cbc3d0eaf0359574fb165dd42202255904d94f005c1beb682c501a",
+   "size": 640699
+  },
+  {
+   "slug": "diagonal-fences",
+   "version": "v8.1.5-1.20.1-Forge",
+   "file": "DiagonalFences-v8.1.5-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/IKARgflD/versions/6eK8RyWM/DiagonalFences-v8.1.5-1.20.1-Forge.jar",
+   "sha512": "53c274fba4c750f953fd44b9edbd78306e1bf6c480ae9cf54d93146200c16602d3d3fd51f803cee734987fe7f0389f4250df1ce0785256e5dc8d202d22c4c2af",
+   "size": 182476
+  },
+  {
+   "slug": "diagonal-walls",
+   "version": "v8.0.4-1.20.1-Forge",
+   "file": "DiagonalWalls-v8.0.4-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/FQgc8dib/versions/ISQPtPH5/DiagonalWalls-v8.0.4-1.20.1-Forge.jar",
+   "sha512": "ca0bbb39aeca6ab2bc93a4efd40ae71b3b680af25f4acbd6029384ffe64304aecf2c5722194de3616e1a963fdd8cec135282503f43c679b0e30d1a709e9ac578",
+   "size": 173567
+  },
+  {
+   "slug": "distanthorizons",
+   "version": "3.3.3-1.20.1",
+   "file": "DistantHorizons-3.3.3-1.20.1-fabric-forge.jar",
+   "url": "https://cdn.modrinth.com/data/uCdwusMi/versions/6UnEfsRQ/DistantHorizons-3.3.3-1.20.1-fabric-forge.jar",
+   "sha512": "2ac0a2fd34fe17bb3a3764bb53838f00595998a7e0b4bd70c5068aa9244626c6b0e622af548f97a1614dbb0b7c3df29b6d313edfc890d572dc361591c2a176c0",
+   "size": 27700542
+  },
+  {
+   "slug": "distraction-free-recipes",
+   "version": "1.2.1",
+   "file": "distraction_free_recipes-forge-1.2.1-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/gbJLUhZP/versions/tmdAnJOP/distraction_free_recipes-forge-1.2.1-1.20.1.jar",
+   "sha512": "5d5a10b33b597a0eb2d4204f3b5db3aff17fbec9d4480845446f168ce01a4be856890e96c82c8d762bd9d58b5d7b7ffae7db1fd5890f44ec95aca4bd279606c7",
+   "size": 241822
+  },
+  {
+   "slug": "double-doors",
+   "version": "1.20.1-7.4-fabric+forge+neo",
+   "file": "doubledoors-1.20.1-7.4.jar",
+   "url": "https://cdn.modrinth.com/data/JrvR9OHr/versions/PHY77d71/doubledoors-1.20.1-7.4.jar",
+   "sha512": "b4512ac3a467e182fd2d1948c135b95e0f6b8bd96b693a05899e395a269d672bf5d783e7e92cdd2ad8a5ac988541e1d5f4b2cb8daa480b02b3228cc9fdef481e",
+   "size": 54169
+  },
+  {
+   "slug": "drippy-loading-screen",
+   "version": "3.1.5-1.20.1-forge",
+   "file": "drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/v3CYg2V9/versions/Nof419YS/drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+   "sha512": "82af17d140f9ca4d3b827e764b26456d7665e7f997c0cd15b61ab6d165d1bc51425eb9f9759b1aeb6b8c5337ce0355958c7beb9b4bf3c207337000183666dd11",
+   "size": 281881
+  },
+  {
+   "slug": "dungeons-and-taverns-ancient-city-overhaul",
+   "version": "1+mod",
+   "file": "dungeons-and-taverns-ancient-city-overhaul-1.jar",
+   "url": "https://cdn.modrinth.com/data/DNuNq5bb/versions/E9Fv5kp6/dungeons-and-taverns-ancient-city-overhaul-1.jar",
+   "sha512": "750ac05375ecf0d00feeffc5ac25c77d0829cbc825ff07ccb686fdb22ba8a4d30842a99da9069dd0a8877ce4fd0cd42d541cb9a5bc034cc2d6737385882c5505",
+   "size": 691038
+  },
+  {
+   "slug": "dungeons-and-taverns-swamp-hut-overhaul",
+   "version": "1+mod",
+   "file": "dungeons-and-taverns-swamp-hut-rework-1.jar",
+   "url": "https://cdn.modrinth.com/data/nWSeFpQt/versions/vXDpyYWK/dungeons-and-taverns-swamp-hut-rework-1.jar",
+   "sha512": "aa2ca06288dd2e3182839f7830b593e79553ba294bb7c18ae7df2a5fd2a360aeff5fced72401111069047285d764da63984ddd79333377cc337e4eb51b3b84cc",
+   "size": 191077
+  },
+  {
+   "slug": "dynamic-trees-addon-lib",
+   "version": "1.20.1-0.1.0-BETA5",
+   "file": "DynamicTreesAddonLib-1.20.1-0.1.0-BETA5.jar",
+   "url": "https://cdn.modrinth.com/data/ju42L8G7/versions/6gSUATI1/DynamicTreesAddonLib-1.20.1-0.1.0-BETA5.jar",
+   "sha512": "0a7597424e10dbebae5ee8153e6254fd542fef863b0aa10a6edd4cbf534901c56202808a7400c089fad42f8971caeddda26c8cc849a0ea9493a37154061a9887",
+   "size": 1335605
+  },
+  {
+   "slug": "dynamic-trees-aether",
+   "version": "1.20.1-1.3.3",
+   "file": "DynamicTreesAether-1.20.1-1.3.3.jar",
+   "url": "https://cdn.modrinth.com/data/s0UnCrWE/versions/Zo1N7yYs/DynamicTreesAether-1.20.1-1.3.3.jar",
+   "sha512": "ac019a44fca33052376cefffc2769b7e99af994d35edba54e48efae26ec47889fc70fa8e1e484569df6fe582400e5febd5965a297f91ba6f3a97c9954834eda1",
+   "size": 538365
+  },
+  {
+   "slug": "dynamic-trees-terralith",
+   "version": "1.20.1-1.2.6",
+   "file": "DynamicTreesTerralith-1.20.1-1.2.6.jar",
+   "url": "https://cdn.modrinth.com/data/o8eM9Cnp/versions/Hs1FNHJ8/DynamicTreesTerralith-1.20.1-1.2.6.jar",
+   "sha512": "a0b5f3280a44308bca81c506e55a40305dca3b57cccec74289c5f26a419766502032bd29e842ade2bb24bfca5f52bada603e1e6ba5ddb3b73afab8fe400a3740",
+   "size": 514225
+  },
+  {
+   "slug": "dynamictrees",
+   "version": "1.20.1-1.4.11",
+   "file": "DynamicTrees-1.20.1-1.4.11.jar",
+   "url": "https://cdn.modrinth.com/data/vdjF5PL5/versions/iGSXZxgo/DynamicTrees-1.20.1-1.4.11.jar",
+   "sha512": "ac04fdf541879e6ee3107644291838243e0281420b16814bfad1ccd9d718c33619d66ffb2ba9e7b28ec4229b33a7e1259ad69fc9ef2fb9b514e52a1b6aeadbc9",
+   "size": 3761925
+  },
+  {
+   "slug": "dynamictrees-vanillabackport",
+   "version": "1.20.1-1.7.0",
+   "file": "dtvanillabackport-1.20.1-1.7.0.jar",
+   "url": "https://cdn.modrinth.com/data/sA2S5ZLK/versions/5gYpNN9B/dtvanillabackport-1.20.1-1.7.0.jar",
+   "sha512": "a2badf908ae6f4dffe924420fc4a8fb8c2ecdf4f5039fc1642952d2dc5028f23ddb92f903af4ac76763ae5fcff6902900f644ee560630eef4b74cbff041daf35",
+   "size": 533339
+  },
+  {
+   "slug": "dynamictreesplus",
+   "version": "1.20.1-1.2.2",
+   "file": "DynamicTreesPlus-1.20.1-1.2.2.jar",
+   "url": "https://cdn.modrinth.com/data/qaO9Dqpu/versions/MzWoA26x/DynamicTreesPlus-1.20.1-1.2.2.jar",
+   "sha512": "56130a461fa4ce0f5479f561bb68757a7f6cc5a3447c975a49146e984fdc48373dc1e35104d125aea56e9505afa3dde9f16fa4cb722c8d502e28424136c7f1aa",
+   "size": 534713
+  },
+  {
+   "slug": "early-bedtime",
+   "version": "forge-1.20.1-1.0.0",
+   "file": "earlybedtime-forge-1.0.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/TjcYKx6s/versions/OFXekXrB/earlybedtime-forge-1.0.0-1.20.1.jar",
+   "sha512": "877799bd7244fcb869cec3e4f9a19ab7934eac7f702bbf78fb4a14d3932664bd7ee0608f33789ef6f21eef616e19efe899d8785a72d1115e9598c4f25bb10bb4",
+   "size": 588590
+  },
+  {
+   "slug": "easy-anvils",
+   "version": "v8.0.2-1.20.1-Forge",
+   "file": "EasyAnvils-v8.0.2-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/OZBR5JT5/versions/4pRdDqEb/EasyAnvils-v8.0.2-1.20.1-Forge.jar",
+   "sha512": "2b4715538b2e78bd86fbd05ebd07b7da2c7fa00d6e9653f6fcfad7f1fc59edb495f54164a8e2a48ed97b1722388b11729221775d798c8de9e92fb73e07f01e14",
+   "size": 141744
+  },
+  {
+   "slug": "easy-disenchanting",
+   "version": "forge-1.20.1-1.0.0",
+   "file": "easydisenchanting-forge-1.0.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/oytHeCkq/versions/8cH3J0bX/easydisenchanting-forge-1.0.0-1.20.1.jar",
+   "sha512": "1171da73c49923e535db6aa3247ea960ac50fe182ed66de4f86e87d708e1df262fc7ce2c8c7d55cdbdf21e4dce724fe45c228f28fd9987a86b76a82b6311eeaf",
+   "size": 566129
+  },
+  {
+   "slug": "easy-magic",
+   "version": "v8.0.1-1.20.1-Forge",
+   "file": "EasyMagic-v8.0.1-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/9hx3AbJM/versions/W2xPEG9I/EasyMagic-v8.0.1-1.20.1-Forge.jar",
+   "sha512": "ac4bc9cbca15e4b07361a84d90357e53edb0d9e336f16138b0644545061299c51c9b4af1554fac0e5f891021035b0bcd9e4b57c39ee9188324b6bca9d63cd90f",
+   "size": 115947
+  },
+  {
+   "slug": "embeddium",
+   "version": "0.3.31+mc1.20.1",
+   "file": "embeddium-0.3.31+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/sk9rgfiA/versions/UTbfe5d1/embeddium-0.3.31%2Bmc1.20.1.jar",
+   "sha512": "ffbf2da4685260a4d5c14c621708bd20722563f084f042d3dfb0a7b87f048e39299648c854a93939129da0d23a15a91ec628560d601e76074b08e275f6e132e9",
+   "size": 1320675
+  },
+  {
+   "slug": "enchantment-descriptions",
+   "version": "17.1.21",
+   "file": "EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar",
+   "url": "https://cdn.modrinth.com/data/UVtY3ZAC/versions/OPgBRfTQ/EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar",
+   "sha512": "5581f7d706809f079bb1847637c8ce8f9abbf0102c647960b54908e0080387702fdaedb31c87ec1e30f729051e3f7194d6ca33e3016a033bc794981b492def5e",
+   "size": 66883
+  },
+  {
+   "slug": "enders-delight",
+   "version": "1.1.4",
+   "file": "endersdelight-1.1.4.jar",
+   "url": "https://cdn.modrinth.com/data/2uEhdGKt/versions/Jaf9wxnO/endersdelight-1.1.4.jar",
+   "sha512": "554a74f9db3b4496fbb98bee3f456495cecdd9e9471d1f8a0de031dfff928f3903e0a76d9e3cbbc785b315833f23bf8593419d11207eb082c8a195e8fe65ad90",
+   "size": 192001
+  },
+  {
+   "slug": "entity-model-features",
+   "version": "3.3.12-forge-1.20.1",
+   "file": "entity_model_features-3.3.12-1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/mQR6L8Qe/entity_model_features-3.3.12-1.20.1-forge.jar",
+   "sha512": "caef975883a15f7ec34010bce5bc81d4eea16f31204c04eb378ac5488a8d5874b0ffc2c396656e20d3bd287eb2061a956c85a7e58e98a78f727c86e5f4f334ab",
+   "size": 840669
+  },
+  {
+   "slug": "entityculling",
+   "version": "1.11.3",
+   "file": "entityculling-forge-1.11.3-mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/HUUJcFnt/entityculling-forge-1.11.3-mc1.20.1.jar",
+   "sha512": "be5be53897ae7403a202e4b0b094701bcc4ecdb94afcf2ea144cd07d9a4553a1fc6a88917732a72c477d01c33583162cffb9c4a19d259089deb018878eec1da8",
+   "size": 1515076
+  },
+  {
+   "slug": "entitytexturefeatures",
+   "version": "7.2.6-forge-1.20.1",
+   "file": "entity_texture_features-7.2.6-1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/EAHEZRbp/entity_texture_features-7.2.6-1.20.1-forge.jar",
+   "sha512": "46f78536191573a917131db354d3178446714f00682c3e181db9c2fb42ec457df52e8d9b12c3d621f0f31e3ef13204f2b74491864ac7ea6c052108ca87544139",
+   "size": 999570
+  },
+  {
+   "slug": "epherolib",
+   "version": "1.2.0",
+   "file": "EpheroLib-1.20.1-FORGE-1.2.0.jar",
+   "url": "https://cdn.modrinth.com/data/DIIgdJzf/versions/vZWRmjl2/EpheroLib-1.20.1-FORGE-1.2.0.jar",
+   "sha512": "6e8396e1194173a142c5e24ea1bf76b1e8b3a0610bbba0a4a336d7750069f8812d20027e75942fed51e9ed77e58b4537f7d7d3fcf1803a9bcf843e4b08ba026e",
+   "size": 745878
+  },
+  {
+   "slug": "euphoria-patches",
+   "version": "1.10.5-r5.9.3-forge",
+   "file": "EuphoriaPatcher-1.10.5-r5.9.3-forge.jar",
+   "url": "https://cdn.modrinth.com/data/4H6sumDB/versions/fhNVBg6d/EuphoriaPatcher-1.10.5-r5.9.3-forge.jar",
+   "sha512": "6cfd8a9d6280e6482a7f3adeabcdf2c247a5e63948ba7fbf18900a36f9f01d66f845d6f1b803eebdb547bf2e2fed95835d380f8c3a57f7be52e1f9dceac1bc07",
+   "size": 4523023
+  },
+  {
+   "slug": "explorations",
+   "version": "1.20.1-1.6.1-Forge",
+   "file": "explorations-forge-1.20.1-1.6.1.jar",
+   "url": "https://cdn.modrinth.com/data/pcGnjJ39/versions/DrsYEYkr/explorations-forge-1.20.1-1.6.1.jar",
+   "sha512": "a86f6b96330499d21e30210f3552a330f1223651dfb4545900fa5fb8650919e4fc03b58abf2d462a7bd62b195143db265948985ac0e13bbb245673a315329a74",
+   "size": 223689
+  },
+  {
+   "slug": "explorify",
+   "version": "v1.6.5",
+   "file": "Explorify v1.6.5.mod.jar",
+   "url": "https://cdn.modrinth.com/data/HSfsxuTo/versions/CuBdAr31/Explorify%20v1.6.5.mod.jar",
+   "sha512": "9b22adeb1952ec25856e160b93aaa41934fd41e8d1aef985317cb2c9d64aae1012e134e23f52ba39fac3a98b3309b60f0b55b98a4db4de1731960b998117c83e",
+   "size": 767884
+  },
+  {
+   "slug": "exposure",
+   "version": "1.7.16",
+   "file": "exposure-1.20.1-1.7.16-forge.jar",
+   "url": "https://cdn.modrinth.com/data/hB899VmG/versions/Wk43p4gt/exposure-1.20.1-1.7.16-forge.jar",
+   "sha512": "94e1c0ddbcb12d2b95e964d9081e41c4c6ad960100ab31fa7faee5ff8d0a3b5e7b29288117dad4d4aa17ae7fc01d19f2a269f327f27151d47248c9d6ff68ace2",
+   "size": 1360685
+  },
+  {
+   "slug": "fallingleavesforge",
+   "version": "1.20.1-2.1.2",
+   "file": "fallingleaves-1.20.1-2.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/2JAUNCL4/versions/j5eND1ZA/fallingleaves-1.20.1-2.1.2.jar",
+   "sha512": "462eda39b0ae6ec6c40f8c538e30a0acf343ccb0d45eb188c77ad1410cab09b607eb9e0f7b791411aca1e6224415485ee635d5b0f83647aecbf1642bdb7b29cd",
+   "size": 124212
+  },
+  {
+   "slug": "fancymenu",
+   "version": "3.9.14-1.20.1-forge",
+   "file": "fancymenu_forge_3.9.14_MC_1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/2mNmkn9s/fancymenu_forge_3.9.14_MC_1.20.1.jar",
+   "sha512": "8adae8debaad30910495b492a447cc7b46e841bda4fe0481ca80609d38ee55b0805227abb088af8c6b180ae42695f96c6633cb2443f322925983462fe2ace6fa",
+   "size": 26191988
+  },
+  {
+   "slug": "farmers-delight",
+   "version": "1.20.1-1.3.4",
+   "file": "FarmersDelight-1.20.1-1.3.4.jar",
+   "url": "https://cdn.modrinth.com/data/R2OftAxM/versions/SiIpcZzM/FarmersDelight-1.20.1-1.3.4.jar",
+   "sha512": "932ae0ab95fa0755bb5a79fbf1d1e31d0e86f3c0f5186796ed06973a3019a618ee8c66a4eae5b901909aed6232abb2bd3b1ff0e1905f74fc70644fada94a80b5",
+   "size": 3311051
+  },
+  {
+   "slug": "fast-ip-ping",
+   "version": "v1.0.12-mc1.20.4-forge",
+   "file": "fast-ip-ping-v1.0.12-mc1.20.4-forge.jar",
+   "url": "https://cdn.modrinth.com/data/9mtu0sUO/versions/AqaB0PbS/fast-ip-ping-v1.0.12-mc1.20.4-forge.jar",
+   "sha512": "2a8d07bb12f1f718c93d41de8fd2c3a489e46eed6f2f8bbe1a4ca69ebedd7e6cf1b8977c47190dd3a037ea44079d7f8d5b9e7044268a4d9aa380659e235bae06",
+   "size": 10409
+  },
+  {
+   "slug": "fast-item-frames",
+   "version": "v20.1.5-1.20.1-Forge",
+   "file": "FastItemFrames-v20.1.5-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/FsoeTIV0/versions/R0MOnh2f/FastItemFrames-v20.1.5-1.20.1-Forge.jar",
+   "sha512": "d20e59b0db63b588181481d76e04213df336523c1e335f02577f32a4146571b2cc032ea2088078b0ea9bece9a55cf7262af4a35edc335c0dd8548e3b31656986",
+   "size": 99737
+  },
+  {
+   "slug": "fast-paintings",
+   "version": "1.20-1.2.7",
+   "file": "fastpaintings-1.20-1.2.7.jar",
+   "url": "https://cdn.modrinth.com/data/z3TzcquW/versions/Bvjyyy1T/fastpaintings-1.20-1.2.7.jar",
+   "sha512": "917595dfe0834d765751ee7272ef212df3d5077a651483b285d4e252819f56db5628e174c22a419b9038c25aa36f85bf22964e862920d2835f77bbd9baa87168",
+   "size": 309400
+  },
+  {
+   "slug": "feature-recycler",
+   "version": "1.0.0",
+   "file": "Feature-Recycler-forge-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/IAzu52kG/versions/3FYH4FtT/Feature-Recycler-forge-1.0.0.jar",
+   "sha512": "af48d9f56d5b20825dac7bf20ff4ce5d6900619b852f5f8c8fbcbfe342591870153ded25f564b99678fe3c38260ecd2c6779b894c53520c4c94010d232bab07e",
+   "size": 9940
+  },
+  {
+   "slug": "ferrite-core",
+   "version": "6.0.1",
+   "file": "ferritecore-6.0.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/DG5Fn9Sz/ferritecore-6.0.1-forge.jar",
+   "sha512": "a1960a7c03dc32d4ccaccaf28afdd9b078758bbd62d15a91d4039a83fa9397a098e89b69591f6bd5190254d9ee97e502504154b9aec764adb8c65f000b75ba2c",
+   "size": 123034
+  },
+  {
+   "slug": "forgified-fabric-api",
+   "version": "0.92.6+1.11.15+1.20.1",
+   "file": "fabric-api-0.92.6+1.11.15+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/Aqlf1Shp/versions/g0MxcWXy/fabric-api-0.92.6%2B1.11.15%2B1.20.1.jar",
+   "sha512": "da1e59fa754edb24d8a3b6023ef648d6431a8297a9e873d18bfe866aca9384f491af1b438c2c4b75dbf9bd4b9a11daf717a8d1469e9efaed145e5c53f9cbcf37",
+   "size": 3065833
+  },
+  {
+   "slug": "formations",
+   "version": "1.0.4-forge-mc1.20.2",
+   "file": "formations-1.0.4-forge-mc1.20.2.jar",
+   "url": "https://cdn.modrinth.com/data/tPe4xnPd/versions/5zgQmLP4/formations-1.0.4-forge-mc1.20.2.jar",
+   "sha512": "d07b66dd6b97208898b84ed84a0238045ce0cfd0e51cb5432534ddfd44e6fb42753dffd616b96b17ace9d301a116b97c7dd13b2c291d276afef22f891a71cfeb",
+   "size": 290100
+  },
+  {
+   "slug": "formations-nether",
+   "version": "1.0.5",
+   "file": "formationsnether-1.0.5.jar",
+   "url": "https://cdn.modrinth.com/data/cGvQGRls/versions/HBTE0lZv/formationsnether-1.0.5.jar",
+   "sha512": "890724a9ba25f8e5be4c4afb9f73086f5153cc70cb45b9a8963a895309d6ca575410446eb6366b77c25e6301cc2cc0abbc7f78069051efcec97fc9e771e6b8de",
+   "size": 942157
+  },
+  {
+   "slug": "formations-overworld",
+   "version": "1.0.5-mc1.20",
+   "file": "formationsoverworld-1.0.5-mc1.20.jar",
+   "url": "https://cdn.modrinth.com/data/KX1XC0Oo/versions/oojsZqpL/formationsoverworld-1.0.5-mc1.20.jar",
+   "sha512": "4fabff31bd82835d9950b75d7678d1feeb169859ddb57fe1ed70512bf4b120c13fd4ebdfe0f718dbca54622e2e9fc3a8dce2c4c3ccf657c6df11f1255ea4bf41",
+   "size": 873590
+  },
+  {
+   "slug": "friends-and-foes-forge",
+   "version": "forge-5.0.2+mc1.20.1",
+   "file": "friendsandfoes-forge-5.0.2+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/BOCJKD49/versions/O00BqNSR/friendsandfoes-forge-5.0.2%2Bmc1.20.1.jar",
+   "sha512": "8461a60558512e97d1e54746760b35b2390c523f20279fbb94411983f45da8a74f70858b9e982c9fca1d919a438f503520338bac4d54843dc6c6ffdb5f30a78d",
+   "size": 5466479
+  },
+  {
+   "slug": "fzzy-config",
+   "version": "0.7.7+1.20.1+forge",
+   "file": "fzzy_config-0.7.7+1.20.1+forge.jar",
+   "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/53kg5uoF/fzzy_config-0.7.7%2B1.20.1%2Bforge.jar",
+   "sha512": "d082b2fcdd2411312f0ce096c35e6167c453f85c979c4273cc92cf246cd0855d825865d79d47933a1bf3f1caaaf17b5a9415d4cb58ace26582434843380e3c1d",
+   "size": 2397175
+  },
+  {
+   "slug": "geckolib",
+   "version": "4.8.4",
+   "file": "geckolib-forge-1.20.1-4.8.4.jar",
+   "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/aC5KMoNg/geckolib-forge-1.20.1-4.8.4.jar",
+   "sha512": "443a321a293e3cb92fbbc3c97a38b179a45d1db703cd7bdb123270a9e04e7b7d67d5b06cd8e77a6d4d9139e033e901b9660cccf53ad5f9beaae6d06eae68febf",
+   "size": 1038209
+  },
+  {
+   "slug": "geophilic",
+   "version": "3.7",
+   "file": "Geophilic v3.7.mod.jar",
+   "url": "https://cdn.modrinth.com/data/hl5OLM95/versions/5kFV8CEz/Geophilic%20v3.7.mod.jar",
+   "sha512": "7731d6d7f85af0dc9eb232138b1dc1096f083d13a9f3e592b84f6c89a97cca0c642c68d5943e0e63bd35e93002708b945554991f519b754a04c6eec058305c19",
+   "size": 1115993
+  },
+  {
+   "slug": "geophilic-backport",
+   "version": "1.3.3",
+   "file": "GeophilicBackported-v1.3.3 1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/uTfd4Kbj/versions/UL2m2ahP/GeophilicBackported-v1.3.3%201.20.1.jar",
+   "sha512": "72bff5f3261c54fc5a7b3b2c884c3251a39be3bd04b0de5174b8423c38f4d47b3bf58472cb7a0b783fc99dd8971302b7513906ef0faa80c4752c8508bd87f9fb",
+   "size": 199269
+  },
+  {
+   "slug": "glitchcore",
+   "version": "0.0.1.1",
+   "file": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/s3dmwKy5/versions/pYPZ5MNI/GlitchCore-forge-1.20.1-0.0.1.1.jar",
+   "sha512": "f4d9ec11b9604f59552cbecf4099600e7adef993cff37af0badac29505bd47aa9615acd140ee808b51754b048c2d61e2f942f656ff391df1e080cbffdfec5112",
+   "size": 87551
+  },
+  {
+   "slug": "golem-spawn-fix",
+   "version": "1.0.2",
+   "file": "golem_spawn_fix-1.0.2-forge-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/dYvFPEKH/versions/Cja5QNv2/golem_spawn_fix-1.0.2-forge-1.20.1.jar",
+   "sha512": "446ffeaf4807808a0985a11c9caab3f5e5ba4c697b3694f1b6d54313da2ab104f449242722b918cec7bf358dd96372e323605038247d9811d95802adbc63c1bc",
+   "size": 148842
+  },
+  {
+   "slug": "guard-villagers",
+   "version": "1.6.19",
+   "file": "guardvillagers-1.20.1-1.6.19.jar",
+   "url": "https://cdn.modrinth.com/data/H1sntfo8/versions/zCzBkn3R/guardvillagers-1.20.1-1.6.19.jar",
+   "sha512": "8c4aa8a0b9ea3611ebe479b42bf642fd664d34d30574d9dfe86f9d498a81ca07b889f6618f77def94625a3fca78a6d992066e3cf519587c2c09d3f599d8c3ef7",
+   "size": 204767
+  },
+  {
+   "slug": "handcrafted",
+   "version": "3.0.6",
+   "file": "handcrafted-forge-1.20.1-3.0.6.jar",
+   "url": "https://cdn.modrinth.com/data/pJmCFF0p/versions/N7wZwOFy/handcrafted-forge-1.20.1-3.0.6.jar",
+   "sha512": "d3c2eb6fad0c274d4ce9e121749252bcbc19a1b0ff5b619255a08f22e3aade51d3f3fd454712de5b1cb8242e78c2f320ab99d2c94f96f372b4089dbc66a8d78e",
+   "size": 7111059
+  },
+  {
+   "slug": "hearths",
+   "version": "1.0.5",
+   "file": "Hearths v1.0.5.mod.jar",
+   "url": "https://cdn.modrinth.com/data/XCIMrYn0/versions/tu78cSah/Hearths%20v1.0.5.mod.jar",
+   "sha512": "c30f4444e0e844185b75b91f2375d3897dd969f7b90df63276cc1e7553412333a632f86c7b88f97708ed8862922630170e82b45cd08762f43a7ede2ebbea51c7",
+   "size": 334560
+  },
+  {
+   "slug": "iceberg",
+   "version": "1.1.25",
+   "file": "Iceberg-1.20.1-forge-1.1.25.jar",
+   "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar",
+   "sha512": "8612097a014fcd6343a092cfeddb0e9d57c5a665b9ac61603a7760d156abd048ac548db55e750b369700b0475661e554f4b92b44677edf07574d4f9ffa42558c",
+   "size": 134551
+  },
+  {
+   "slug": "illager-invasion",
+   "version": "v8.0.7-1.20.1-Forge",
+   "file": "IllagerInvasion-v8.0.7-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/jSV9w0J5/versions/h3xEIiW8/IllagerInvasion-v8.0.7-1.20.1-Forge.jar",
+   "sha512": "add2894b0a5247db10ed9e1fbfd94abd9d54309e91418d4d56da855d6b088ef41f35534d324f7172f66327a1cf111bcec4b3560c31c887f799b559e6190a74e2",
+   "size": 2341695
+  },
+  {
+   "slug": "immediatelyfast",
+   "version": "1.5.5+1.20.4-forge",
+   "file": "ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+   "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/rvsLEEZU/ImmediatelyFast-Forge-1.5.5%2B1.20.4.jar",
+   "sha512": "8fab0605880f6b3875dc6d9d7bc8d69612a3e61a0bfc5adeac3240248715042f04885a09bc4d29383ab809cfc536dff84c6150af56ebd8f08128a1c42909c323",
+   "size": 532063
+  },
+  {
+   "slug": "immersive-armor-hud",
+   "version": "forge-1.20.1-1.0.1",
+   "file": "immersivearmorhud-forge-1.0.1-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/EyJFr6Vw/versions/4xrEXgqo/immersivearmorhud-forge-1.0.1-1.20.1.jar",
+   "sha512": "59e7e34d1701dae5d5a28adda4c08a7328de1238011f2d5be5f1aefb5a028507384a66e09e7d79897712cfb35a9ba1809a509e03b39294aff07b6c9ed215084c",
+   "size": 583612
+  },
+  {
+   "slug": "immersive-lanterns",
+   "version": "1.0.6",
+   "file": "immersivelanterns-forge-1.0.6-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/vskzdsyT/versions/bKAfmaXM/immersivelanterns-forge-1.0.6-1.20.1.jar",
+   "sha512": "b6828aadd8570cdef43275fd527731c365110dabc6a6b797d2165f8db9c0173b1bad188b824b87aeb35ad7fe763ffb07eef4f60cbc434308b183430039546133",
+   "size": 367298
+  },
+  {
+   "slug": "immersive-messages-api",
+   "version": "forge-1.20.1-1.0.18",
+   "file": "immersivemessages-forge-1.0.18-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/6xvrmbjn/versions/4JWF2yfv/immersivemessages-forge-1.0.18-1.20.1.jar",
+   "sha512": "50f4318f81712293bf7079e6d4e58261d5564117717485f83c0064eb06442a3f1fc8fbe6d4fc9b5379ca561b592269829b840c7cf3cfb720bbbf39b373cd51b6",
+   "size": 1462072
+  },
+  {
+   "slug": "immersive-tips",
+   "version": "forge-1.20.1-1.0.2",
+   "file": "immersivetips-forge-1.0.2-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/FyiLzCSu/versions/xZGGSV3T/immersivetips-forge-1.0.2-1.20.1.jar",
+   "sha512": "75e20560dc2aefe9eafd345fc53a93449cc654240cfe30e17eee5cb5a4386735cf7053e7885eeaac59cad67c29e49729750ad5a2f9f1cb4c01779943df0bae39",
+   "size": 462568
+  },
+  {
+   "slug": "improved-village-placement",
+   "version": "1.1.2",
+   "file": "improved-village-placement-1.1.1.jar",
+   "url": "https://cdn.modrinth.com/data/KA0MllEw/versions/kbweidhO/improved-village-placement-1.1.1.jar",
+   "sha512": "5eb40701a7157ef08162443923a7e14f3fa72f9468112a64b3f81564a019528d3b3fe416c342aba7898afa0aadd3de22ee7a5394252478bb75579c6d96946266",
+   "size": 34332
+  },
+  {
+   "slug": "incendium",
+   "version": "5.3.5",
+   "file": "Incendium_1.20.x_v5.3.5.jar",
+   "url": "https://cdn.modrinth.com/data/ZVzW5oNS/versions/uUqarp2H/Incendium_1.20.x_v5.3.5.jar",
+   "sha512": "04944dcbf3aa7ee8ea8785549e00f74a417ca17aa5760593e39090733ab0a9e38ebce078e4f5af544030759a5459c371003601ff5a7feebbc09765f8c712bb25",
+   "size": 4638945
+  },
+  {
+   "slug": "item-highlighter",
+   "version": "1.1.9",
+   "file": "Highlighter-1.20.1-forge-1.1.9.jar",
+   "url": "https://cdn.modrinth.com/data/cVNW5lr6/versions/rcQOLnyI/Highlighter-1.20.1-forge-1.1.9.jar",
+   "sha512": "a8b9e114281c1390ecded38a6114516dc0b3ae0e4cb0f041162d54b6cabfacf077c7394075c43c1565a01362cdbf37e45c3bdeac2aa5b8dede93970bafd44c65",
+   "size": 29438
+  },
+  {
+   "slug": "jade",
+   "version": "11.13.3+forge",
+   "file": "Jade-1.20.1-Forge-11.13.3.jar",
+   "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/xJQHCmWJ/Jade-1.20.1-Forge-11.13.3.jar",
+   "sha512": "72025c4ad6d26522bafe3d5d6ac9d4702c006a868312cb34df8a7a2398a4618205839607b129c167fd176e58cb7655f08e3afbf1993925c80d4fcc559c45a037",
+   "size": 553487
+  },
+  {
+   "slug": "jamlib",
+   "version": "1.3.6+1.20.1-patch.1",
+   "file": "jamlib-forge-1.3.6+1.20.1-patch.1.jar",
+   "url": "https://cdn.modrinth.com/data/IYY9Siz8/versions/PDIowNff/jamlib-forge-1.3.6%2B1.20.1-patch.1.jar",
+   "sha512": "0ff2c1871cf5bf66ae92c0a02fd8c800e22361f1c150db3d07905cfa5f884e1114579e9f9cd8cfd793bc71e6b49983d23af3862ffa9a5a2099939f9552a0896b",
+   "size": 191607
+  },
+  {
+   "slug": "jei",
+   "version": "15.56.0.205",
+   "file": "jei-1.20.1-forge-15.56.0.205.jar",
+   "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/9jqubC9n/jei-1.20.1-forge-15.56.0.205.jar",
+   "sha512": "1306fe15c81d54aa9ff8f3d9f04812c0d61ffaaae433c29621f926db8f8e2c898669ccdd99e025849859d38b7a2eac170c466390b467f4dfa77542b5dbdd1678",
+   "size": 1778129
+  },
+  {
+   "slug": "just-enough-professions-jep",
+   "version": "3.0.1",
+   "file": "JustEnoughProfessions-forge-1.20.1-3.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/kB56GtWA/versions/ANKVJC3T/JustEnoughProfessions-forge-1.20.1-3.0.1.jar",
+   "sha512": "b1637b0cd3cf8062cada8a13e7d49ed15b7a2ff6c1502c8ba044c2c7cad3c07f1312d50f997405da658695b0e7ddcb916074b5c2da23db36b5391ae88a94d80e",
+   "size": 24607
+  },
+  {
+   "slug": "just-zoom",
+   "version": "3.0.1-1.20.1-forge",
+   "file": "justzoom_forge_3.0.1_MC_1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/iAiqcykM/versions/Q8eU4jvY/justzoom_forge_3.0.1_MC_1.20.1.jar",
+   "sha512": "76cf47e8ce08873f7ff8df5d98ea2f3a3d19dc3d3572207c62b0515aceb9f4c453a6ab7213f5c195a20ef8ec4b215c7869423e86cc4ecd8e3f8d13f92e645398",
+   "size": 340610
+  },
+  {
+   "slug": "justenoughbreeding",
+   "version": "3.1.2",
+   "file": "justenoughbreeding-forge-1.20.1-3.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/9Pk89J3g/versions/OYD67lHL/justenoughbreeding-forge-1.20.1-3.1.2.jar",
+   "sha512": "c3ef7c2d69c7953dd79895c357dbe8392a2a07bb53ffe14592cf17d372af011f6958bece03e606d1b0088aff8884c6a27bac747aa0a7fdefb847b385c7e18b8b",
+   "size": 601762
+  },
+  {
+   "slug": "kiwi",
+   "version": "11.10.3+forge",
+   "file": "Kiwi-1.20.1-Forge-11.10.3.jar",
+   "url": "https://cdn.modrinth.com/data/ufdDoWPd/versions/NSxwah05/Kiwi-1.20.1-Forge-11.10.3.jar",
+   "sha512": "95357497d6042c6c1d33b222da06ada6eb03b78004720d0610cd82dc83e6f0a23bca2a87ba8c1a02b1de323e8235b94cb2107b5e3c04150fbb4760521173cdfc",
+   "size": 1677733
+  },
+  {
+   "slug": "kleeslabs",
+   "version": "15.0.12+forge-1.20.1",
+   "file": "kleeslabs-forge-1.20.1-15.0.12.jar",
+   "url": "https://cdn.modrinth.com/data/7uh75ruZ/versions/oEVhOfUM/kleeslabs-forge-1.20.1-15.0.12.jar",
+   "sha512": "2af8701bfc62b1ca1dc35b7cf6f586d890f0b3a4bb24aae0e0384315dd7a7b849889b82995c71185866fb61f2c6c0e64685f77a4670dd83d50742c8f9873e939",
+   "size": 310159
+  },
+  {
+   "slug": "konkrete",
+   "version": "1.8.0-1.20-1.20.1-forge",
+   "file": "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/J81TRJWm/versions/skYziQQL/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+   "sha512": "df79a0c64da14ca2b27dc04a72d85ce5c8e7c498e7b72da4d7bfddd592bb4bac165e70afe33fac97446e4996fffd8003350df07ede2a77233dddec77b8ff0ee7",
+   "size": 625185
+  },
+  {
+   "slug": "kotlin-for-forge",
+   "version": "4.12.0",
+   "file": "kotlinforforge-4.12.0-all.jar",
+   "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/Zsh14XeQ/kotlinforforge-4.12.0-all.jar",
+   "sha512": "767f40030ed4b370a3838fa65ae1b79974f31979342fff7cc834a0d5f39eb28612642519352ff2a1dd5226ce1f745f8b3156ee3625ffde01219137d064c1ee40",
+   "size": 7442998
+  },
+  {
+   "slug": "l_enders-cataclysm",
+   "version": "3.31",
+   "file": "L_Enders_Cataclysm-3.31.jar",
+   "url": "https://cdn.modrinth.com/data/46KJle7n/versions/C3H0azzB/L_Enders_Cataclysm-3.31.jar",
+   "sha512": "0dccedd79e3e555f5a38075612d91aec23e1f6ca674e7637ea88c669095b44554385abb75826dfa5a0170585c6b3c3b6d9465bed049c0186d80f75d88f45c5e8",
+   "size": 73916104
+  },
+  {
+   "slug": "leave-my-bars-alone",
+   "version": "v8.0.0-1.20.1-Forge",
+   "file": "LeaveMyBarsAlone-v8.0.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/gK9mebQg/versions/tuok8y4p/LeaveMyBarsAlone-v8.0.0-1.20.1-Forge.jar",
+   "sha512": "0149038f196faff3c47d05b4ac6ddce754ecc883323c33dff57a2d6316521470d7730bdd8ab56ba3d525702081ce9bdbcddd1c475fc98aaa41d5553180568969",
+   "size": 54288
+  },
+  {
+   "slug": "leaves-be-gone",
+   "version": "v8.0.0-1.20.1-Forge",
+   "file": "LeavesBeGone-v8.0.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/AVq17PqV/versions/slScQFdb/LeavesBeGone-v8.0.0-1.20.1-Forge.jar",
+   "sha512": "7e209ccfcc438bec934556132ec7bb48dcf7db55611fd0e26a72f19b6a7c07e8a5103408e5e2d46b825979944a2208ba5dc28b95a0e3c4f6a78d8494e1d9780a",
+   "size": 50042
+  },
+  {
+   "slug": "lionfish-api",
+   "version": "3.0",
+   "file": "lionfishapi-3.0.jar",
+   "url": "https://cdn.modrinth.com/data/FoVacERa/versions/CPftDBcY/lionfishapi-3.0.jar",
+   "sha512": "a7cf6c9bf27a77b45efe434a166f9c99efdb6db14e5d88ce8417c6364aea9d250a9f43627e9e0ac162e106517fccf51cebb5035852c8449fb7fb299a083770c4",
+   "size": 101931
+  },
+  {
+   "slug": "lithostitched",
+   "version": "1.4.11-forge-1.20",
+   "file": "lithostitched-forge-1.20.1-1.4.11.jar",
+   "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/srPoHKt8/lithostitched-forge-1.20.1-1.4.11.jar",
+   "sha512": "4e50a0fb4f054b429803cb20fc0820011b12098ebca1f17b1b0634cab832369e08446901d5e97fd35b01e99cf6066d20a16cc673c5b7bc8196568b3db67128c2",
+   "size": 476347
+  },
+  {
+   "slug": "lmft",
+   "version": "1.0.4+1.20.1",
+   "file": "lmft-1.0.4+1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/67kVxsaO/versions/XJdD8eB6/lmft-1.0.4%2B1.20.1-forge.jar",
+   "sha512": "41c4fb7874692b457cee5205911fccce305adb43c0dd237486926e856d15500996be551cfee1ad9aefaaed0a72422e7677c26980ac08313b4198438264c2a4bd",
+   "size": 178327
+  },
+  {
+   "slug": "log-begone",
+   "version": "1.0.8",
+   "file": "Log-Begone-Forge-1.20.1-1.0.8.jar",
+   "url": "https://cdn.modrinth.com/data/9ON3zv6e/versions/HEJGfa5J/Log-Begone-Forge-1.20.1-1.0.8.jar",
+   "sha512": "505fcf7df73d084169c20f401f7a90d987837eaac04ac18678d51669303051609b05f6da11df031cefc8c65a906137148e8bcc6f4f5899a42e817832d936faaf",
+   "size": 58508
+  },
+  {
+   "slug": "long-nbt-killer",
+   "version": "Forge-1.20.2-1.0.0",
+   "file": "LongNbtKiller-Forge-1.20.2-1.0.0.jar",
+   "url": "https://cdn.modrinth.com/data/rWOcJQI6/versions/9YPdHp3H/LongNbtKiller-Forge-1.20.2-1.0.0.jar",
+   "sha512": "7b38ea08e3e15741bc0f212b1c326bfd47019ba05481b73208e2a91f6d2c57c0cf7c661beeb82a0f719956ec39cebebd4b316972bcaa54401261b9f975d7d49d",
+   "size": 5777
+  },
+  {
+   "slug": "luna",
+   "version": "5.3.1",
+   "file": "luna_minecraft-forge-5.3.1.jar",
+   "url": "https://cdn.modrinth.com/data/T3yEYSUT/versions/oVGNuhFY/luna_minecraft-forge-5.3.1.jar",
+   "sha512": "5fddce5dc680b1dd7134826d35a292e147ec23fdbbccd457a5fea7fd88e63cdefb3250c251cd9d65bb7beb7ce3db7f19715f4fd0af6ac06b680c04e855d45c84",
+   "size": 623151
+  },
+  {
+   "slug": "magnum-torch",
+   "version": "v8.0.2-1.20.1-Forge",
+   "file": "MagnumTorch-v8.0.2-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/jorDmSKv/versions/LrsjuUiA/MagnumTorch-v8.0.2-1.20.1-Forge.jar",
+   "sha512": "2434d5c691e041fc3e3e56238710aecbfc6e9266019f367d7d0716c7328a8125194e7c19d595fe2254718ad89dd4a3936e12137740a6c2ba046e1bb29380fef5",
+   "size": 90965
+  },
+  {
+   "slug": "melody",
+   "version": "1.0.3-1.20.1-1.20.4-forge",
+   "file": "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+   "url": "https://cdn.modrinth.com/data/CVT4pFB2/versions/lJlW5r8R/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+   "sha512": "43c60d0cb98b1642d663e3cea68d50c01e9be82361851bf40c5c869e6593499aaf4b410d891d07a083f3c4b2df7fc06b2f8fbaa3c661a5061d46e250c017d30f",
+   "size": 37178
+  },
+  {
+   "slug": "mes-moogs-end-structures",
+   "version": "2.1.0",
+   "file": "MoogsEndStructures-universal-1.20-2.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/r4PuRGfV/versions/ROvChtQg/MoogsEndStructures-universal-1.20-2.1.0.jar",
+   "sha512": "2638eb5697278f63dc06095702f0cfc1258cf59526be23ac19d5866f33c3f04c5079218eea656dd3ecbd9dc2fdbc5492037625cf9c7a2e9deaa2ece8943e38f1",
+   "size": 2546120
+  },
+  {
+   "slug": "minecraft-comes-alive-reborn",
+   "version": "7.6.26+1.20.1",
+   "file": "minecraft-comes-alive-7.6.26+1.20.1-universal.jar",
+   "url": "https://cdn.modrinth.com/data/1W98a849/versions/7syRW46i/minecraft-comes-alive-7.6.26%2B1.20.1-universal.jar",
+   "sha512": "8b42fd3e54b4b535a95807b469221d228a6e99a61e7049dd58b720163aa4627822dea320e21c60b59ca00cd2e51ee18bfde87daea6697998010beb88cdf54a5e",
+   "size": 13058547
+  },
+  {
+   "slug": "mining-speed-tooltips",
+   "version": "forge-1.20.1-1.0.0",
+   "file": "miningspeedtooltips-forge-1.0.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/aMctJ87u/versions/eB3mS3AK/miningspeedtooltips-forge-1.0.0-1.20.1.jar",
+   "sha512": "e9707ea4d0c8cd06b3fe85e3473863e2072a64157ff60bfea9dc819d4cfa0e24cd1ff9a7f8183b85e79821fa94c39862bc2e1a68f20d16240604a9012e59efa0",
+   "size": 637165
+  },
+  {
+   "slug": "misctweaks",
+   "version": "1.1.4+1.20.1",
+   "file": "misctweaks-1.1.4+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/9sMkzzYU/versions/5wBnIliX/misctweaks-1.1.4%2B1.20.1.jar",
+   "sha512": "30477ab572a3acb4b78257cea5f03f0fb9b83044384068f939f942d653328732ba8d6df06bd51f9c156bb7cf7e28fa0b640798816fd03ff2bd7fdd4cbe0f1f50",
+   "size": 78034
+  },
+  {
+   "slug": "mmmmmmmmmmmm",
+   "version": "1.20-2.0.12-forge",
+   "file": "dummmmmmy-1.20-2.0.12-forge.jar",
+   "url": "https://cdn.modrinth.com/data/Adega8YN/versions/c1HMqDvI/dummmmmmy-1.20-2.0.12-forge.jar",
+   "sha512": "3ad3237a847cdbfc93df1eb0eaa75552e9a1aca871e04106948317ee930b04e6e1d84fb776f3d21bd17ceb5bf033833562bf7294c7579a4e6f5abbf86f1aa32f",
+   "size": 839685
+  },
+  {
+   "slug": "mns-moogs-nether-structures",
+   "version": "3.1.0",
+   "file": "MoogsNetherStructures-universal-1.20-3.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/nGUXvjTa/versions/bcwhyj8t/MoogsNetherStructures-universal-1.20-3.1.0.jar",
+   "sha512": "e372533c7daf2f06a1d94a3b692c25ec11bc454d93711b204bd7e402a1e20891a8403f57a81209723cefd132d375e679ce41410bcc0f32d99af0c737f23a34dd",
+   "size": 3321620
+  },
+  {
+   "slug": "modernfix",
+   "version": "5.27.88+mc1.20.1",
+   "file": "modernfix-forge-5.27.88+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/bDP3S7Vh/modernfix-forge-5.27.88%2Bmc1.20.1.jar",
+   "sha512": "f972dcf51fbe55568e11746f2cb39cfc9f477e3b6068f77e2e058b21bc8d3d9138f10744de0609842d65d75f439c4ef09fb19274a9480fad0bb57c1f61cfef3e",
+   "size": 1009661
+  },
+  {
+   "slug": "modpack-update-checker",
+   "version": "0.15.6",
+   "file": "modpack-update-checker-1.20.1-forge-0.15.6.jar",
+   "url": "https://cdn.modrinth.com/data/rR4tY6Cw/versions/ZUJprIH2/modpack-update-checker-1.20.1-forge-0.15.6.jar",
+   "sha512": "db07e561b72ef0e7a7afa9c76f1e7036469963bd1edec4d437362a604edb06b8dbea53fe9c6f14b0df4287ba29d1723a44c8cc66b7260735aa0d2428bab30d5c",
+   "size": 435075
+  },
+  {
+   "slug": "moogs-structure-lib",
+   "version": "3.4.2-forge-1.20",
+   "file": "MoogsStructureLib-forge-1.20-3.4.2.jar",
+   "url": "https://cdn.modrinth.com/data/1oUDhxuy/versions/zuKYMmUt/MoogsStructureLib-forge-1.20-3.4.2.jar",
+   "sha512": "650dde1ff953fc8fa2c45e53a2ea47fbadc246caa16d1054acec964283fa191eab3c8044c6e074edfb2986ab3045607f541f2a62ba50791ab8f41a8a88f46ab8",
+   "size": 1089534
+  },
+  {
+   "slug": "moogs-voyager-structures",
+   "version": "5.1.3",
+   "file": "MoogsVoyagerStructures-universal-1.20-5.1.3.jar",
+   "url": "https://cdn.modrinth.com/data/OQAgZMH1/versions/dMwX4GPR/MoogsVoyagerStructures-universal-1.20-5.1.3.jar",
+   "sha512": "eb1df849f0ba62c78b4629514b3b50fb9a686c5d648ab361ad1c3452f20db90be43c5fdee7c467b901e9581a3f83ad6ed484908076392dc52df48ed4c312a33a",
+   "size": 2432788
+  },
+  {
+   "slug": "moonlight",
+   "version": "1.20-2.16.37-forge",
+   "file": "moonlight-1.20-2.16.37-forge.jar",
+   "url": "https://cdn.modrinth.com/data/twkfQtEc/versions/b1cuadwV/moonlight-1.20-2.16.37-forge.jar",
+   "sha512": "3a492f861ba9b2aee47fd7122c63976cf9767278d88c992a59f1979cf61a3e9ca3dcb6dc2bf836ff83f1da90f244c098ded32fc1c8a1b62c5d0efdf2831af0fc",
+   "size": 1425211
+  },
+  {
+   "slug": "mouse-tweaks",
+   "version": "1.20.1-2.25.1-forge",
+   "file": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+   "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/7JVXOe3K/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+   "sha512": "a3bb0272c0a1a3be9250dfee030bb8f86217fa6a32bd534be8c940fdd8c466c800c2df85874877983ced36ecfc28c8ced6c0d42107c1ab621385b4be9a7c65eb",
+   "size": 76237
+  },
+  {
+   "slug": "my-nethers-delight",
+   "version": "1.20.1-1.10.4-backport.1",
+   "file": "MyNethersDelight-1.20.1-1.10.4-backport.1.jar",
+   "url": "https://cdn.modrinth.com/data/O53VhQoZ/versions/pOBasFQT/MyNethersDelight-1.20.1-1.10.4-backport.1.jar",
+   "sha512": "e4a141f82790e08b67be2091cd415025a31ec297b8ba36d347108ff109d92c8becd60298cd04ffac04e6128efb89d633af21e8ce2ee03abf7bab1c339ea1f744",
+   "size": 903317
+  },
+  {
+   "slug": "nanny",
+   "version": "1.0.1",
+   "file": "NaNny-1.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/6EpIGT2g/versions/xmdj69Pa/NaNny-1.0.1.jar",
+   "sha512": "2af88c417772d37a43d77d172cd56f509b7c762cf1bc8f0200facc9fd6232b4076184065bd0f9c1b48f6611cdc7ff2a9d10751f2025244fca29be4c591cea7a8",
+   "size": 5086
+  },
+  {
+   "slug": "naturalist",
+   "version": "5.0pre2",
+   "file": "naturalist-5.0pre2+forge-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/F8BQNPWX/versions/LbtmTtvK/naturalist-5.0pre2%2Bforge-1.20.1.jar",
+   "sha512": "431f72f970c53827d2e69cda078d327dc538700b0bc2588c98cee47c81c923f6a8709a3d2520bfd8485e6a934c426839239809e5cad5541e1de6ea55726f6c5a",
+   "size": 3793857
+  },
+  {
+   "slug": "natures-compass",
+   "version": "1.20.1-1.12.0-forge",
+   "file": "NaturesCompass-1.20.1-1.12.0-forge.jar",
+   "url": "https://cdn.modrinth.com/data/fPetb5Kh/versions/eRSDvCjN/NaturesCompass-1.20.1-1.12.0-forge.jar",
+   "sha512": "885671553f322c3125557343a66260b0723e6ad474d6786b1f252712162fee6175666f6ec640969dd9e0e09a26e95a69c3ab3626d78341644d3c0c86a244939c",
+   "size": 227495
+  },
+  {
+   "slug": "neat",
+   "version": "1.20.1-41-forge",
+   "file": "Neat-1.20.1-41-FORGE.jar",
+   "url": "https://cdn.modrinth.com/data/Ins7SzzR/versions/7lL1qFg0/Neat-1.20.1-41-FORGE.jar",
+   "sha512": "644529d6e0c11fd9d4d55090213649e5c12cc7f95aa3a180a2e4985012eb94ace058d112489474df0217309db08741729fe58989494c2aebbceb6f33d5161959",
+   "size": 30595
+  },
+  {
+   "slug": "necronomicon",
+   "version": "1.6.0+1.20.1",
+   "file": "Necronomicon-Forge-1.6.0+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/P1Kv5EAO/versions/AomMq7HP/Necronomicon-Forge-1.6.0%2B1.20.1.jar",
+   "sha512": "d63d8d3e252197b7cabffc10ba6ec718d03b0038345d40dc5c9ce3014b9e542a35760ab0250f179b3de4183fe34784d645157b34bf54648c0ebbe24604ed5ba7",
+   "size": 33251
+  },
+  {
+   "slug": "neruina",
+   "version": "2.1.1-forge+1.20.1",
+   "file": "Neruina-2.1.1-forge+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/1s5x833P/versions/3dEDxcSK/Neruina-2.1.1-forge%2B1.20.1.jar",
+   "sha512": "8597526b68383230c44f8078dfa3755429ab1bcd5d5a349ffd590745bf23622b2694320f3b450ce6efa2bf68a6d5663bcb2549ddb6c6bc3f565cc101b76d3a6c",
+   "size": 3083386
+  },
+  {
+   "slug": "nether-chested",
+   "version": "v8.0.4-1.20.1-Forge",
+   "file": "NetherChested-v8.0.4-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/bHJp2GRg/versions/pg7wiIfo/NetherChested-v8.0.4-1.20.1-Forge.jar",
+   "sha512": "1ea89f3ae0a23aed205076789b6e99bc9fc204d6fd49f0f03f363a3f5c717a968a7cea5c7b197de17ba370a8575076c7637b0882bae75df333d6ed2bf98e9ce6",
+   "size": 532299
+  },
+  {
+   "slug": "netherportalfix",
+   "version": "13.0.1+forge-1.20",
+   "file": "netherportalfix-forge-1.20-13.0.1.jar",
+   "url": "https://cdn.modrinth.com/data/nPZr02ET/versions/cWPAnu7u/netherportalfix-forge-1.20-13.0.1.jar",
+   "sha512": "622d181918418c9bd9c919d19e9f5b0cc8e70c18b7c9be79353ea96481c40264cd986367630d9228867a8fbe94a2b9a2fd5b1ae3ba9edcb8edd12185a8366e3a",
+   "size": 217831
+  },
+  {
+   "slug": "no-chat-reports",
+   "version": "Forge-1.20.1-v2.2.3",
+   "file": "NoChatReports-FORGE-1.20.1-v2.2.3.jar",
+   "url": "https://cdn.modrinth.com/data/qQyHxfxd/versions/2XUIKIAa/NoChatReports-FORGE-1.20.1-v2.2.3.jar",
+   "sha512": "486e6143426ecce7e4784b6f3717d6120de6a29ee73c8fa1d641221f7490e527c13d942ec061c5853a24e1feb8d40126397e405511c3868537567ef1b91f447b",
+   "size": 271630
+  },
+  {
+   "slug": "noisium",
+   "version": "2.3.0+mc1.20-1.20.1",
+   "file": "noisium-forge-2.3.0+mc1.20-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/KuNKN7d2/versions/gbYUKrDP/noisium-forge-2.3.0%2Bmc1.20-1.20.1.jar",
+   "sha512": "5bc43bc1b748edcd63d074a8bb14d393d986c51e1933e1f38cd7a2dd2fd70dba5a46a6415f46d4a52c68e7e1e9ce101e54376ad04273df958608e2fdb43db502",
+   "size": 218152
+  },
+  {
+   "slug": "not-enough-animations",
+   "version": "1.12.6",
+   "file": "notenoughanimations-forge-1.12.6-mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/kGjMleOz/notenoughanimations-forge-1.12.6-mc1.20.1.jar",
+   "sha512": "deb10b44e923a5ead4379651328f28c7e7aa862f825f0938ffc4d641119671fedeb5129161553618efb7e4b578d23393c225ade7ce486d1e6e36de256b2ec793",
+   "size": 1870649
+  },
+  {
+   "slug": "nrb",
+   "version": "1.5.0",
+   "file": "no-report-button-forge-1.5.0.jar",
+   "url": "https://cdn.modrinth.com/data/9WJeSpTH/versions/5TLOa6VS/no-report-button-forge-1.5.0.jar",
+   "sha512": "cd6f5925b2618e674448229fdfd48b48b0da992018f228825449e0881d74fc43a1b098006b34371e030f661971326826bc5090f00d054f41e4d64455518dfbba",
+   "size": 17064
+  },
+  {
+   "slug": "nullscape",
+   "version": "1.2.8",
+   "file": "Nullscape_1.20.x_v1.2.8.jar",
+   "url": "https://cdn.modrinth.com/data/LPjGiSO4/versions/QsRKydVt/Nullscape_1.20.x_v1.2.8.jar",
+   "sha512": "fcd11f20ab1b374a219e915156c8439f2d6fcabb060406f4d0a11392f945228e1c6e375f8e9e3048ac01c3a351c88bde4327e1f958bfd5ef4ab81c178f9e35da",
+   "size": 399214
+  },
+  {
+   "slug": "oceans-delight",
+   "version": "1.0.2-1.20",
+   "file": "oceansdelight-1.0.2-1.20.jar",
+   "url": "https://cdn.modrinth.com/data/DGiq4ZSW/versions/9jLLNENb/oceansdelight-1.0.2-1.20.jar",
+   "sha512": "64ba0396d7168c73c810c8aefc135eebd7c2d5780e482fb36e96de87d0f226625b3ebb4249372b896ededa335895efda5d134846522e2e45c0a8d3a97ae2bf93",
+   "size": 90353
+  },
+  {
+   "slug": "oculus",
+   "version": "1.20.1-1.8.0",
+   "file": "oculus-mc1.20.1-1.8.0.jar",
+   "url": "https://cdn.modrinth.com/data/GchcoXML/versions/iQ1SwGc3/oculus-mc1.20.1-1.8.0.jar",
+   "sha512": "1bb4ac77400d6684347988ed298a692c2cb15cf7923693607eb8739b171a20fef7412259e9e157111d9ce21779badab386029956f7d2283a9e611722a373e9d5",
+   "size": 2851119
+  },
+  {
+   "slug": "opacpvp",
+   "version": "1.0.1",
+   "file": "opacpvp-forge-1.0.1-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/xcparckV/versions/qbogIOst/opacpvp-forge-1.0.1-1.20.1.jar",
+   "sha512": "6f29d3f3c9d85bb24b2b897ab609b504f08b32d57a53a69882b6fe29361d237ac3015cd6d7aad064ecaf2f75959e42042dbef178bc4213540d60462101e98876",
+   "size": 9214
+  },
+  {
+   "slug": "open-parties-and-claims",
+   "version": "forge-1.20.1-0.33.0",
+   "file": "open-parties-and-claims-forge-1.20.1-0.33.0.jar",
+   "url": "https://cdn.modrinth.com/data/gF3BGWvG/versions/Ec8wDd9H/open-parties-and-claims-forge-1.20.1-0.33.0.jar",
+   "sha512": "696ea9af89f71843dc6c205755ea49542ba5b55944ce9c43e279b819b92e06b8175b914ec4fc3c699240e6c9b833d008d3383e32274de15c2dda61ffb681dfce",
+   "size": 1906788
+  },
+  {
+   "slug": "overflowing-bars",
+   "version": "v8.0.1-1.20.1-Forge",
+   "file": "OverflowingBars-v8.0.1-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/XD7XOrAF/versions/w90XIUWB/OverflowingBars-v8.0.1-1.20.1-Forge.jar",
+   "sha512": "4854cac7069e1140dd9b567e04414c0acc865f66433b7c8cb79269e4c1a20c38f30b2d393e9920ff7f9c732fdf01408a22b07f5d1532756623072470dfc24248",
+   "size": 73689
+  },
+  {
+   "slug": "packet-fixer",
+   "version": "3.3.2",
+   "file": "packetfixer-3.3.2-1.18-1.20.4-merged.jar",
+   "url": "https://cdn.modrinth.com/data/c7m1mi73/versions/9F4NGhGR/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
+   "sha512": "916501acefab2a33f7b5438375dec0c3d523975d82c807c98496227c107c1efd57c95d9e1501d657513324a9ad617eb8ef7e963921263389af896da55dc707a9",
+   "size": 188661
+  },
+  {
+   "slug": "particle-rain",
+   "version": "v4.0.2+1.20.1-forge",
+   "file": "particlerain-4.0.2+1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/6YJVNjSI/particlerain-4.0.2%2B1.20.1-forge.jar",
+   "sha512": "0ed9c0ff8fc84da5b84ba7090390d1c0c923b895e3ea269752c815d18d67191384f96f014847a3f30567c543e32da46f7010ae89203e3e2dd519d3733a5ef329",
+   "size": 1257968
+  },
+  {
+   "slug": "patchouli",
+   "version": "1.20.1-85-forge",
+   "file": "Patchouli-1.20.1-85-FORGE.jar",
+   "url": "https://cdn.modrinth.com/data/nU0bVIaL/versions/94dtOLgZ/Patchouli-1.20.1-85-FORGE.jar",
+   "sha512": "15aedda4efcc553d5e3c83aa867b62554bc2fab298b43f55ed324e10507a3605f0ec2c59c01476e6d80b2a49275ef080142e43a6e663f9463b62f520960fc203",
+   "size": 642732
+  },
+  {
+   "slug": "paxi",
+   "version": "1.20-Forge-4.0",
+   "file": "Paxi-1.20-Forge-4.0.jar",
+   "url": "https://cdn.modrinth.com/data/CU0PAyzb/versions/C7buFh0l/Paxi-1.20-Forge-4.0.jar",
+   "sha512": "50ed8c99981b9860c846a18cda215d388b67019b76a172833fa4e4b52cbd122eb8e49e594e5789790f95af06e0a98dcf2433b001b1f559b3e7071d2e6b7c1dd7",
+   "size": 96892
+  },
+  {
+   "slug": "physicsmod",
+   "version": "3.0.20",
+   "file": "physics-mod-3.0.20-mc-1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/Xy8aRQKS/versions/binwAk5d/physics-mod-3.0.20-mc-1.20.1-forge.jar",
+   "sha512": "2210fc12337d986917c7fd1e5017da5f8036ec86d185f10070e5a9aa3e4e3eaf915c9bba595f057f0852133fec95388e7b9d2937c7890775fae19bea707c58b0",
+   "size": 60624148
+  },
+  {
+   "slug": "pick-up-notifier",
+   "version": "v8.0.0-1.20.1-Forge",
+   "file": "PickUpNotifier-v8.0.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/ZX66K16c/versions/LojgSWbd/PickUpNotifier-v8.0.0-1.20.1-Forge.jar",
+   "sha512": "3cddd0e7cd2527bf9483c2a4a40eb1d1e650c806fdfd3bcdf55cffdcc0575ca71d56a50d8d09cca63793e3da6b22436b636702755e0644beb4b0051f039a2dda",
+   "size": 102164
+  },
+  {
+   "slug": "piglin-proliferation",
+   "version": "1.20.1-1.2.6",
+   "file": "piglinproliferation-1.20.1-1.2.8.jar",
+   "url": "https://cdn.modrinth.com/data/iRE67WIn/versions/35nRLWhN/piglinproliferation-1.20.1-1.2.8.jar",
+   "sha512": "1eeb54d0be15c8c9fb80d7be44ea364d02037a8e41d7fc209243ad30b85ce95a8552417737a2d280d287af15f89bc17f555782eb755e68470269165326a852a2",
+   "size": 2488491
+  },
+  {
+   "slug": "ping-wheel",
+   "version": "1.12.1",
+   "file": "Ping-Wheel-1.12.1-forge-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/QQXAdCzh/versions/OIvI752z/Ping-Wheel-1.12.1-forge-1.20.1.jar",
+   "sha512": "8a57040eeb6f57f6b88c50e619db7b3389dc5afd6b9bdc2215ada148511243e71514ffc497a0209539130ad721382c0c771eb115cfe2141367a11a7950f15795",
+   "size": 157314
+  },
+  {
+   "slug": "platform",
+   "version": "1.4",
+   "file": "Platform-forge-1.20.1-1.4.jar",
+   "url": "https://cdn.modrinth.com/data/i6fiqm5y/versions/pnAJaOBr/Platform-forge-1.20.1-1.4.jar",
+   "sha512": "ac1abec507ec1c9c9223871d974eb61d61dd4913af788f84d0798482152e1e0211e6b234f2c8ac3f39e14de2bb56c73a4bb959b4bb5d2272c8f2f01c7b472bad",
+   "size": 1190878
+  },
+  {
+   "slug": "playeranimator",
+   "version": "1.0.2-rc1+1.20-forge",
+   "file": "player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+   "url": "https://cdn.modrinth.com/data/gedNE4y2/versions/xe2EVE6q/player-animation-lib-forge-1.0.2-rc1%2B1.20.jar",
+   "sha512": "cb9f6a3aaa943823a85fdd716ddb3c7623af2b3520926c3a98d170c52d31908894808fb61c52bea39bae622dbab59d50b4bad56f7ca0533a9c3350d412c33729",
+   "size": 181437
+  },
+  {
+   "slug": "polymorph",
+   "version": "0.49.11+1.20.1",
+   "file": "polymorph-forge-0.49.11+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/tagwiZkJ/versions/5lNATnbO/polymorph-forge-0.49.11%2B1.20.1.jar",
+   "sha512": "807b830ece5f2569682b16471263fdc589db41403ba49ec1b92d6c88043ec3cdc5b912be5e112fb1f1933654b428d26d9f707b64c2c3abf00480dd4611e4905f",
+   "size": 301935
+  },
+  {
+   "slug": "pro-placer",
+   "version": "v8.0.3-1.20.1-Forge",
+   "file": "ProPlacer-v8.0.3-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/LhK0LkWd/versions/nAAkM9HI/ProPlacer-v8.0.3-1.20.1-Forge.jar",
+   "sha512": "5180dc6cab1efbdedd71f38953cfe6b5f0cf9dfe359cafd434ab70b711c473d3ef4e1dc51f5903c909d87e4e8d31affcd31bfea54f85a23afb0099c85faeeffa",
+   "size": 63234
+  },
+  {
+   "slug": "puzzles-lib",
+   "version": "8.1.36",
+   "file": "PuzzlesLib-v8.1.36-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/hOfDHA4g/PuzzlesLib-v8.1.36-1.20.1-Forge.jar",
+   "sha512": "232c7c052c32d07bbb9daa02e16eab3ff45d41cf91488dca79e099965cb33983b09554c758c7e0df0516c33a9327880068ceb167ed3f0df60d590588aad55d99",
+   "size": 1790007
+  },
+  {
+   "slug": "radium",
+   "version": "0.12.4",
+   "file": "radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
+   "url": "https://cdn.modrinth.com/data/2gvRmQXx/versions/n947JjJH/radium-mc1.20.1-0.12.4%2Bgit.26c9d8e.jar",
+   "sha512": "7b59c491d72801257c740626faab8c14ed580db28493c474147341531bca3de5ea822d4042d3786ae619449b6f6ffc1001a1cdc1b9276ec900e57ab17dd8989a",
+   "size": 713454
+  },
+  {
+   "slug": "raided",
+   "version": "0.1.6",
+   "file": "Raided-1.20.1-0.1.6.jar",
+   "url": "https://cdn.modrinth.com/data/9vaHfaHw/versions/OjVZLgAZ/Raided-1.20.1-0.1.6.jar",
+   "sha512": "35a55b10c2852bda10cc205c5be32f916368dc4f1dfb8e65a1199514635a85db1cb28515b19ed2842fafc5ec0d206bc279e15f88877abf7970641cf4e3c8e24c",
+   "size": 133741
+  },
+  {
+   "slug": "redirected",
+   "version": "forge-1.20.1-1.0.0",
+   "file": "redirected-forge-1.0.0-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/hhnR8xqU/versions/cJBVuClJ/redirected-forge-1.0.0-1.20.1.jar",
+   "sha512": "4f1362b1c0a4620b4fdb1282ae4fa036df843ffef4b0c1146d887a324f2517b4331691db42de09c7ca6729dad2993ff06ccd38b6f203e9623d25e17951b8fddf",
+   "size": 416660
+  },
+  {
+   "slug": "repurposed-structures-forge",
+   "version": "7.1.25+1.20.1-forge",
+   "file": "repurposed_structures-7.1.25+1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/QDNS5oAT/versions/GgUh2Zx7/repurposed_structures-7.1.25%2B1.20.1-forge.jar",
+   "sha512": "d160ced7958023c450cded996c75a8b4c894d8ddd13e1b8a5e44316875e32c475c455cd494666a530698189be479ca78700a8f94e33855d0f7fa1d3da0649a49",
+   "size": 8236925
+  },
+  {
+   "slug": "resource-pack-overrides",
+   "version": "v8.0.3-1.20.1-Forge",
+   "file": "ResourcePackOverrides-v8.0.3-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/YsFycamt/versions/fw5ouviG/ResourcePackOverrides-v8.0.3-1.20.1-Forge.jar",
+   "sha512": "a1e21b52a11611fbcbbe7e5fd1227e264f9285d1443945aa422c28e9a84caf400a8533e2b85f6c4bd26800e249c4958289ec796b4a3f6c41335adc39c933155f",
+   "size": 84339
+  },
+  {
+   "slug": "resourceful-config",
+   "version": "2.1.3",
+   "file": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
+   "url": "https://cdn.modrinth.com/data/M1953qlQ/versions/DERs8u7v/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+   "sha512": "2e05fe27529d00d7808a83dbe0c475a0fb96a20ebfd5c9767f4cc8dcd9a865e20a18de41fb9ed710e5cd2e0211c30303b43c1f22702af1d50ee7212ad83a54d3",
+   "size": 136923
+  },
+  {
+   "slug": "resourceful-lib",
+   "version": "2.1.29",
+   "file": "resourcefullib-forge-1.20.1-2.1.29.jar",
+   "url": "https://cdn.modrinth.com/data/G1hIVOrD/versions/OhsHaCcW/resourcefullib-forge-1.20.1-2.1.29.jar",
+   "sha512": "8dbe951d431545a7d18081a8b11a52a248e6d8ff9862ae6462b0f5a6f57ff523af12704c3adb071ae99a7c5c1dd895bd7875dea59f9c4956c1597a668b6e8820",
+   "size": 432753
+  },
+  {
+   "slug": "revampedwolf",
+   "version": "1.20.1-6.1.0",
+   "file": "revampedwolf-1.20.1-6.1.0.jar",
+   "url": "https://cdn.modrinth.com/data/AV4N1OZQ/versions/pY7zBjxD/revampedwolf-1.20.1-6.1.0.jar",
+   "sha512": "677ea82707688ba482c01b1b7adca9616b26e22f6d1cd28cebf3164b09ee151faff7135cc19c5521ad2a432b7e88953a9b7665d1a6d1283212640be8d19e1733",
+   "size": 95825
+  },
+  {
+   "slug": "ribbits",
+   "version": "3.0.5",
+   "file": "Ribbits-1.20.1-Forge-3.0.5.jar",
+   "url": "https://cdn.modrinth.com/data/8YcE8y4T/versions/RCsQFeua/Ribbits-1.20.1-Forge-3.0.5.jar",
+   "sha512": "d82ffa954886abd2971672ff530e3778319a8a1e6630ca55fc9a58a1e7a8f294fbd5c9fd7752123980468bda7e28363a4c724e5d8da89d237e3c2d5ae4cbe189",
+   "size": 2223589
+  },
+  {
+   "slug": "rightclickharvest",
+   "version": "4.6.1+1.20.1",
+   "file": "rightclickharvest-forge-4.6.1+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/Cnejf5xM/versions/NFxivT5s/rightclickharvest-forge-4.6.1%2B1.20.1.jar",
+   "sha512": "4c547c9ab385b2ea3f942f61fd8febe1b683f06c4e8bfb0d17b8089e1d3377402a2feda5c9af1799b6e13c6e3db0925dc52b498f4cf3bc115b36a353ec68e168",
+   "size": 288408
+  },
+  {
+   "slug": "searchables",
+   "version": "1.0.3",
+   "file": "Searchables-forge-1.20.1-1.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/fuuu3xnx/versions/PM9yAW1G/Searchables-forge-1.20.1-1.0.3.jar",
+   "sha512": "185617d6d446f3d4ef6c7d5c6ee4e2fb731a89f7495157313b21292ec6b8e3dbcc10c0379ab49ecb2d0c64d0a78df74750d7f7336d5e6c43516a7c92f278c0a2",
+   "size": 77732
+  },
+  {
+   "slug": "serene-seasons",
+   "version": "9.1.0.3",
+   "file": "SereneSeasons-forge-1.20.1-9.1.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/e0bNACJD/versions/WMrhrybF/SereneSeasons-forge-1.20.1-9.1.0.3.jar",
+   "sha512": "038af92c577c3cf71a4cfd2a388641c7b942bee61f47982e269395eb46147083f5e492f83829ab4af6d95a7b8a7c926a6250539ff1a52d6c30970f544dc4873b",
+   "size": 160886
+  },
+  {
+   "slug": "server-browser",
+   "version": "1.4.0",
+   "file": "ServerBrowser-forge-1.4.0-1.21.1.jar",
+   "url": "https://cdn.modrinth.com/data/REH0O240/versions/LrtHjNtP/ServerBrowser-forge-1.4.0-1.21.1.jar",
+   "sha512": "1362b9e26ec443e3e6f4d6d1b45d05a3c2421db1cda74958b0511b6ce4837c2ffeebb8a2514d4be2cfb3d74fc79f0a5e67d1b6db192eb1c99627c403bd5ab2e4",
+   "size": 60991
+  },
+  {
+   "slug": "simple-snowy-fix-forge-fabric",
+   "version": "2.1.5",
+   "file": "simple_snowy_fix-forge-1.19-1.20.1-2.1.5.jar",
+   "url": "https://cdn.modrinth.com/data/3WP3HZRG/versions/tEfULPyd/simple_snowy_fix-forge-1.19-1.20.1-2.1.5.jar",
+   "sha512": "21c093bd872240987b674f3e1fb18574ba190963385ae61829caec15b12a4780e63732be775011b608357725d9ebca30e182c56f51ae8f676d810e13a6642cfe",
+   "size": 123109
+  },
+  {
+   "slug": "simple-voice-chat",
+   "version": "forge-1.20.1-2.6.22",
+   "file": "voicechat-forge-1.20.1-2.6.22.jar",
+   "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/S11m0QIb/voicechat-forge-1.20.1-2.6.22.jar",
+   "sha512": "23c8b3a593fe506af8d8e0edc0afb45349777d5cdea41ffc3fa99afc2e3b9bc7770bb9951f674017ea5b3c23e111b0c6031ebd61820c9a0b5191e3992d9c8798",
+   "size": 4923439
+  },
+  {
+   "slug": "skeleton-ai-fix",
+   "version": "v20.1.1-1.20.1-Forge",
+   "file": "SkeletonAIFix-v20.1.1-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/jn24bUJo/versions/VMGmo5Si/SkeletonAIFix-v20.1.1-1.20.1-Forge.jar",
+   "sha512": "440e921363722a4514a63c92147d7cc0e3714be28c95eda1045624171f18fbd720f5e9b607db0556b9d7ac982943ec70094f3efd4a2943b214da80cfb59295f6",
+   "size": 45860
+  },
+  {
+   "slug": "smarter-farmers-farmers-replant",
+   "version": "1.20-2.1.2",
+   "file": "smarterfarmers-1.20-2.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/Bh6ZOMvp/versions/Pg7m0oCv/smarterfarmers-1.20-2.1.2.jar",
+   "sha512": "2b12bbb5a494598f62c07a8b8f9b2127eda0327b59580e6dc45ffae57f2be5d4576acff4d5adf533fcd932fdbd1b4d27b761d29e93cdcd397c08a7f6f40de5de",
+   "size": 223368
+  },
+  {
+   "slug": "snow-real-magic",
+   "version": "10.7.0",
+   "file": "SnowRealMagic-1.20.1-Forge-10.7.0.jar",
+   "url": "https://cdn.modrinth.com/data/iJNje1E8/versions/aQw97T9l/SnowRealMagic-1.20.1-Forge-10.7.0.jar",
+   "sha512": "7b3972ab9db7e90ac989c0d98e04771583b21141d76531f1905fa0438eb5b95cf89f283c0b43ac9f51e98bd373ccabc7fef8325912f97456bda8157f69a3ffbe",
+   "size": 346619
+  },
+  {
+   "slug": "snow-under-trees",
+   "version": "v1.4.12",
+   "file": "snowundertrees-1.20.1-1.4.12.jar",
+   "url": "https://cdn.modrinth.com/data/Q3vyMuj2/versions/VPpaFQ0C/snowundertrees-1.20.1-1.4.12.jar",
+   "sha512": "9873d8d037348a918768a528150d13f2324528afb6cf9f7f42c46682e439501d9a2157261ffff138e6da143853d4c4135a43f9912726e1203e5b23d7a137970f",
+   "size": 28536
+  },
+  {
+   "slug": "sodium-dynamic-lights",
+   "version": "forge-1.20.1-1.0.10",
+   "file": "sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/PxQSWIcD/versions/I156ee3A/sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
+   "sha512": "b8527199be5a8b4bc758a4f320586b5886e6ff657718f52d464386b1e3c695d7bfe644e2ef9487a869c93c0866818995ecd47b9e1a19054929242682e37f58b7",
+   "size": 511601
+  },
+  {
+   "slug": "sodium-options-api",
+   "version": "forge-1.20.1-1.0.10",
+   "file": "sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/Es5v4eyq/versions/d0EFLitO/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+   "sha512": "20b11f1582df3df3d351e0cffcfc8b97453e2d73164fbad46d3f4eb960cab57d8f708d84b818782ef019d5cd9494ce001161f753623680516a191d6f510ebb79",
+   "size": 443978
+  },
+  {
+   "slug": "sound-physics-remastered",
+   "version": "forge-1.20.1-1.4.10",
+   "file": "sound-physics-remastered-forge-1.20.1-1.4.10.jar",
+   "url": "https://cdn.modrinth.com/data/qyVF9oeo/versions/qeWNOzYk/sound-physics-remastered-forge-1.20.1-1.4.10.jar",
+   "sha512": "920fd454aab89b05e80f4b697e28f0e1c608d8af5123a1c246b5317851fd0fda6b140830e7249fbf1b7ef9f4ee71bb1648defbe48a14349e5f410aad13c31001",
+   "size": 203819
+  },
+  {
+   "slug": "spark",
+   "version": "1.10.53-forge",
+   "file": "spark-1.10.53-forge.jar",
+   "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/4FXHDE9F/spark-1.10.53-forge.jar",
+   "sha512": "15c6a3753dcba380624643a1e19c856240e8f6bed280f908e1be12c6154a86284ac86405c806273842975e0b7270af93ea9b1db5cf575a3853e54e1088cf7343",
+   "size": 3114590
+  },
+  {
+   "slug": "sparsestructures",
+   "version": "3.0",
+   "file": "sparsestructures-forge-1.20.1-3.0.jar",
+   "url": "https://cdn.modrinth.com/data/qwvI41y9/versions/oqEnX6AN/sparsestructures-forge-1.20.1-3.0.jar",
+   "sha512": "d4cf093c76af0456ed629ac163753c309f7b7096bb7d826929f9fb64ca29af096705dbe5e12c831a183544506c80067d5eae43882bc65808170ee25fbf482aba",
+   "size": 121055
+  },
+  {
+   "slug": "srdp",
+   "version": "4.0.3",
+   "file": "SimpleDiscordRichPresence-forge-4.0.3-build.40+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/SCAopByd/versions/jnmqJmSh/SimpleDiscordRichPresence-forge-4.0.3-build.40%2Bmc1.20.1.jar",
+   "sha512": "669ae32b3cca8478fcee68fcb13aeb71af4eeb464ba62e78ccae01921eb624580f6b3ba61ed16595acc9fbceb562ba85541f3c58a66580765bd0615d610f15e5",
+   "size": 1198997
+  },
+  {
+   "slug": "stoneworks",
+   "version": "v8.0.0-1.20.1-Forge",
+   "file": "Stoneworks-v8.0.0-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/FzyTKtVF/versions/bhfQuE7T/Stoneworks-v8.0.0-1.20.1-Forge.jar",
+   "sha512": "a3c8e2afcddd0cba67af224d330fac0e99f34b53c31fba6742f1d05b62cb75ca4d573432f9b53a69d0e8128158b277d61c2bfd34f1107de5cf63150fa45d09a8",
+   "size": 2809567
+  },
+  {
+   "slug": "stony-cliffs-are-cool",
+   "version": "1.1.2",
+   "file": "Stony Cliffs FML v1.1.2.jar",
+   "url": "https://cdn.modrinth.com/data/boFjx9eY/versions/GRs8dpYU/Stony%20Cliffs%20FML%20v1.1.2.jar",
+   "sha512": "8df735e42a6b21860ee4217fb9c461660a771b968b928e49909bddcca1266b3e7a814f9f920ba40cc41a988908126da51326758bb82d3111b5b3a02dc4f2fb5a",
+   "size": 43941
+  },
+  {
+   "slug": "structory",
+   "version": "1.3.5",
+   "file": "Structory_1.20.x_v1.3.5.jar",
+   "url": "https://cdn.modrinth.com/data/aKCwCJlY/versions/FkaSuQb0/Structory_1.20.x_v1.3.5.jar",
+   "sha512": "2239b6232b32b1358f56c8095b855b7ad3032cc872e2089359682b31dc16b7cad316ba601bfcfe314ab32a51f26cb5a4eb12d27d62a8c879eeda45a251d5839a",
+   "size": 1286462
+  },
+  {
+   "slug": "structory-towers",
+   "version": "1.0.7",
+   "file": "Structory_Towers_1.20.x_v1.0.7.jar",
+   "url": "https://cdn.modrinth.com/data/j3FONRYr/versions/fTl6NfPL/Structory_Towers_1.20.x_v1.0.7.jar",
+   "sha512": "b3a04babcdac8c66f974d10b9ec0beee2d9ba33c34144adfe9dbf80ee7cdb64e1e598168160aa10778975f6e5c3dc4bba396a2520ee609793714f22bb320ebc6",
+   "size": 526234
+  },
+  {
+   "slug": "structure-layout-optimizer",
+   "version": "1.0.11+1.20.1-forge",
+   "file": "structure_layout_optimizer-forge-1.0.11.jar",
+   "url": "https://cdn.modrinth.com/data/ayPU0OHc/versions/EazfspJH/structure_layout_optimizer-forge-1.0.11.jar",
+   "sha512": "e90a40a8a3b4f9a369d9a80bfb7dced3e42a400701d4cb76ace0db8a3eb84757ade10eaa6f9ec9e3dc78dcd4edc87173bdc19f64a4fb8fc047d24ae57ca4466d",
+   "size": 246413
+  },
+  {
+   "slug": "supplementaries",
+   "version": "1.20-3.1.44-forge",
+   "file": "supplementaries-1.20-3.1.44-forge.jar",
+   "url": "https://cdn.modrinth.com/data/fFEIiSDQ/versions/foXRPXFH/supplementaries-1.20-3.1.44-forge.jar",
+   "sha512": "c8307fb766723b4a91fe1237de79894c162ecd26575d56690249876f186f3285b16a2ad2b1ef6c1356d843514b57734a15e3420bb5dcf7c4bd78770a0d51fa7e",
+   "size": 13686603
+  },
+  {
+   "slug": "tectonic",
+   "version": "3.0.17",
+   "file": "tectonic-3.0.17-forge-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/lWDHr9jE/versions/KLmvRxwh/tectonic-3.0.17-forge-1.20.1.jar",
+   "sha512": "96840393db8e50645d80ee1a04fdecf11b8e9ce5aa807fc1be626429d874fd5b7cb57a6ed8d7d7e2448a3e3f43ef3826f33abeafd430c6d852cb1b1af6c793b2",
+   "size": 322575
+  },
+  {
+   "slug": "terrablender",
+   "version": "3.0.1.11",
+   "file": "TerraBlender-forge-1.20.1-3.0.1.11.jar",
+   "url": "https://cdn.modrinth.com/data/kkmrDlKT/versions/IfcgopfA/TerraBlender-forge-1.20.1-3.0.1.11.jar",
+   "sha512": "a784082052e229167f52f01a4ec5d0a7d94a27f2832f5df6918a99f5b680818c8d7c0116fd4897cdff044e9d2bc3129a13ba1454d1cd3ec9d851260d8c2c97fc",
+   "size": 107575
+  },
+  {
+   "slug": "terralith",
+   "version": "2.5.4",
+   "file": "Terralith_1.20.x_v2.5.4.jar",
+   "url": "https://cdn.modrinth.com/data/8oi3bsk5/versions/WeYhEb5d/Terralith_1.20.x_v2.5.4.jar",
+   "sha512": "885e171d8b34aae7e142f082d0364285ec5a8e8342f11c60d341f7a94083d5a42c4e30612fe4f9f64d57b484396a3dff3a224e2a2497d4ced8d22f2ad6cd561d",
+   "size": 3156901
+  },
+  {
+   "slug": "toms-storage",
+   "version": "1.20-1.7.1",
+   "file": "toms_storage-1.20-1.7.1.jar",
+   "url": "https://cdn.modrinth.com/data/XZNI4Cpy/versions/XELeoPjZ/toms_storage-1.20-1.7.1.jar",
+   "sha512": "ac5a057a9fdafa851fca05be77ba68548082119e0b7ac19f2197e418da703bf60f341e65ec76ddc73003682b89159850f6b9dff65147df3c0c9b8e6f58460ce0",
+   "size": 520148
+  },
+  {
+   "slug": "too-fast",
+   "version": "0.4.3.5",
+   "file": "toofast-1.20-0.4.3.5.jar",
+   "url": "https://cdn.modrinth.com/data/w6JSkKSH/versions/2pix3xrW/toofast-1.20-0.4.3.5.jar",
+   "sha512": "722b6788724c813978d468100f85532ea5a9f07830d4a0475aa6050434bef5da3e51ccd235ed7158b6797d938ab10b9b3f79422e72517c2e20761dd923c5d602",
+   "size": 3875
+  },
+  {
+   "slug": "towns-and-towers",
+   "version": "1.12",
+   "file": "Towns-and-Towers-1.12-Fabric+Forge.jar",
+   "url": "https://cdn.modrinth.com/data/DjLobEOy/versions/7ZwnSrVW/Towns-and-Towers-1.12-Fabric%2BForge.jar",
+   "sha512": "ed734046c356bb996b628c2e0c47e64ba598c87016591fd77533069de68f27b8bfdcd2173d7d3db97f1981ebb806133c3d1751c330d539ade3d6c37ed2d5598f",
+   "size": 2864275
+  },
+  {
+   "slug": "trading-post",
+   "version": "v8.0.2-1.20.1-Forge",
+   "file": "TradingPost-v8.0.2-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/8pcjMDgj/versions/LvveFy3w/TradingPost-v8.0.2-1.20.1-Forge.jar",
+   "sha512": "c401f6bdd7aaef623bbc5c55fbd1d33184a427ad7f89bc7713050cb7adb61346badea266009b8f9ecf3624ea3e537a4b23d7f360ecf369e9d208b2df8902777c",
+   "size": 123478
+  },
+  {
+   "slug": "txnilib",
+   "version": "forge-1.20.1-1.0.24",
+   "file": "txnilib-forge-1.0.24-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/vBbPDuOs/versions/kQ8qnDHA/txnilib-forge-1.0.24-1.20.1.jar",
+   "sha512": "06881ae202d9903909c34a1742f38308f7a04e4ed9c5eb3bd09441920d2666c6f4ee54b38ed3688b612ade5a06d2a35b45fad8a232c4e8f7f6bf527f082f6bc9",
+   "size": 3743339
+  },
+  {
+   "slug": "universal-sawmill",
+   "version": "1.20-1.4.11",
+   "file": "sawmill-1.20-1.4.11.jar",
+   "url": "https://cdn.modrinth.com/data/WRaRZdTd/versions/oxchyq1r/sawmill-1.20-1.4.11.jar",
+   "sha512": "257cdc00716e22c5d07e9aeb9b979ecd2a42857921e8566fc21cb48ebaf04fc911d56ba3e6e94496e9e7bc907e20d4c10697dbe52b46e66b4a3665cb343ca521",
+   "size": 569065
+  },
+  {
+   "slug": "vanillabackport",
+   "version": "1.1.7.10",
+   "file": "VanillaBackport-forge-1.20.1-1.1.7.10.jar",
+   "url": "https://cdn.modrinth.com/data/6xwxDTgf/versions/u8YPiN39/VanillaBackport-forge-1.20.1-1.1.7.10.jar",
+   "sha512": "f07e983096ae97bf160b0bdcc6034d4785fe78218c2858d9154b2abab291e9552d1f9f578eed84eb7dc174b969a8611d9a2ac840230d81b601e30f7271dad10a",
+   "size": 56051142
+  },
+  {
+   "slug": "variants-and-ventures",
+   "version": "forge-1.0.28+mc1.20.1",
+   "file": "variantsandventures-forge-1.0.28+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/lNDRiXkY/versions/6gKZ5j1H/variantsandventures-forge-1.0.28%2Bmc1.20.1.jar",
+   "sha512": "0e8dc8197d65428985f9e38a5cc14ca68f3d64b68522d09653a086dd9816fdea1bef917be5c3660233bd1de75fcceedf35f20592a5ee141ae119019cb88f1a2b",
+   "size": 1287099
+  },
+  {
+   "slug": "vb-compat",
+   "version": "2.2",
+   "file": "vb-compat-2.2-1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/jcYHXHwz/versions/oa6csnLP/vb-compat-2.2-1.20.1.jar",
+   "sha512": "d5b53cec5224036a040c7e4d1587a8759c2d1e20cbc3e3263b80103029c35691133a95f7b3305332c470dbebd1e7d150540dd0d6b12bc0a2fed6f6c1593b2f03",
+   "size": 59278
+  },
+  {
+   "slug": "vb-mob-variants-compat",
+   "version": "1.4.1+mod",
+   "file": "vb-mob-variants-compat-1.4.1.jar",
+   "url": "https://cdn.modrinth.com/data/uvYkeUqm/versions/FScUiEv6/vb-mob-variants-compat-1.4.1.jar",
+   "sha512": "8ed9e5e715eff553876ec6063d1f2b0f2dcff3771ed08d5ca767e3af57d529b8a5c1fd03e161a90f520ed9919baf95c1a216b17b5a97284badfdf054cb81bf93",
+   "size": 273914
+  },
+  {
+   "slug": "vein-mining",
+   "version": "1.5.0+1.20.1",
+   "file": "veinmining-forge-1.5.0+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/bRAPbNyF/versions/qV4B4EMI/veinmining-forge-1.5.0%2B1.20.1.jar",
+   "sha512": "6a5423885a35b2c28561f28bd12e3f03b52c296bc1f4d050cd03a4b5485e0cdc90b3ac8bff0880353436af061f16a7342dc197a95ee28e88cc76c770341151fa",
+   "size": 230264
+  },
+  {
+   "slug": "villager-names-serilum",
+   "version": "1.20.1-8.8-fabric+forge+neo",
+   "file": "villagernames-1.20.1-8.8.jar",
+   "url": "https://cdn.modrinth.com/data/gqRXDo8B/versions/dC9llzrG/villagernames-1.20.1-8.8.jar",
+   "sha512": "7aa26da29f110fde9131770642a50987560bcc5f3cac76789d0d22b9e6ceaae449e46c546b54b8c2aef209d1b4fc4496fdf82dfd05f9bfc0a985a5921bf19ab6",
+   "size": 56119
+  },
+  {
+   "slug": "villages-and-pillages",
+   "version": "forge-2.0.0+mc1.20.1",
+   "file": "villagesandpillages-forge-2.0.0+mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/klXONLDA/versions/SCYHfAoy/villagesandpillages-forge-2.0.0%2Bmc1.20.1.jar",
+   "sha512": "44c872fc8971c4a9d8484d10bb1ad73ba5f4ee783d7dae50c5b2b02315eb6801ccc9d9ade075689aeae5dbec963d77ec4761d77c36380e1c7ef34495f13e183f",
+   "size": 341304
+  },
+  {
+   "slug": "visual-workbench",
+   "version": "v8.0.1-1.20.1-Forge",
+   "file": "VisualWorkbench-v8.0.1-1.20.1-Forge.jar",
+   "url": "https://cdn.modrinth.com/data/kfqD1JRw/versions/qaWEHDC3/VisualWorkbench-v8.0.1-1.20.1-Forge.jar",
+   "sha512": "f6167cf80d9163d1beae3dce898949a0b08afe9da099b030d95144a9a8de69021f7d1eaf0a93ce10ef12f5117d18d3fe124ff35b2ae76328da1c307ca96016c8",
+   "size": 82557
+  },
+  {
+   "slug": "visuality-forge",
+   "version": "2.2.0",
+   "file": "visuality-forge-2.2.0.jar",
+   "url": "https://cdn.modrinth.com/data/z13R7Et1/versions/XuoohJcp/visuality-forge-2.2.0.jar",
+   "sha512": "dc38f799560ee952e5c3606681879a5f08a76e7bfdaddb3ec7d6e6ce0e77bc4aaa7f4d3161d6d06bc7ce9cbec8587facfe5a9bfaaba2146b5afd9b6e33f913e0",
+   "size": 226834
+  },
+  {
+   "slug": "wavey-capes",
+   "version": "1.11.3",
+   "file": "waveycapes-forge-1.11.3-mc1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/kYuIpRLv/versions/gVLFQd36/waveycapes-forge-1.11.3-mc1.20.1.jar",
+   "sha512": "bb3e2a648b5aea19502263e4642a8a1c0f9298f44f002a4b1d39c27872d6c90f09454007bcf4f79da23f2a6daf187fa05b094ceb6cf81aaa7c79b96a90f654dc",
+   "size": 1778521
+  },
+  {
+   "slug": "waystones",
+   "version": "14.1.21+forge-1.20.1",
+   "file": "waystones-forge-1.20.1-14.1.21.jar",
+   "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/Y0IgdaoP/waystones-forge-1.20.1-14.1.21.jar",
+   "sha512": "3798eef2f81c2f6066d9dc2dc22bbe9d1c4b62d5aa494c592ffe67ee7f4fb8021361505b3c0b1358d4f9af27e50b1f12d29afb3b4b0b362b5ab227e8be171047",
+   "size": 536782
+  },
+  {
+   "slug": "what-are-they-up-to",
+   "version": "1.20.1-1.2.3",
+   "file": "watut-forge-1.20.1-1.2.3.jar",
+   "url": "https://cdn.modrinth.com/data/AtB5mHky/versions/GpiXMxvP/watut-forge-1.20.1-1.2.3.jar",
+   "sha512": "80be5011a6f3a933bf87cc1815febde79e915a9fb3d2ff304bfda199ad8a09e5acb32b91dc6a56db4765209c83ca977870b11bc7dbfeb7c4efa0fda6cc370386",
+   "size": 435496
+  },
+  {
+   "slug": "when-dungeons-arise",
+   "version": "2.1.58-1.20.x",
+   "file": "DungeonsArise-1.20.x-2.1.58-release.jar",
+   "url": "https://cdn.modrinth.com/data/8DfbfASn/versions/6hQpx5Tc/DungeonsArise-1.20.x-2.1.58-release.jar",
+   "sha512": "021bc9558af43492c45c05874fa9f2e87f1e90298b70681f8d3b845716d29b4a5eae57d06c3c4308fd7d7cd45194dea513e78c891d1f546a8f5474acc204153d",
+   "size": 8762342
+  },
+  {
+   "slug": "xaeroplus",
+   "version": "2.37.0+forge-1.20.1",
+   "file": "XaeroPlus-2.37.0+forge-1.20.1-WM1.47.0-MM26.6.0.jar",
+   "url": "https://cdn.modrinth.com/data/EnPUzSTg/versions/lF76lQkB/XaeroPlus-2.37.0%2Bforge-1.20.1-WM1.47.0-MM26.6.0.jar",
+   "sha512": "6a712285d5a77645075c6381a67ae85f8ba69b5b7115cdb8a9ed36bf78dcb8366756c63725b838e13ea929c585a219ff0a1d92c21fc92970442d02eb8b868663",
+   "size": 8772582
+  },
+  {
+   "slug": "xaeros-minimap",
+   "version": "forge-1.20.1-26.6.0",
+   "file": "xaerominimap-forge-1.20.1-26.6.0.jar",
+   "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/dB6E0CY9/xaerominimap-forge-1.20.1-26.6.0.jar",
+   "sha512": "9c566a2b9537c37b438a38a060cc251187e6643e96522466c50c90c7fa747a4e4edc3a5fff0f31fb042e1eeefd047df2a57d1bbe6a3d741837cef8cdb6426a25",
+   "size": 2196194
+  },
+  {
+   "slug": "xaeros-world-map",
+   "version": "forge-1.20.1-1.47.0",
+   "file": "xaeroworldmap-forge-1.20.1-1.47.0.jar",
+   "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/KtEupJvB/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+   "sha512": "a8c775ad1645cd3dc922072955fff65f7874bd6a1c99e6a61d370e7a9a5880e450ba61dafa6c719ad8f719fcff3b17ec6124b7f47288009547b4b136d81e5657",
+   "size": 1429424
+  },
+  {
+   "slug": "xp-tome",
+   "version": "v2.2.1",
+   "file": "xptome-1.20.1-2.2.1.jar",
+   "url": "https://cdn.modrinth.com/data/AnpW69o3/versions/SYfBGaA3/xptome-1.20.1-2.2.1.jar",
+   "sha512": "2459901b5cd93ea5f8712b6a19397058bf13dcc88cf2fa2fd505007dd97dc0d3d03dd754f7320c3eab3fe99f81b4abed8dcf6fb28cf7ad09dc2b5e534b5f840b",
+   "size": 22972
+  },
+  {
+   "slug": "yacl",
+   "version": "3.6.6+1.20.1-forge",
+   "file": "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",
+   "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/sCWgXDYQ/yet_another_config_lib_v3-3.6.6%2B1.20.1-forge.jar",
+   "sha512": "7fdd923ae94c1ada9bf0524f21cdfbb4f870ea93b26d02f369829585892fc5a2f61e60f43a6686ee611ff11bde8f123f178279e2de453c8fb320264153a0e8d9",
+   "size": 1105891
+  },
+  {
+   "slug": "yungs-api",
+   "version": "1.20-Forge-4.0.6",
+   "file": "YungsApi-1.20-Forge-4.0.6.jar",
+   "url": "https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar",
+   "sha512": "7d83d94a90e55a712f6508485c044ff202916e9b9b9166b75177cb8f2eb919543bbbe1547d11c41cfd4763820f934235f47c0b26dd9e89bc1030954afa9fb889",
+   "size": 370524
+  },
+  {
+   "slug": "yungs-better-dungeons",
+   "version": "1.20-Forge-4.0.4",
+   "file": "YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+   "url": "https://cdn.modrinth.com/data/o1C1Dkj5/versions/kPiQ6v4q/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+   "sha512": "56bd11a7aca3bacb908381a668af8f5b574c5557c21370ace783d637c949802187110a4f5dc26afae4d9af74cdf64cee81d59fac3513a9bec3f921193fc938b8",
+   "size": 792381
+  },
+  {
+   "slug": "yungs-better-end-island",
+   "version": "1.20-Forge-2.0.6",
+   "file": "YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+   "url": "https://cdn.modrinth.com/data/2BwBOmBQ/versions/Izqhg3Va/YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+   "sha512": "a51b76fc41d19276bea2ebe081b153d3be53c502ef9de93593990f8b7bf644e3e4fd4cff17477abce16692f23aff3077be1762606f10ca1058771741ad652e2e",
+   "size": 387111
+  },
+  {
+   "slug": "yungs-better-jungle-temples",
+   "version": "1.20-Forge-2.0.5",
+   "file": "YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+   "url": "https://cdn.modrinth.com/data/z9Ve58Ih/versions/CXQc6EnZ/YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+   "sha512": "433d84ca6a8f223376bc8e30c7ca2407294876c2fe8ef51fec9f12358b5b4f84c76031abba74a256eec12146817690224b141668890ebba99decd411d6b37b9c",
+   "size": 806652
+  },
+  {
+   "slug": "yungs-better-mineshafts",
+   "version": "1.20-Forge-4.0.4",
+   "file": "YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+   "url": "https://cdn.modrinth.com/data/HjmxVlSr/versions/kVO57zxB/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+   "sha512": "1e8237e0fc4dd7e00a3ad30c5c02a82eeed63aed4544310cfdee863ac95b626874773f599779b985e6e460869804c036e1336c2720fbb34a3b09445434c063c8",
+   "size": 492998
+  },
+  {
+   "slug": "yungs-better-nether-fortresses",
+   "version": "1.20-Forge-2.0.6",
+   "file": "YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+   "url": "https://cdn.modrinth.com/data/Z2mXHnxP/versions/2nUEz0zq/YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+   "sha512": "bceefeaf84dffd7386a61118d6b1c6c2107e17e7a8f4340eff2c1f0234dba0e6d8f43903521d5a70334362ab6e4069788e5b29cf42d8ee9cd4f2a98feb64112b",
+   "size": 619255
+  },
+  {
+   "slug": "yungs-better-ocean-monuments",
+   "version": "1.20-Forge-3.0.4",
+   "file": "YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+   "url": "https://cdn.modrinth.com/data/3dT9sgt4/versions/SN4iZ7wf/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+   "sha512": "2c67db8caf355f2e3b4a6f2b99c64abfa3b084163b38e18aba7f8ad0fb297fab3bfa7a61cd6bff5391fdaad185ed8233f22080a2cd35f1428d2d04dbfdf10a1d",
+   "size": 1033262
+  },
+  {
+   "slug": "yungs-better-strongholds",
+   "version": "1.20-Forge-4.0.3",
+   "file": "YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/kidLKymU/versions/rwiShgsc/YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+   "sha512": "7fbb51f761ca1a514ce95e9967bcc93c09766a8929f19029390d46b18d7e876c4354d11350a5f8410dc28e485680f4eaf1019e4bd074cff34e8cfc5b232480d4",
+   "size": 473564
+  },
+  {
+   "slug": "yungs-better-witch-huts",
+   "version": "1.20-Forge-3.0.3",
+   "file": "YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/t5FRdP87/versions/mwlYB7rq/YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+   "sha512": "c17d5b07ecf44aa4539bd7af37882a63ab73ec10dd2c9675ed715e7c1f0ee73ee9d9c32bfddfb67f8f3c6f8b753cb965119e31e64926ea6d50ef33f881fc61f1",
+   "size": 179190
+  },
+  {
+   "slug": "yungs-bridges",
+   "version": "1.20-Forge-4.0.3",
+   "file": "YungsBridges-1.20-Forge-4.0.3.jar",
+   "url": "https://cdn.modrinth.com/data/Ht4BfYp6/versions/KgO1gfM2/YungsBridges-1.20-Forge-4.0.3.jar",
+   "sha512": "2705fbaeb62115c5604719d68756f723a974ea9a62a4194771ebbea877ee715de72cefe3b01ec0d318d4d6fe2e9de87e6a7122ef21ee54d48153e84cb7bae0c6",
+   "size": 136236
+  },
+  {
+   "slug": "yungs-menu-tweaks",
+   "version": "1.20.1-Forge-1.0.2",
+   "file": "YungsMenuTweaks-1.20.1-Forge-1.0.2.jar",
+   "url": "https://cdn.modrinth.com/data/Hcy2DFKF/versions/3FmFt8jI/YungsMenuTweaks-1.20.1-Forge-1.0.2.jar",
+   "sha512": "63085c7e9b668cb381bb2c654953d17420fab93d4be661879251ebc98de90ae1452e51dc7df5450539f5d13b06f48f3fae03f1130e92ae55c2fb098c92684495",
+   "size": 157602
+  }
+ ],
+ "resourcepacks": [
+  {
+   "slug": "better-leaves",
+   "version": "9.6",
+   "file": "Better-Leaves-9.6.zip",
+   "url": "https://cdn.modrinth.com/data/uvpymuxq/versions/w4ReEpuG/Better-Leaves-9.6.zip",
+   "sha512": "793dacaca4c200656e8875195e42975ecb628af114e13aad2059368b51cf45f00280f86075368e9adf492e847718a9d593bdf481664e10cf1aa9628d2a51a8d6",
+   "size": 1977146
+  },
+  {
+   "slug": "fresh-animations",
+   "version": "1.10.4",
+   "file": "FreshAnimations_v1.10.4.zip",
+   "url": "https://cdn.modrinth.com/data/50dA9Sha/versions/xN57JJts/FreshAnimations_v1.10.4.zip",
+   "sha512": "41258f9bea1a773d823f9a014d0c08206e9e7b339bc538e1538211fff28fadd06878a836d292cbb636ed6829cd2801a509368ae3eb3ad4bedf42190a0d5f7a90",
+   "size": 850941
+  },
+  {
+   "slug": "fresh-animations-extensions",
+   "version": "1.8.1",
+   "file": "FA+All_Extensions-v1.8.1.zip",
+   "url": "https://cdn.modrinth.com/data/YAVTU8mK/versions/RfJ3uz2J/FA%2BAll_Extensions-v1.8.1.zip",
+   "sha512": "a035c1e6c771177676672f93fa68858cfd949426a83bc141ad9fec6def3714aadb62c052d93b259662d03a399bd03ca70947a2ff7dd9b7262dcb16d311e33234",
+   "size": 425088
+  },
+  {
+   "slug": "fresh-animations-details",
+   "version": "2.2.1",
+   "file": "FA+Details-v2.2.1.zip",
+   "url": "https://cdn.modrinth.com/data/lctgpCsu/versions/tGydmcT3/FA%2BDetails-v2.2.1.zip",
+   "sha512": "f5f84645c2665e772d6db80a201e7dda0feb570a82445b72e7012665b6df238357a8b62e6d2655a43146fd309c36125ed18d9512ee924f89587ef627c6f3c753",
+   "size": 289745
+  },
+  {
+   "slug": "fa-player-extension",
+   "version": "1.1.0",
+   "file": "FA+Player-v1.1.zip",
+   "url": "https://cdn.modrinth.com/data/TAIMVZCL/versions/Wj7NeGjP/FA%2BPlayer-v1.1.zip",
+   "sha512": "d2a5c46ae53e4bb6355604a1ade253ab49f1deb205f5ee69085014965241d3c9623204951ab174a5dbdaf24d9b25ecae9a1638cc6a13d780b398a6d70d157a4e",
+   "size": 110203
+  },
+  {
+   "slug": "better-lanterns",
+   "version": "1.2+1.20.1",
+   "file": "Better+Lanterns+v1.2(mc-1.20.1).zip",
+   "url": "https://cdn.modrinth.com/data/PGGrfcvL/versions/xuTH8Cj3/Better%2BLanterns%2Bv1.2%28mc-1.20.1%29.zip",
+   "sha512": "10e2ddfd29e4e0e5ac1fcab2672f554a67c8656b97e9cb9d90ef120fd5cfb76f616883caa7b8377d176ebcdb9a7324a3eefa35b3f40d17aa2b4f8f666fc01ec9",
+   "size": 51369
+  },
+  {
+   "slug": "fancy-crops",
+   "version": "1.3",
+   "file": "Fancy Crops v1.3.zip",
+   "url": "https://cdn.modrinth.com/data/UGEVQ6t9/versions/ZJEBZjg6/Fancy%20Crops%20v1.3.zip",
+   "sha512": "ce8e34ce76f5368169722f9949edf372af5d9e1d3c262395006a5a1561ed7bae1259b9d69e4838914d637817f611283bfaf8be07c7b45b317fd2bdb22f32b7e3",
+   "size": 92779
+  },
+  {
+   "slug": "rays-3d-ladders",
+   "version": "2.4",
+   "file": "RAYs_3D_Ladders_v2.4.zip",
+   "url": "https://cdn.modrinth.com/data/Uupo7yGf/versions/lfVriRcD/RAYs_3D_Ladders_v2.4.zip",
+   "sha512": "56f0f53da4647908a5204023470b9e81528025a4182c219482f9b32056157e4f97f00c1c92308de5d83cf71308cb738ea3f1dec3d59bd9b6884050e0480371ed",
+   "size": 1936943
+  },
+  {
+   "slug": "rays-3d-rails",
+   "version": "3.6",
+   "file": "RAYs_3D_Rails_v3.6.zip",
+   "url": "https://cdn.modrinth.com/data/jKa9Ievs/versions/vTaYwBqs/RAYs_3D_Rails_v3.6.zip",
+   "sha512": "5bac9a5e994075a867b154d77aa39bf10755589683119ebbc093d7b4c6a228f44d8fafc18ffb981724fa805e79c360d95a72aaa909d58cb9fdde63a4c75e5bdb",
+   "size": 6228510
+  },
+  {
+   "slug": "simple-grass-flowers",
+   "version": "2.0.0",
+   "file": "Simple Grass Flowers v2.0.0.zip",
+   "url": "https://cdn.modrinth.com/data/ti9KkMHm/versions/Cd4Xa7Sr/Simple%20Grass%20Flowers%20v2.0.0.zip",
+   "sha512": "9ad752e71feb8fea4ccf2ecb23eecb85d48285e95744f28902bf505423a849a2ff74da6273982e7d38f7ea74385c67a9c188beaff38dae6e23473fbbd8bc11b5",
+   "size": 208597
+  },
+  {
+   "slug": "fresh-flower-pots",
+   "version": "1.5.4",
+   "file": "§3Fresh §bFlower Pots.zip",
+   "url": "https://cdn.modrinth.com/data/CmEN0T1m/versions/YEM2pUsf/%C2%A73Fresh%20%C2%A7bFlower%20Pots.zip",
+   "sha512": "20f6b1d45f824fd5218bb9ab0798170de158e9d58f71b0ddf3fad1e7a22c90aca8d1f08c8d9a1f1e932754d619c0f9480d81ad4ba2c1746b7c832c241cd2e817",
+   "size": 43374
+  },
+  {
+   "slug": "just-expressions",
+   "version": "1.2.1",
+   "file": "JustExpressions_v1.2.1.zip",
+   "url": "https://cdn.modrinth.com/data/vPaHlT2U/versions/ZNXAMRW4/JustExpressions_v1.2.1.zip",
+   "sha512": "f20f3960caf66863dc7fd99f2cb1a32d574c1861e2b5b7ebb8551b1072460d834c8d680359e2c231888fb324519f350eb7f22c5ae955b04831db87564696a42d",
+   "size": 262755
+  },
+  {
+   "slug": "icon-xaeros",
+   "version": "1.22",
+   "file": "Icon Xaero's 1.22.zip",
+   "url": "https://cdn.modrinth.com/data/LWGq2eg6/versions/OC90EEmJ/Icon%20Xaero%27s%201.22.zip",
+   "sha512": "98b15343928dfb8f42b72eeacb350b388c1781d0f668a74e79dc365e8f780515c073221261fc1051dbf8ca1516d7f2bcc11e45f4ae323369a2a1e3fe4e71ca3d",
+   "size": 18866675
+  },
+  {
+   "slug": "beautiful-enchanted-books",
+   "version": "8.0.0",
+   "file": "Beautiful Enchanted Books - MC 1.20.1 - 8.0.0.zip",
+   "url": "https://cdn.modrinth.com/data/VDTtLGSV/versions/DhwOwWZt/Beautiful%20Enchanted%20Books%20-%20MC%201.20.1%20-%208.0.0.zip",
+   "sha512": "c0155116de50fbe3ec05542d08c950de80c497352c008c8d7391c7762f39ea1f94949d9e799aa92258e65f4b19888d8c4a38c31b013e05292200f6eb45563f6c",
+   "size": 1481276
+  },
+  {
+   "slug": "re-imagine-tom-simple-storage",
+   "version": "1.0",
+   "file": "Re-Simple-Storage.zip",
+   "url": "https://cdn.modrinth.com/data/AFl4lkap/versions/Wt0naTC3/Re-Simple-Storage.zip",
+   "sha512": "40bce44ef6a7385efa6bf7d94de2e6835080d6eb052f0acbd13f380d7879204dacca95a4b5a89e529ee2b24a455b5a8fa2b0c368a449f51f601744a40ecdac8d",
+   "size": 40885
+  },
+  {
+   "slug": "fresh-waystones-texture",
+   "version": "2.1",
+   "file": "waystones_update_2_1.20.1.zip",
+   "url": "https://cdn.modrinth.com/data/BcyGAwlg/versions/7vacRuYz/waystones_update_2_1.20.1.zip",
+   "sha512": "1e56e272f4848b024c6c083bffbef1f2f6f089d98dfd0387a2f545df9b118dbe9afc74a9b65e0b48b626920875dd4943cf94c7c1f5aaaaa2d573116b5e95a0ac",
+   "size": 317849
+  },
+  {
+   "slug": "enchantment-descriptions-compat",
+   "version": "1.4",
+   "file": "Enchantment Descriptions Compat 1.4.zip",
+   "url": "https://cdn.modrinth.com/data/FHrgg7t3/versions/hmElh7Fa/Enchantment%20Descriptions%20Compat%201.4.zip",
+   "sha512": "9c330a9a6f2b558248821b9050daadfc8f6323e941b1616bb05763a601374101ee3eca9bfb303b0627e04d21b7ffd6e4fd4b4abc1a687f3993ba1866d715cc38",
+   "size": 105420
+  },
+  {
+   "slug": "mandalas-gui-dark-mode",
+   "version": "2.1",
+   "file": "MandalasGUI+Dakmode_1.21.6_v2.1.zip",
+   "url": "https://cdn.modrinth.com/data/h6zxsNVF/versions/Z2ajDlEE/MandalasGUI%2BDakmode_1.21.6_v2.1.zip",
+   "sha512": "cdfa5ab9fbda8986385b5e94338df86f80ba50b14d5a84c2b0a44477a012d846c784bc6edbe9ec04eff8acc659da8eb8f5dc51f72cbdfd653ba9d0cee24852f7",
+   "size": 726042
+  },
+  {
+   "slug": "mandalas-gui-vanilla-crosshair",
+   "version": "1.0",
+   "file": "Mandala's GUI Vanilla Crosshair.zip",
+   "url": "https://cdn.modrinth.com/data/4zlIFp4J/versions/bS5PrRhs/Mandala%27s%20GUI%20Vanilla%20Crosshair.zip",
+   "sha512": "2b91c14a29a270cbe09da99009b9a1ad8448f19ad56057f8f71672596ba5700c701db3a1e64897b6540411a416059574308f9341acf78c7da7d6e6f602c26070",
+   "size": 8161
+  }
+ ],
+ "shaderpacks": [
+  {
+   "slug": "complementary-unbound",
+   "version": "r5.9.3",
+   "file": "ComplementaryUnbound_r5.9.3.zip",
+   "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip",
+   "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c",
+   "size": 553400
+  }
+ ]
+}
