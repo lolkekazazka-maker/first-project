@@ -1,53 +1,64 @@
 # Better MC 5 на Forge 1.20.1
 
 Сборка для **Minecraft 1.20.1 + Forge 47.4.10**: Dynamic Trees + Better Leaves, Distant Horizons, Embeddium + Oculus,
-шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport и спутники, Corpse, кровь, Neat, MCA Reborn и др.
+шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport, Corpse, кровь, Neat, MCA Reborn, Kaleidoscope, Alex's Mobs/Caves и многое другое
+(около 380 модов, 36 ресурспаков, из них 29 включаются автоматически).
 
 ## Установка (Windows + TLauncher)
 
 1. Поставь TLauncher, один раз запусти любую версию игры и закрой её (появится `%appdata%\.minecraft`).
 2. Скачай ветку репозитория (Code → Download ZIP) и распакуй. Нужна только папка `forge-1.20.1`.
-3. Запусти `forge-1.20.1\install.bat`. Он: ставит Forge, скачивает ~300 модов (около 850 МБ) с проверкой sha512,
-   кладёт ресурспаки и шейдер, включает язык, ресурспаки и шейдеры. Нужен интернет. Если обрыв — запусти ещё раз.
+3. Запусти `forge-1.20.1\install.bat`. Он ставит Forge, скачивает моды (около 950 МБ) с проверкой sha512, ресурспаки и шейдер,
+   включает язык, ресурспаки и шейдеры. Нужен интернет. Если обрыв — запусти ещё раз, уже скачанное не качается повторно.
 4. В TLauncher обнови список версий и выбери **1.20.1-forge-47.4.10**.
 5. В настройках TLauncher: память около 9000 МБ.
 6. Создай новый мир.
 
-Всё, чего нет в `mods.lock.json` (моды от 1.21.1, вылетающие Feature Recycler, Chunky, Distraction Free Recipes и т.п.),
-`install.bat` переносит в `%appdata%\.minecraft\mods_backup_…`. При запуске он печатает «Версия сборки: 2026-10-18-r11»:
-если такой строки нет, у тебя старый ZIP — скачай ветку заново.
-Сами jar в git не лежат: список и контрольные суммы в `mods.lock.json`, собирается `tools/build_lock.py`.
+В окне установщика должна быть строка «Версия сборки: …»: если её нет, у тебя старый ZIP, скачай ветку заново.
+Всё, чего нет в `mods.lock.json` (моды от 1.21.1, Feature Recycler, Chunky и т.п.), установщик переносит в `mods_backup_…`.
+Сами jar в git не лежат: список и контрольные суммы в `mods.lock.json`, собирается `tools/build_lock.py` из `tools/slugs.json`.
 
-## Обновление с прошлой версии
+## Что проверено
 
-Скачай ветку заново (Code → Download ZIP), распакуй и ещё раз запусти `forge-1.20.1\install.bat`. Уже скачанное не качается повторно.
-После запуска в `mods` должно быть 306 jar, а в `latest.log` не должно быть Feature Recycler, Chunky и Distraction Free Recipes.
+Сборка запускалась в тестовой среде: сервер сгенерировал мир в верхнем мире, Незере, Крае и Эфире, клиент дошёл до меню,
+создал мир, зашёл в него (шейдеры, Distant Horizons, достижения, инвентарь, предметы на полу, мобы). Это проверка работоспособности,
+а не замер FPS: FPS на RTX 3070 не измерялся.
 
 ## Ресурспаки
 
-Включаются автоматически, порядок от нижнего слоя к верхнему: Fresh Animations (+ расширения), Better Lanterns, Fancy Crops, 3D Crops «Grow your blossoms»,
-3D Ladders/Rails, Simple Grass Flowers, Fresh Flower Pots, Just Expressions, 3D FOOD, 3D грибы (Mikapika), Melody's Cute Girl Villagers, Iron Girl,
-Overgrown Flowery GUI + Overgrown Flowery Hotbar, Better Leaves. Villagers и Iron Girl работают через Entity Model Features (мод уже в сборке) и перекрывают Fresh Animations
-для жителей и железного голема.
+Порядок от нижнего слоя к верхнему: Mizuno's 16 Craft (лежит рядом с `install.bat`, условия автора в `readme.txt` внутри zip), Fresh Animations,
+Fresh Animations Player, анимации оружия для Punchy (Polaris и Blacksea), Mizuno x Fresh Animations, 3D-инструменты и верстаки (Actually 3D),
+Better Lanterns, Fancy Crops, 3D Crops, 3D-лестницы и рельсы, Simple Grass Flowers, дополнения Mizuno (трава, стекло, посевы), Fresh Flower Pots,
+Just Expressions, 3D FOOD, 3D-грибы, Melody's Cute Girl Villagers, Iron Girl, Overgrown Flowery GUI и Hotbar, листва Mizuno Better Leaves.
 
-### Mizuno's 16 Craft
+- Minecraft 1.20.1 молча выкидывает паки с «чужим» pack_format (старше или новее 15). Поэтому установщик делает для таких паков копии `… [1.20.1].zip` с pack_format 15.
+- В копиях Overgrown Flowery GUI/Hotbar убран `icons.png`: в нём здоровье нарисовано цветами, а голод каплями воды. Теперь иконки обычные, а рамки, кнопки и хотбар остались цветочными.
+- Овцы целиком берутся из Mizuno: в копиях Fresh Animations и Mizuno x Fresh Animations файлы овцы убраны. Смесь частей модели овцы из разных паков давала овец без лица. Fresh Animations Extensions/Details не включаются, пока есть Mizuno.
+- Melody's Cute Girl Villagers и Iron Girl работают через Entity Model Features (мод в сборке).
 
-Сам пак лежит в этой папке (`Mizunos-16-Craft-Resource-Pack-1.20.1.zip`, 10 МБ), его автором является Mizuno (условия использования — в `readme.txt` внутри архива).
-Установщик находит его по имени, ставит нижним слоем, включает дополнения Mizuno (Connected Texture/Glass, Better Grass, Better Crops, Fresh Animations)
-и вместо обычного Better Leaves берёт Mizuno Better Leaves. Если файл убрать, установщик продолжит без него.
-Если сделаешь репозиторий публичным, подумай, можно ли выкладывать этот файл: условия автора смотри в `readme.txt` внутри zip.
+## Настройки, которые ставит установщик
 
-### Actually 3D
+Один раз на версию набора из папки `config` рядом с `install.bat` копируются настройки из старой сборки и мои правки; заменённые файлы лежат в `config_backup_…_replaced`.
+- **Distant Horizons**: стартовые предупреждения и ошибки убраны из чата (остаются в логе).
+- **Alex's Caves**: отключены `biome_sky_overrides`, `biome_sky_fog_overrides`, `biome_ambient_light_coloring`, `radiation_glow_effect`, `sugar_rush_saturation_effect` — Distant Horizons просит их выключить.
+- **MCA Reborn**: выключены стартовый экран «Кто ты?», история Destiny и редактор внешности игрока. Он менял форму тела, а скин не сохранялся, и получался «Стив другой формы».
+- **Adaptive Performance Tweaks, Advancement Plaques, TrashSlot, Xaero** — настройки из старой сборки.
+- **FancyMenu**: панель редактора сверху экрана скрыта. **Load My F***ing Tags**: сообщение в чат отключено.
 
-Версии «Actually 3D Stuff» под 1.20.1 нет, поэтому стоит его предшественник из той же серии: Actually 3D Blocks & Items, плюс Equipment и Workbenches.
-Они лежат ниже остальных 3D-паков (3D Crops, 3D FOOD, грибы, лестницы), поэтому в спорных местах побеждают эти паки.
+## Убрано и почему
 
-## Kaleidoscope
+Visual Workbench (оставляет предметы в верстаке), Actually 3D Blocks & Items (по просьбе), Physics Mod (по просьбе), Accessories (ошибка миксина на Forge, нужен только Immersive Lanterns как необязательный),
+Chunks Fade In (ломает Distant Horizons: рендерер не привязывается, в чате «ClientServer level loading failed»), Oh The Biomes We've Gone (цикл порядка фич с Climate Rivers: вылет при создании мира),
+Subtle Effects (нужен Forge новее 47.4.10), Feature Recycler, Chunky, Distraction Free Recipes, ImmediatelyFast.
 
-Kaleidoscope Cookery и дополнения: Chinese Food, Tavern, World Liquor, End, Nether, Sculk, Doll, Doll Workshop, Addons, Compat, Grilling, Sauce,
-Texture Expansion, JEI Extension, Painting Extension, Bloodwine, Dimensions Wine. Не взяты: Automation и Contraption (тянут Create), Twilight (нужен Twilight Forest),
-Satiated Shield Tuner (требует старый Kaleidoscope Cookery 1.1–1.2, а в сборке 1.6).
+## Из старой сборки не добавлено
 
-## Не проверено
+- Страшное: Goat Man, Stalker, Hydra, Weather2 (торнадо), Twilight Forest. Остались ранее выбранные Born in Chaos, Mutant Monsters, Deeper and Darker, Cataclysm.
+- Нет под Forge 1.20.1 на Modrinth (только CurseForge или другая версия): FTB Quests/Library/Teams/Filter System, Framework, Backpacked, Goblin Traders, Farsight, Cupboard, Connectivity,
+  Chunk Sending, Smooth Chunk, Fast Async World Save, Memory Settings, Recipe Essentials, Structure Essentials, Loot Integrations, Client Crafting, Biome Music, alltheleaks.
+- Конфликтуют с тем, что в сборке: Falling Tree, BetterFoliage (Dynamic Trees и Better Leaves), Golem Overhaul (Iron Girl), Plasmo Voice (Simple Voice Chat), Your Grave Is Dead (Corpse),
+  Sodium/Iris/Lithium (вместо них Embeddium, Oculus, Radium), Connector и Continuity.
 
-FPS на RTX 3070 не измерялся, ресурспаки в игре я не просматривал (проверены только содержимое zip и формат). Если вылет, пришли `latest.log` или crash-report из `%appdata%\.minecraft`.
+## Обновление с прошлой версии
+
+Скачай ветку заново и ещё раз запусти `forge-1.20.1\install.bat`. Если вылет, пришли `latest.log` или crash-report из `%appdata%\.minecraft`.

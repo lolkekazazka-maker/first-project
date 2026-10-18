@@ -15,7 +15,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
-BUILD = "2026-10-18-r12"  # меняется при каждом изменении набора модов: установщик печатает её
+BUILD = "2026-10-18-r13"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):
@@ -34,7 +34,8 @@ def jget(url):
 
 # на Forge 1.20.1 конфиг встроен в Forge; Modrinth требует этот мод только для Fabric-связки
 # Sodium на Forge заменяет Embeddium: Chunks Fade In в mods.toml Sodium не требует, это метка Modrinth
-IGNORE = {"ohNO6lps", "AANobbMI"}  # forge-config-api-port, sodium
+# Accessories на Forge даёт ошибку миксина (ContainerMixin) и нужен только Immersive Lanterns как необязательный
+IGNORE = {"ohNO6lps", "AANobbMI", "jtmvUHXj"}  # forge-config-api-port, sodium, accessories
 
 # уже проверенные версии из текущего mods.lock.json остаются, пока их не просят обновить (--update):
 # иначе при каждой пересборке мод тихо переезжает на новую, не проверенную версию
@@ -46,7 +47,7 @@ if OUT.exists() and "--update" not in sys.argv:
 
 
 # версии, которые нельзя брать новыми (например, требуют Forge новее 47.4.10)
-MOD_VERSION = {"subtle-effects": "1.14.0"}
+MOD_VERSION = {}
 
 
 def wrong_game(name):

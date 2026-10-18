@@ -1,0 +1,3 @@
+##[customization]
+
+B:show_customization_overlay = 'false';

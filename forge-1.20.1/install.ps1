@@ -95,28 +95,52 @@ if ($mizuno) {
   Write-Host "  Mizuno's 16 Craft не найден (он только на CurseForge): скачай zip вручную, положи в папку forge-1.20.1 и запусти install.bat ещё раз" -ForegroundColor Yellow
 }
 
-# Overgrown Flowery GUI/Hotbar рисуют здоровье цветами, а голод каплями воды: делаем копии без icons.png (иконки будут обычные)
+# Minecraft 1.20.1 молча выкидывает из options.txt паки с чужим pack_format (старше или новее 15) и не понимает supported_formats.
+# Поэтому для каждого такого пака делаем копию с pack_format 15; у Overgrown Flowery GUI/Hotbar заодно убираем icons.png:
+# в нём здоровье нарисовано цветами, а голод каплями воды, без него иконки будут обычные
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
-function New-PackWithout($slug, $dstName, $entries) {
-  $p = $lock.resourcepacks | Where-Object { $_.slug -eq $slug } | Select-Object -First 1
-  if (-not $p) { return $null }
+$mcFormat = 15
+function Read-ZipText($entry) {
+  $sr = New-Object IO.StreamReader($entry.Open(), [Text.Encoding]::UTF8)
+  try { return $sr.ReadToEnd() } finally { $sr.Dispose() }
+}
+function Get-PackFormat($path) {
+  $z = [IO.Compression.ZipFile]::OpenRead($path)
+  try {
+    $e = $z.GetEntry('pack.mcmeta')
+    if (-not $e) { return $mcFormat }
+    $m = [regex]::Match((Read-ZipText $e), '"pack_format"\s*:\s*(\d+)')
+    if ($m.Success) { return [int]$m.Groups[1].Value } else { return $mcFormat }
+  } finally { $z.Dispose() }
+}
+function New-FixedPack($srcPath, $dstName, $drop) {
   $dst = Join-Path $rp $dstName
-  Copy-Item -LiteralPath (Join-Path $rp $p.file) -Destination $dst -Force
+  Copy-Item -LiteralPath $srcPath -Destination $dst -Force
   $zip = [IO.Compression.ZipFile]::Open($dst, [IO.Compression.ZipArchiveMode]::Update)
-  try { foreach ($e in @($zip.Entries)) { if ($entries -contains $e.FullName) { $e.Delete() } } } finally { $zip.Dispose() }
+  try {
+    foreach ($e in @($zip.Entries)) { foreach ($re in $drop) { if ($e.FullName -match $re) { $e.Delete(); break } } }
+    $m = $zip.GetEntry('pack.mcmeta')
+    if ($m) {
+      $txt = [regex]::Replace((Read-ZipText $m), '"pack_format"\s*:\s*\d+', ('"pack_format": ' + $mcFormat))
+      $m.Delete()
+      $sw = New-Object IO.StreamWriter(($zip.CreateEntry('pack.mcmeta')).Open(), $utf8)
+      try { $sw.Write($txt) } finally { $sw.Dispose() }
+    }
+  } finally { $zip.Dispose() }
   return $dstName
 }
-$iconsEntry = @('assets/minecraft/textures/gui/icons.png')
-$override = @{
-  'overgrown-flowery-gui'    = (New-PackWithout 'overgrown-flowery-gui' 'Overgrown Flowery GUI - vanilla icons.zip' $iconsEntry)
-  'overgrown-flowery-hotbar' = (New-PackWithout 'overgrown-flowery-hotbar' 'Overgrown Flowery Hotbar - vanilla icons.zip' $iconsEntry)
-}
+$iconsEntry = @('^assets/minecraft/textures/gui/icons\.png$')
+# овца целиком берётся из Mizuno (модель, текстура и лицо одного автора), а не из Fresh Animations / Mizuno x FA
+$sheepRe = @('(^|/)assets/minecraft/(optifine/cem/sheep|optifine/random/entity/sheep/|textures/entity/sheep/)')
 
 # порядок: от нижнего слоя к верхнему (последний в списке перекрывает остальные)
 $enable = @()
 if ($mizuno) { $enable += '@mizuno' }
-$enable += @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension',
-             'polaris-animation-for-punchy', 'blacksea-animation-for-punchy')
+# Mizuno x Fresh Animations заменяет модель и текстуру овцы и других мобов: вместе с Fresh Animations Extensions/Details
+# части моделей перемешиваются, и у окрашенных овец пропадает лицо. Поэтому с Mizuno ставим только базовый Fresh Animations
+$enable += @('fresh-animations')
+if (-not $mizuno) { $enable += @('fresh-animations-extensions', 'fresh-animations-details') }
+$enable += @('fa-player-extension', 'polaris-animation-for-punchy', 'blacksea-animation-for-punchy')
 if ($mizuno) { $enable += 'mizuno-x-fresh-animations' }
 $enable += @('3d-equipment', '3d-workbenches')
 $enable += @('better-lanterns', 'fancy-crops', '3d-crops')
@@ -128,10 +152,20 @@ $enable += @('fresh-flower-pots', 'just-expressions', '3d-food', 'mikapika-s-3d-
 $enable += $(if ($mizuno) { 'mizuno-better-leaves' } else { 'better-leaves' })
 $packs = @('"vanilla"')
 foreach ($s in $enable) {
-  if ($s -eq '@mizuno') { $packs += ('"file/' + $mizuno.Name + '"'); continue }
-  if ($override.ContainsKey($s)) { if ($override[$s]) { $packs += ('"file/' + $override[$s] + '"') }; continue }
-  $p = $lock.resourcepacks | Where-Object { $_.slug -eq $s } | Select-Object -First 1
-  if ($p) { $packs += ('"file/' + $p.file + '"') }
+  if ($s -eq '@mizuno') { $file = $mizuno.Name }
+  else {
+    $p = $lock.resourcepacks | Where-Object { $_.slug -eq $s } | Select-Object -First 1
+    if (-not $p) { continue }
+    $file = $p.file
+  }
+  $path = Join-Path $rp $file
+  $drop = @()
+  if ($s -eq 'overgrown-flowery-gui' -or $s -eq 'overgrown-flowery-hotbar') { $drop = $iconsEntry }
+  if ($mizuno -and ($s -eq 'fresh-animations' -or $s -eq 'mizuno-x-fresh-animations')) { $drop = $sheepRe }
+  if ((Get-PackFormat $path) -ne $mcFormat -or $drop.Count -gt 0) {
+    $file = New-FixedPack $path ([IO.Path]::GetFileNameWithoutExtension($file) + ' [1.20.1].zip') $drop
+  }
+  $packs += ('"file/' + $file + '"')
 }
 Set-Lines (Join-Path $Mc 'options.txt') ([ordered]@{ 'lang' = 'ru_ru'; 'renderDistance' = '12'; 'resourcePacks' = ('[' + ($packs -join ',') + ']') }) ':'
 New-Item -ItemType Directory -Force -Path (Join-Path $Mc 'config') | Out-Null
@@ -157,28 +191,22 @@ if ((Test-Path $bundle) -and -not (Test-Path $cfgMarker)) {
     Copy-Item -LiteralPath $f.FullName -Destination $to -Force
     $n++
   }
-  # MCA Reborn: свой скин игрока не подменяется моделью жителя (иначе сохраняется только форма, а не скин)
+  # MCA Reborn: без стартового экрана «Кто ты?» и истории (Destiny) и без редактора внешности игрока:
+  # он менял форму тела, а скин не сохранялся, и игрок становился «Стивом другой формы»
   $mca = Join-Path $cfg 'mca.json'
   if (Test-Path -LiteralPath $mca) {
     $txt = [IO.File]::ReadAllText($mca)
-    foreach ($k in @('enableVillagerPlayerModel', 'forceVillagerPlayerModel')) {
+    foreach ($k in @('enableVillagerPlayerModel', 'forceVillagerPlayerModel', 'launchIntoDestiny', 'allowFullPlayerEditor', 'allowLimitedPlayerEditor')) {
       if ($txt -match ('"' + $k + '"\s*:')) { $txt = [regex]::Replace($txt, '("' + $k + '"\s*:\s*)(true|false)', '${1}false') }
       else { $txt = [regex]::Replace($txt, '^\s*\{', ('{' + [Environment]::NewLine + '  "' + $k + '": false,'), 1) }
     }
     [IO.File]::WriteAllText($mca, $txt, $utf8)
   } else {
-    [IO.File]::WriteAllText($mca, "{`n  `"enableVillagerPlayerModel`": false,`n  `"forceVillagerPlayerModel`": false`n}`n", $utf8)
+    [IO.File]::WriteAllText($mca, "{`n  `"enableVillagerPlayerModel`": false,`n  `"forceVillagerPlayerModel`": false,`n  `"launchIntoDestiny`": false,`n  `"allowFullPlayerEditor`": false,`n  `"allowLimitedPlayerEditor`": false`n}`n", $utf8)
   }
   New-Item -ItemType File -Force -Path $cfgMarker | Out-Null
   Write-Host "  Настройки скопированы: $n файлов (прежние версии, если были, в $bak)"
 }
-# панель редактора FancyMenu сверху экрана не нужна
-$fm = Join-Path $cfg 'fancymenu'
-New-Item -ItemType Directory -Force -Path $fm | Out-Null
-if (-not (Test-Path (Join-Path $fm 'options.txt'))) {
-  [IO.File]::WriteAllLines((Join-Path $fm 'options.txt'), @("B:show_customization_overlay = 'false';"), $utf8)
-}
-
 if ($failed.Count -gt 0) {
   Write-Host "НЕ СКАЧАЛОСЬ:" -ForegroundColor Red
   $failed | ForEach-Object { Write-Host "  $_" }
