@@ -15,7 +15,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
-BUILD = "2026-10-18-r6"  # меняется при каждом изменении набора модов: установщик печатает её
+BUILD = "2026-10-18-r8"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):
@@ -40,7 +40,9 @@ IGNORE = {"ohNO6lps", "AANobbMI"}  # forge-config-api-port, sodium
 # иначе при каждой пересборке мод тихо переезжает на новую, не проверенную версию
 PINNED = set()
 if OUT.exists() and "--update" not in sys.argv:
-    PINNED = {m["file"] for m in json.loads(OUT.read_text("utf-8"))["mods"]}
+    _old = json.loads(OUT.read_text("utf-8"))
+    PINNED = {m["file"] for m in _old["mods"]}
+    PINNED |= {m["file"] for m in _old.get("resourcepacks", []) + _old.get("shaderpacks", [])}
 
 
 def wrong_game(name):
@@ -147,6 +149,10 @@ for pid in sorted(keep, key=lambda p: slug_of[p]):
 
 
 
+# у этих паков свежие версии сделаны под новые игры (формат 46+), а для 1.20.1 нужна старая версия
+PACK_VERSION = {"3d-crops": "1"}  # «Grow your blossoms», pack_format 15
+
+
 def packs(slugs, loaders, game):
     """Ресурспаки / шейдеры: последняя версия под 1.20.1 (шейдеры от версии игры не зависят)."""
     found, missing = [], []
@@ -161,7 +167,9 @@ def packs(slugs, loaders, game):
         if not vs:
             missing.append(slug)
             continue
-        v = next((x for x in vs if x["version_type"] == "release"), vs[0])
+        v = (next((x for x in vs if x["version_number"] == PACK_VERSION.get(slug)), None)
+             or next((x for x in vs if any(f["filename"] in PINNED for f in x["files"])), None)
+             or next((x for x in vs if x["version_type"] == "release"), vs[0]))
         f = next((x for x in v["files"] if x["primary"]), v["files"][0])
         found.append({"slug": slug, "version": v["version_number"], "file": f["filename"], "url": f["url"],
                       "sha512": f["hashes"]["sha512"], "size": f["size"]})

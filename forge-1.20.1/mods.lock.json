@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-18-r6",
+ "build": "2026-10-18-r8",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -1412,6 +1412,14 @@
    "size": 1425211
   },
   {
+   "slug": "morecatvariants",
+   "version": "0.0.2+1.20.1",
+   "file": "morecatvariants-forge-0.0.2+1.20.1.jar",
+   "url": "https://cdn.modrinth.com/data/cs5vil9i/versions/h08KVn9G/morecatvariants-forge-0.0.2%2B1.20.1.jar",
+   "sha512": "ce9db93f5bc48a56c13bdebe8f94074f615b16795c77799df61562d3e6a582457268c76640a7fe17a0abdde67b3ffd76acec4ce9ee1e1d260e314d46cafde552",
+   "size": 309661
+  },
+  {
    "slug": "mouse-tweaks",
    "version": "1.20.1-2.25.1-forge",
    "file": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
@@ -2452,6 +2460,110 @@
    "url": "https://cdn.modrinth.com/data/4zlIFp4J/versions/bS5PrRhs/Mandala%27s%20GUI%20Vanilla%20Crosshair.zip",
    "sha512": "2b91c14a29a270cbe09da99009b9a1ad8448f19ad56057f8f71672596ba5700c701db3a1e64897b6540411a416059574308f9341acf78c7da7d6e6f602c26070",
    "size": 8161
+  },
+  {
+   "slug": "cutegirlvillagers",
+   "version": "1.11.1_pre-26.1",
+   "file": "Melodys Cute Villagers v1.11.1_pre-26.1.zip",
+   "url": "https://cdn.modrinth.com/data/nQDsB5Zp/versions/M8leE9tP/Melodys%20Cute%20Villagers%20v1.11.1_pre-26.1.zip",
+   "sha512": "272335979e85caa127784dccfe8e22dbc20607f8e12bcdc004bebfb23fab047ef24fa61fdcca04311def9d0a23ee3b2e2ab5163bbd8e91d6fd913397cf54fe3d",
+   "size": 7614088
+  },
+  {
+   "slug": "mikapika-s-3d-mushrooms",
+   "version": "1.2.1",
+   "file": "mikapika-s-3D-mushrooms-v1.2.1.zip",
+   "url": "https://cdn.modrinth.com/data/bA5jCz7D/versions/xw0qKMy0/mikapika-s-3D-mushrooms-v1.2.1.zip",
+   "sha512": "9c1db07febb206f9fc128fa7a4aca4fa2725752c5fb54cfbdbf58def7141e696f178161794bec82399b1568c970b68b20b33f189527a012e663664dc7c80d95f",
+   "size": 176849
+  },
+  {
+   "slug": "overgrown-flowery-gui",
+   "version": "1.5",
+   "file": "Overgrown Flowery GUI.zip",
+   "url": "https://cdn.modrinth.com/data/IUJGdLaw/versions/qr5hrNcB/Overgrown%20Flowery%20GUI.zip",
+   "sha512": "23cf7c82b9aa219551b95c30a0e63878b79a3d63a3afa36483f82b37f215af913d37ec5dda2b5f86fddcf8dadac3f1bbd89ed78769e0ad1a70794640537222d2",
+   "size": 888615
+  },
+  {
+   "slug": "overgrown-flowery-hotbar",
+   "version": "1.2.2",
+   "file": "Overgrown Flowery Hotbar.zip",
+   "url": "https://cdn.modrinth.com/data/coUTm32c/versions/UJ9GM26C/Overgrown%20Flowery%20Hotbar.zip",
+   "sha512": "87b0735ae1366adf0e1ecb6b22e81a0399371f4e3a299a24eb77eaec163c701e3811f898a240288a92007a4e0803c5161fb5c7fb22b33a51a3d77994d14d019a",
+   "size": 76699
+  },
+  {
+   "slug": "iron-girl",
+   "version": "v2.0",
+   "file": "Iron Girl v2.0.zip",
+   "url": "https://cdn.modrinth.com/data/DzFZbAtt/versions/crUqRz5F/Iron%20Girl%20v2.0.zip",
+   "sha512": "4009fefd238f8999ecbee703a9ca374e078e7ec913b721d9b4bdea28eeb0d0af0f7a62b1b219ed772176e7dec7addb0c0912e0ca3876db0f11d3d7005190b125",
+   "size": 191774
+  },
+  {
+   "slug": "3d-crops",
+   "version": "1",
+   "file": "crops-3d.zip",
+   "url": "https://cdn.modrinth.com/data/PgpTtNoI/versions/zA35k5Vk/crops-3d.zip",
+   "sha512": "8ef5e0e9237ceca4517b0c72edbc383c6c4e834cd5532be6e7b4ac9b3dad2f6793975236e8b2e5c60d667b6b577227dff8fa3804240b11eaa6ab43672ebba525",
+   "size": 482938
+  },
+  {
+   "slug": "mizuno-better-leaves",
+   "version": "2.4",
+   "file": "Mizuno Better Flowers Leaves 2.4.zip",
+   "url": "https://cdn.modrinth.com/data/aLVbJPY1/versions/IW6CrWNO/Mizuno%20Better%20Flowers%20Leaves%202.4.zip",
+   "sha512": "837f1da95f80d1213a86e0371c808bbcef2bf79d0219aec8d43971b0c0fe27e0e1ac22412f6d1241734f2ad0a036233659edba4887321800fe87cd1414ba0472",
+   "size": 1685939
+  },
+  {
+   "slug": "mizuno-x-fresh-animations",
+   "version": "4.5",
+   "file": "Mizuno x Fresh Animations 4.5.zip",
+   "url": "https://cdn.modrinth.com/data/DCF67rmr/versions/A1H5RhS8/Mizuno%20x%20Fresh%20Animations%204.5.zip",
+   "sha512": "fe42989a00748fe281594865ff73f3d6c3818fa6735c1dedb79e34e2bebe38a1187f58b87e16635cdf73b26662055f38a99ed30da3ffad406ac3e94a166455c3",
+   "size": 769490
+  },
+  {
+   "slug": "mizuno-connected-texture",
+   "version": "2.7",
+   "file": "Mizuno Connected Texture 2.7.zip",
+   "url": "https://cdn.modrinth.com/data/gXk3JSUR/versions/7vgHCgbj/Mizuno%20Connected%20Texture%202.7.zip",
+   "sha512": "cc920aa84a8f5053c3a768283770e5cfc1128ccc8bb5842b87442d644967b24b23c0119bf7fbb5128e6f479895c231ad086041f4e90a845d1664063642526c40",
+   "size": 573029
+  },
+  {
+   "slug": "mizunos-connected-glass",
+   "version": "1.5",
+   "file": "Mizuno's Connected Glass 1.5.zip",
+   "url": "https://cdn.modrinth.com/data/qbZmMHUH/versions/bOAJQdTF/Mizuno%27s%20Connected%20Glass%201.5.zip",
+   "sha512": "8f3e8c4b3ffc7976446c8a0d2395efd743aba3703731fee3c9a0ac94ffd400509c3161793fb394c820a21b1a711b76f5ce0a3d298d7cb7b01b9444f3984f60e3",
+   "size": 114662
+  },
+  {
+   "slug": "mizunos-better-grass",
+   "version": "1.4",
+   "file": "Mizuno's Better Grass 1.4.zip",
+   "url": "https://cdn.modrinth.com/data/HcZFw2yC/versions/cvIRIqjs/Mizuno%27s%20Better%20Grass%201.4.zip",
+   "sha512": "5c946973887bb6a6f7e7f877ef419f554282fb9b499c2cd81d7692082713d4f5398c53ebf47e5bf2469bb530e972eda5686a527f3bc55378b400fe31ccb9b5b9",
+   "size": 11955
+  },
+  {
+   "slug": "mizunos-better-crops",
+   "version": "1.2",
+   "file": "Mizuno's Better Crops 1.2.zip",
+   "url": "https://cdn.modrinth.com/data/hAUAjkzE/versions/GQjcikIZ/Mizuno%27s%20Better%20Crops%201.2.zip",
+   "sha512": "ceaf760249f2b919f12a9f128ab06ed31bd1465e203b505509c53475c671434c18f3af94284868abcd6a4f095f9cabccbc5b5324d8fb40160209f51e428bd0ce",
+   "size": 75729
+  },
+  {
+   "slug": "3d-food",
+   "version": "1",
+   "file": "3D FOOD.zip",
+   "url": "https://cdn.modrinth.com/data/P68E97Zb/versions/5eYW0lNd/3D%20FOOD.zip",
+   "sha512": "54a2e252b130696fdd617561c23f82743a92fe72d60ef7e83ba0f15432748db293733dbcdab466b481c4f679839986b6998df8c06a2228eb16e51cefa0f654a2",
+   "size": 318512
   }
  ],
  "shaderpacks": [

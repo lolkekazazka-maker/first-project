@@ -168,6 +168,7 @@
   "modpack-update-checker",
   "moogs-voyager-structures",
   "moonlight",
+  "morecatvariants",
   "mouse-tweaks",
   "mowzies-mobs",
   "mutant-monsters",
@@ -296,7 +297,20 @@
   "fresh-waystones-texture",
   "enchantment-descriptions-compat",
   "mandalas-gui-dark-mode",
-  "mandalas-gui-vanilla-crosshair"
+  "mandalas-gui-vanilla-crosshair",
+  "cutegirlvillagers",
+  "mikapika-s-3d-mushrooms",
+  "overgrown-flowery-gui",
+  "overgrown-flowery-hotbar",
+  "iron-girl",
+  "3d-crops",
+  "mizuno-better-leaves",
+  "mizuno-x-fresh-animations",
+  "mizuno-connected-texture",
+  "mizunos-connected-glass",
+  "mizunos-better-grass",
+  "mizunos-better-crops",
+  "3d-food"
  ],
  "shaderpacks": [
   "complementary-unbound"

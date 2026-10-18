@@ -82,10 +82,34 @@ function Set-Lines($path, $pairs, $sep) {
   [IO.File]::WriteAllLines($path, $lines, $utf8)
 }
 
-$enable = @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension', 'better-lanterns',
-            'fancy-crops', 'rays-3d-ladders', 'rays-3d-rails', 'simple-grass-flowers', 'fresh-flower-pots', 'just-expressions', 'better-leaves')
+# Mizuno's 16 Craft есть только на CurseForge, скачать автоматически нельзя: если файл лежит рядом с install.bat
+# (в папке forge-1.20.1) или уже в resourcepacks, подключаем его и дополнения к нему
+$rp = Join-Path $Mc 'resourcepacks'
+$mizunoRe = '(?i)mizuno.*16.*craft'
+$mizunoSkip = '(?i)addon|better|connected|fresh|variants|crops|grass|glass|eating|tinker|modern|tweaks'
+$mizuno = @(Get-ChildItem $PSScriptRoot, $rp -Filter *.zip -ErrorAction SilentlyContinue | Where-Object { $_.Name -match $mizunoRe -and $_.Name -notmatch $mizunoSkip }) | Select-Object -First 1
+if ($mizuno) {
+  if ($mizuno.DirectoryName -ne $rp) { Copy-Item -LiteralPath $mizuno.FullName -Destination $rp -Force }
+  Write-Host "  Mizuno's 16 Craft найден: $($mizuno.Name)"
+} else {
+  Write-Host "  Mizuno's 16 Craft не найден (он только на CurseForge): скачай zip вручную, положи в папку forge-1.20.1 и запусти install.bat ещё раз" -ForegroundColor Yellow
+}
+
+# порядок: от нижнего слоя к верхнему (последний в списке перекрывает остальные)
+$enable = @()
+if ($mizuno) { $enable += '@mizuno' }
+$enable += @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension')
+if ($mizuno) { $enable += 'mizuno-x-fresh-animations' }
+$enable += @('better-lanterns', 'fancy-crops', '3d-crops')
+if ($mizuno) { $enable += 'mizunos-better-crops' }
+$enable += @('rays-3d-ladders', 'rays-3d-rails', 'simple-grass-flowers')
+if ($mizuno) { $enable += @('mizunos-better-grass', 'mizuno-connected-texture', 'mizunos-connected-glass') }
+$enable += @('fresh-flower-pots', 'just-expressions', '3d-food', 'mikapika-s-3d-mushrooms', 'cutegirlvillagers', 'iron-girl',
+             'overgrown-flowery-gui', 'overgrown-flowery-hotbar')
+$enable += $(if ($mizuno) { 'mizuno-better-leaves' } else { 'better-leaves' })
 $packs = @('"vanilla"')
 foreach ($s in $enable) {
+  if ($s -eq '@mizuno') { $packs += ('"file/' + $mizuno.Name + '"'); continue }
   $p = $lock.resourcepacks | Where-Object { $_.slug -eq $s } | Select-Object -First 1
   if ($p) { $packs += ('"file/' + $p.file + '"') }
 }
