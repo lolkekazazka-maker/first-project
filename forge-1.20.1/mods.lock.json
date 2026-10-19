@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-19-r14",
+ "build": "2026-10-19-r15",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -714,14 +714,6 @@
    "url": "https://cdn.modrinth.com/data/fnAffV0n/versions/e2oirgc2/deeperdarker-forge-1.20.1-1.3.3.jar",
    "sha512": "fcf08e2d1bfb0bf40120f426826b25e6d483a83cf7f04d221798bcc8cb46cedb9065dc5c0d33213f5c708cebd0081aba4ca7265fcd96c76b16d2f99bd4297aae",
    "size": 17844266
-  },
-  {
-   "slug": "default-options",
-   "version": "18.0.5+forge-1.20.1",
-   "file": "defaultoptions-forge-1.20.1-18.0.5.jar",
-   "url": "https://cdn.modrinth.com/data/WEg59z5b/versions/AVz3mvZZ/defaultoptions-forge-1.20.1-18.0.5.jar",
-   "sha512": "703f2a710ab099fadaaeb96a02fd381ef8eda2f60bb80537c2e7855fc505bf36bbff3e1df216bc85fd60841bb548c3785314fdcef39d12c2ebfabb224b066e0d",
-   "size": 101393
   },
   {
    "slug": "delete-worlds-to-trash",
@@ -1466,6 +1458,14 @@
    "url": "https://cdn.modrinth.com/data/sNJAIjUm/versions/xswBYA4q/jewelry-forge-2.4.0%2B1.20.1.jar",
    "sha512": "ce41e9e8eb9975b4fbd0f4286340f4f2f37ff41d8c24618cbc7144afe4bc034ffc9556fa3141dd5791fe409f37b6004fef81d66e8d507a26fdd8bf996abec268",
    "size": 508734
+  },
+  {
+   "slug": "journeymap",
+   "version": "1.20.1-6.0.7+forge",
+   "file": "journeymap-forge-1.20.1-6.0.7.jar",
+   "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/HWDC99DO/journeymap-forge-1.20.1-6.0.7.jar",
+   "sha512": "93f8514bb8bb24f31b67991940a2075ef9889e3eff2e57a6c1bc98828e3315c37d96c025e73318a2209602bfea71a0b3d2fd415bb347076b0c8a1daafae11746",
+   "size": 4353808
   },
   {
    "slug": "just-enough-professions-jep",
@@ -2484,14 +2484,6 @@
    "size": 123109
   },
   {
-   "slug": "simple-voice-chat",
-   "version": "forge-1.20.1-2.6.24",
-   "file": "voicechat-forge-1.20.1-2.6.24.jar",
-   "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/lWvbAZ3P/voicechat-forge-1.20.1-2.6.24.jar",
-   "sha512": "a38c87c5030a6f7a3d4672f3a4d48c29fd7470999493d3204077313ce46f00f32cb4f8657a50763f66fb1cf817a643ccc3b2496b5c67e118fb827569c2acdd69",
-   "size": 4939841
-  },
-  {
    "slug": "skeleton-ai-fix",
    "version": "v20.1.1-1.20.1-Forge",
    "file": "SkeletonAIFix-v20.1.1-1.20.1-Forge.jar",
@@ -2900,30 +2892,6 @@
    "size": 4525440
   },
   {
-   "slug": "xaeroplus",
-   "version": "2.37.0+forge-1.20.1",
-   "file": "XaeroPlus-2.37.0+forge-1.20.1-WM1.47.0-MM26.6.0.jar",
-   "url": "https://cdn.modrinth.com/data/EnPUzSTg/versions/lF76lQkB/XaeroPlus-2.37.0%2Bforge-1.20.1-WM1.47.0-MM26.6.0.jar",
-   "sha512": "6a712285d5a77645075c6381a67ae85f8ba69b5b7115cdb8a9ed36bf78dcb8366756c63725b838e13ea929c585a219ff0a1d92c21fc92970442d02eb8b868663",
-   "size": 8772582
-  },
-  {
-   "slug": "xaeros-minimap",
-   "version": "forge-1.20.1-26.6.0",
-   "file": "xaerominimap-forge-1.20.1-26.6.0.jar",
-   "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/dB6E0CY9/xaerominimap-forge-1.20.1-26.6.0.jar",
-   "sha512": "9c566a2b9537c37b438a38a060cc251187e6643e96522466c50c90c7fa747a4e4edc3a5fff0f31fb042e1eeefd047df2a57d1bbe6a3d741837cef8cdb6426a25",
-   "size": 2196194
-  },
-  {
-   "slug": "xaeros-world-map",
-   "version": "forge-1.20.1-1.47.0",
-   "file": "xaeroworldmap-forge-1.20.1-1.47.0.jar",
-   "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/KtEupJvB/xaeroworldmap-forge-1.20.1-1.47.0.jar",
-   "sha512": "a8c775ad1645cd3dc922072955fff65f7874bd6a1c99e6a61d370e7a9a5880e450ba61dafa6c719ad8f719fcff3b17ec6124b7f47288009547b4b136d81e5657",
-   "size": 1429424
-  },
-  {
    "slug": "xp-tome",
    "version": "v2.2.1",
    "file": "xptome-1.20.1-2.2.1.jar",
@@ -3140,14 +3108,6 @@
    "url": "https://cdn.modrinth.com/data/vPaHlT2U/versions/ZNXAMRW4/JustExpressions_v1.2.1.zip",
    "sha512": "f20f3960caf66863dc7fd99f2cb1a32d574c1861e2b5b7ebb8551b1072460d834c8d680359e2c231888fb324519f350eb7f22c5ae955b04831db87564696a42d",
    "size": 262755
-  },
-  {
-   "slug": "icon-xaeros",
-   "version": "1.22",
-   "file": "Icon Xaero's 1.22.zip",
-   "url": "https://cdn.modrinth.com/data/LWGq2eg6/versions/OC90EEmJ/Icon%20Xaero%27s%201.22.zip",
-   "sha512": "98b15343928dfb8f42b72eeacb350b388c1781d0f668a74e79dc365e8f780515c073221261fc1051dbf8ca1516d7f2bcc11e45f4ae323369a2a1e3fe4e71ca3d",
-   "size": 18866675
   },
   {
    "slug": "beautiful-enchanted-books",

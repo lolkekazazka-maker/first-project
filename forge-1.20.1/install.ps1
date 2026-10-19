@@ -167,7 +167,12 @@ foreach ($s in $enable) {
   }
   $packs += ('"file/' + $file + '"')
 }
-Set-Lines (Join-Path $Mc 'options.txt') ([ordered]@{ 'lang' = 'ru_ru'; 'renderDistance' = '12'; 'resourcePacks' = ('[' + ($packs -join ',') + ']') }) ':'
+# карта JourneyMap на клавишу M (по умолчанию J; J освобождаем, чтобы она не прятала миникарту)
+# без строки version Minecraft считает options.txt очень старым, не понимает имя клавиши и сбрасывает все настройки
+$optPath = Join-Path $Mc 'options.txt'
+$opts = [ordered]@{ 'lang' = 'ru_ru'; 'renderDistance' = '12'; 'key_key.journeymap.map_toggle_alt' = 'key.keyboard.m'; 'key_key.journeymap.minimap_toggle_alt' = 'key.keyboard.unknown'; 'resourcePacks' = ('[' + ($packs -join ',') + ']') }
+if (-not ((Test-Path -LiteralPath $optPath) -and (Select-String -LiteralPath $optPath -Pattern '^version:' -Quiet))) { $opts['version'] = '3465' }
+Set-Lines $optPath $opts ':'
 New-Item -ItemType Directory -Force -Path (Join-Path $Mc 'config') | Out-Null
 $cfg = Join-Path $Mc 'config'
 Set-Lines (Join-Path $cfg 'oculus.properties') ([ordered]@{ 'enableShaders' = 'true'; 'shaderPack' = @($lock.shaderpacks)[0].file }) '='

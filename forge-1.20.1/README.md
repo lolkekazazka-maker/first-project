@@ -2,7 +2,7 @@
 
 Сборка для **Minecraft 1.20.1 + Forge 47.4.10**: Dynamic Trees + Better Leaves, Distant Horizons, Embeddium + Oculus,
 шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport, Corpse, кровь, Neat, MCA Reborn, Kaleidoscope, Alex's Mobs/Caves и многое другое
-(около 380 модов, 35 ресурспаков, из них 26 включаются автоматически).
+(около 376 модов, 34 ресурспака, из них 26 включаются автоматически).
 
 ## Установка (Windows + TLauncher)
 
@@ -42,10 +42,14 @@ Just Expressions, 3D FOOD, 3D-грибы, Melody's Cute Girl Villagers, Iron Gir
 - **Distant Horizons**: стартовые предупреждения и ошибки убраны из чата (остаются в логе).
 - **Alex's Caves**: отключены `biome_sky_overrides`, `biome_sky_fog_overrides`, `biome_ambient_light_coloring`, `radiation_glow_effect`, `sugar_rush_saturation_effect` — Distant Horizons просит их выключить.
 - **MCA Reborn**: выключены стартовый экран «Кто ты?», история Destiny и редактор внешности игрока. Он менял форму тела, а скин не сохранялся, и получался «Стив другой формы».
-- **Adaptive Performance Tweaks, Advancement Plaques, TrashSlot, Xaero** — настройки из старой сборки.
+- **Adaptive Performance Tweaks, Advancement Plaques, TrashSlot** — настройки из старой сборки.
+- **Карта**: JourneyMap, полноэкранная карта на клавише **M** (установщик прописывает клавишу в `options.txt`, J освобождена), миникарта на экране.
+- **options.txt**: если в нём нет строки `version`, установщик её добавляет: без неё Minecraft не понимает имена клавиш и сбрасывает все настройки (язык, ресурспаки).
 - **FancyMenu**: панель редактора сверху экрана скрыта. **Load My F***ing Tags**: сообщение в чат отключено.
 
 ## Убрано и почему
+
+Xaero's Minimap/World Map/XaeroPlus (у тебя карта не показывала ничего; вместо них JourneyMap), Simple Voice Chat (по просьбе: при входе в мир показывал окно настройки микрофона), Default Options (не нужен),
 
 Visual Workbench (оставляет предметы в верстаке), Actually 3D Blocks & Items и Actually 3D Equipment (по просьбе; у Equipment модели палки, топоров и лопат собраны под новый формат, 1.20.1 их не грузит, и вместо предметов фиолетовая «шашечка»), Physics Mod (по просьбе), Accessories (ошибка миксина на Forge, нужен только Immersive Lanterns как необязательный),
 Chunks Fade In (ломает Distant Horizons: рендерер не привязывается, в чате «ClientServer level loading failed»), Oh The Biomes We've Gone (цикл порядка фич с Climate Rivers: вылет при создании мира),
@@ -56,7 +60,7 @@ Subtle Effects (нужен Forge новее 47.4.10), Feature Recycler, Chunky, 
 - Страшное: Goat Man, Stalker, Hydra, Weather2 (торнадо), Twilight Forest. Остались ранее выбранные Born in Chaos, Mutant Monsters, Deeper and Darker, Cataclysm.
 - Нет под Forge 1.20.1 на Modrinth (только CurseForge или другая версия): FTB Quests/Library/Teams/Filter System, Framework, Backpacked, Goblin Traders, Farsight, Cupboard, Connectivity,
   Chunk Sending, Smooth Chunk, Fast Async World Save, Memory Settings, Recipe Essentials, Structure Essentials, Loot Integrations, Client Crafting, Biome Music, alltheleaks.
-- Конфликтуют с тем, что в сборке: Falling Tree, BetterFoliage (Dynamic Trees и Better Leaves), Golem Overhaul (Iron Girl), Plasmo Voice (Simple Voice Chat), Your Grave Is Dead (Corpse),
+- Конфликтуют с тем, что в сборке: Falling Tree, BetterFoliage (Dynamic Trees и Better Leaves), Golem Overhaul (Iron Girl), Plasmo Voice (голосовой чат убран по просьбе), Your Grave Is Dead (Corpse),
   Sodium/Iris/Lithium (вместо них Embeddium, Oculus, Radium), Connector и Continuity.
 
 ## Обновление с прошлой версии
