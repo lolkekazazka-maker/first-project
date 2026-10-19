@@ -2,7 +2,7 @@
 
 Сборка для **Minecraft 1.20.1 + Forge 47.4.10**: Dynamic Trees + Better Leaves, Distant Horizons, Embeddium + Oculus,
 шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport, Corpse, кровь, Neat, Kaleidoscope, Alex's Mobs/Caves и многое другое
-(383 мода, 32 ресурспака, из них 26 включаются автоматически).
+(384 мода, 32 ресурспака, из них 26 включаются автоматически).
 
 ## Установка (Windows + TLauncher)
 
@@ -39,6 +39,12 @@ Overgrown Flowery GUI и Hotbar, Better Leaves.
   Из-за этого палка, топоры, мотыги и лопаты были фиолетовыми «шашечками». В копии установщик округляет углы до допустимых (части палки и топоров слегка выпрямляются).
   В инвентаре эти предметы тоже показываются в 3D: выбрать вид по контексту (3D в руке, 2D в слоте) в 1.20.1 без модов нельзя.
 - Melody's Cute Girl Villagers и Iron Girl работают через Entity Model Features и Entity Texture Features (оба в сборке).
+
+## Свой скин (CustomSkinLoader)
+
+В TLauncher игра на кастомной версии Forge сама свой скин не получает, и ставится скин по умолчанию («какой-то чувак»). CustomSkinLoader сам ищет скин по нику:
+в Mojang, TLauncher, Ely.by, LittleSkin и в локальной папке. Если скин не появился, положи PNG 64×64 в `%appdata%\.minecraft\CustomSkinLoader\LocalSkin\skins\ТВОЙ_НИК.png`
+(плащ в `...\capes\ТВОЙ_НИК.png`) и перезапусти игру. Ник должен совпадать с тем, под которым заходишь в TLauncher.
 
 ## Мод на грудь для скина (Female Gender Mod)
 

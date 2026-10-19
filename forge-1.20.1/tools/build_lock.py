@@ -15,7 +15,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
-BUILD = "2026-10-19-r19"  # меняется при каждом изменении набора модов: установщик печатает её
+BUILD = "2026-10-19-r20"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):

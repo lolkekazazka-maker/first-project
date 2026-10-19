@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-19-r19",
+ "build": "2026-10-19-r20",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -706,6 +706,14 @@
    "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar",
    "sha512": "1373f95fd111c977db2f6adcef8e4eb486a2d926a3e17374692dee4ac3d65857de6446c16922b531aa5ace2c23c666a7fcc28c720b2917c1e04808d15648ba87",
    "size": 398066
+  },
+  {
+   "slug": "customskinloader",
+   "version": "15.1-Universal",
+   "file": "CustomSkinLoader_Universal-15.1.jar",
+   "url": "https://cdn.modrinth.com/data/idMHQ4n2/versions/yyYvYfZI/CustomSkinLoader_Universal-15.1.jar",
+   "sha512": "1c3ee525200d3dff69b19d4667f0c40155d0a8eedcfed4749ec8883fcf169bcf1123942a87ca73ecf46002fded35ec653bb902b0d3900c42f4eab0323793daf2",
+   "size": 222917
   },
   {
    "slug": "cut-through",
