@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-18-r13",
+ "build": "2026-10-19-r14",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -3300,14 +3300,6 @@
    "url": "https://cdn.modrinth.com/data/P68E97Zb/versions/5eYW0lNd/3D%20FOOD.zip",
    "sha512": "54a2e252b130696fdd617561c23f82743a92fe72d60ef7e83ba0f15432748db293733dbcdab466b481c4f679839986b6998df8c06a2228eb16e51cefa0f654a2",
    "size": 318512
-  },
-  {
-   "slug": "3d-equipment",
-   "version": "r1.0-beta1",
-   "file": "§f§lActually §6§l3D §bEquipment!§7.zip",
-   "url": "https://cdn.modrinth.com/data/GhyYdw4D/versions/VWdKm3Nx/%C2%A7f%C2%A7lActually%20%C2%A76%C2%A7l3D%20%C2%A7bEquipment%21%C2%A77.zip",
-   "sha512": "30b9a7cdf61e7e08b895401b608f8112b3a7f3de3026132696b43d2516e0a0a07a62eb9c6c4e28c9948e10fd32e1cebf6cc5112c47b971ac6197e0699e8db4bf",
-   "size": 534279
   },
   {
    "slug": "3d-workbenches",

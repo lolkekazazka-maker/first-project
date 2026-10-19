@@ -2,7 +2,7 @@
 
 Сборка для **Minecraft 1.20.1 + Forge 47.4.10**: Dynamic Trees + Better Leaves, Distant Horizons, Embeddium + Oculus,
 шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport, Corpse, кровь, Neat, MCA Reborn, Kaleidoscope, Alex's Mobs/Caves и многое другое
-(около 380 модов, 36 ресурспаков, из них 29 включаются автоматически).
+(около 380 модов, 35 ресурспаков, из них 26 включаются автоматически).
 
 ## Установка (Windows + TLauncher)
 
@@ -27,7 +27,7 @@
 ## Ресурспаки
 
 Порядок от нижнего слоя к верхнему: Mizuno's 16 Craft (лежит рядом с `install.bat`, условия автора в `readme.txt` внутри zip), Fresh Animations,
-Fresh Animations Player, анимации оружия для Punchy (Polaris и Blacksea), Mizuno x Fresh Animations, 3D-инструменты и верстаки (Actually 3D),
+Fresh Animations Player, анимации оружия для Punchy (Polaris и Blacksea), Mizuno x Fresh Animations, 3D-верстаки (Actually 3D Workbenches),
 Better Lanterns, Fancy Crops, 3D Crops, 3D-лестницы и рельсы, Simple Grass Flowers, дополнения Mizuno (трава, стекло, посевы), Fresh Flower Pots,
 Just Expressions, 3D FOOD, 3D-грибы, Melody's Cute Girl Villagers, Iron Girl, Overgrown Flowery GUI и Hotbar, листва Mizuno Better Leaves.
 
@@ -47,7 +47,7 @@ Just Expressions, 3D FOOD, 3D-грибы, Melody's Cute Girl Villagers, Iron Gir
 
 ## Убрано и почему
 
-Visual Workbench (оставляет предметы в верстаке), Actually 3D Blocks & Items (по просьбе), Physics Mod (по просьбе), Accessories (ошибка миксина на Forge, нужен только Immersive Lanterns как необязательный),
+Visual Workbench (оставляет предметы в верстаке), Actually 3D Blocks & Items и Actually 3D Equipment (по просьбе; у Equipment модели палки, топоров и лопат собраны под новый формат, 1.20.1 их не грузит, и вместо предметов фиолетовая «шашечка»), Physics Mod (по просьбе), Accessories (ошибка миксина на Forge, нужен только Immersive Lanterns как необязательный),
 Chunks Fade In (ломает Distant Horizons: рендерер не привязывается, в чате «ClientServer level loading failed»), Oh The Biomes We've Gone (цикл порядка фич с Climate Rivers: вылет при создании мира),
 Subtle Effects (нужен Forge новее 47.4.10), Feature Recycler, Chunky, Distraction Free Recipes, ImmediatelyFast.
 
