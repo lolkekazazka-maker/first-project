@@ -2,7 +2,7 @@
 
 Сборка для **Minecraft 1.20.1 + Forge 47.4.10**: Dynamic Trees + Better Leaves, Distant Horizons, Embeddium + Oculus,
 шейдеры Complementary Unbound + Euphoria Patches, Vanilla Backport, Corpse, кровь, Neat, Kaleidoscope, Alex's Mobs/Caves и многое другое
-(391 мод, 32 ресурспака, из них 26 включаются автоматически).
+(383 мода, 32 ресурспака, из них 26 включаются автоматически).
 
 ## Установка (Windows + TLauncher)
 
@@ -57,6 +57,10 @@ Wildfire's Female Gender Mod добавляет к любому скину (в �
 - **Загрузка модов в один поток** (`config/fml.toml`, `maxThreads = 1`): при параллельной загрузке один раз из десяти Quark падал на старте (гонка потоков в его библиотеке Zeta), а после такого вылета Minecraft сбрасывал список ресурспаков. Время загрузки от этого не выросло.
 - **FancyMenu**: панель редактора и приветственное окно скрыты. **Load My F***ing Tags**: сообщение в чат отключено.
 
+## Ускорение запуска
+
+Ksyxis (быстрее загрузка мира) и Smooth Boot (Reloaded) (меньше фризов при старте) добавлены по просьбе.
+
 ## Взято с CurseForge (на Modrinth нет)
 
 FTB Quests, FTB Library, FTB Teams, FTB Filter System, Framework, Goblin Traders, Cupboard, Chunk Sending, Smooth Chunk Save, Fast Async World Save,
@@ -67,6 +71,9 @@ Memory Settings, Recipe Essentials, Structure Essentials, Loot Integrations, Cli
 - **Mizuno's 16 Craft и все дополнения Mizuno** (по просьбе).
 - **MCA Reborn**: подменял всех жителей своими «людьми» с моделью игрока, поэтому Melody's Cute Girl Villagers не применялся.
 - **Better Animations Collection**: подменял модели жителей и железного голема своими (получались житель с кусками в воздухе и обычный голем), а Fresh Animations, Melody's и Iron Girl работают через те же модели.
+- **Guard Villagers** (стражники в броне) и торговцы из модов RPG Series: **Rogues & Warriors, Paladins & Priests, Wizards, Archers, Jewelry** (по просьбе: чтобы все жители были девушками из Melody's; для этих профессий и стражников в паке нет моделей). Вместе с ними ушли их библиотеки Structure Pool API и Armor Model API. Arsenal (оружие из RPG Series) остался.
+- **Inventory HUD+** (по просьбе).
+- **Fastload**: правит тот же метод запуска мира, что и добавленный по просьбе Ksyxis, два мода сразу конфликтуют миксинами.
 - **Backpacked**: третий рюкзак (уже есть Sophisticated Backpacks и Traveler's Backpack), все три открываются на B.
 - **Connectivity** (дублирует Packet Fixer, при запуске конфликт миксинов) и **AllTheLeaks** (дублирует MemoryLeakFix, часть исправлений для EMF не грузится и пишет ошибку в лог).
 - Xaero's Minimap/World Map/XaeroPlus (вместо них JourneyMap), Simple Voice Chat, Default Options, Visual Workbench (оставляет предметы в верстаке),

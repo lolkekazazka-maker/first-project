@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-19-r18",
+ "build": "2026-10-19-r19",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -148,28 +148,12 @@
    "size": 47428
   },
   {
-   "slug": "archers",
-   "version": "3.1.4+1.20.1-forge",
-   "file": "archers-forge-3.1.4+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/QgooUXAJ/versions/soTw31yz/archers-forge-3.1.4%2B1.20.1.jar",
-   "sha512": "083da3d2c5367fdf1475f75008e8635e759fccefdb2545bbb1cce89394f2a75b70f7f4fe391946d7870d0407286d73613dd630f3dffc23fa6df71727c897e5cd",
-   "size": 993040
-  },
-  {
    "slug": "architectury-api",
    "version": "9.2.14+forge",
    "file": "architectury-9.2.14-forge.jar",
    "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1MKTLiiG/architectury-9.2.14-forge.jar",
    "sha512": "cf67f2050cafa00f0bee42e6d7bef77fdb808ac4f71742f7b4d6d5c1e6ffb49561a5a252f332d2b78a9767bdb5faa284611790dba303fbdc736ae36d794f61c7",
    "size": 580602
-  },
-  {
-   "slug": "armor-model-api",
-   "version": "1.0.0+1.20.1-forge",
-   "file": "armor_model_api-forge-1.0.0+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/onz2NN2n/versions/HzpM9IVR/armor_model_api-forge-1.0.0%2B1.20.1.jar",
-   "sha512": "d8ae7bf65e4673e3412521ad5b8e7fd1e39857c59eab8529b796ec62f8196cb706ffcf6e7a0dd7d936dfc66cd89c0ba9fa8abf2dd3130c3bbb5914e40824a1ff",
-   "size": 86757
   },
   {
    "slug": "arsenal-rpg-series",
@@ -1152,14 +1136,6 @@
    "size": 309400
   },
   {
-   "slug": "fastload",
-   "version": "mc1.20.1-3.4.0",
-   "file": "Fastload-Reforged-mc1.20.1-3.4.0.jar",
-   "url": "https://cdn.modrinth.com/data/kCpssoSb/versions/5caSj7kt/Fastload-Reforged-mc1.20.1-3.4.0.jar",
-   "sha512": "b8be6ed0bef707c7c34d84049eb68313a5c787f6e9c9a88fb94daed6bccfedc6c181a1fca431f53b6e8ac03c7baf7653414b5a5792cab6b500c6d66502489431",
-   "size": 66989
-  },
-  {
    "slug": "fastquit-forge",
    "version": "3.0.1+1.20.1forge",
    "file": "Fastquit-3.0.1+1.20.1forge.jar",
@@ -1392,14 +1368,6 @@
    "size": 148842
   },
   {
-   "slug": "guard-villagers",
-   "version": "1.6.19",
-   "file": "guardvillagers-1.20.1-1.6.19.jar",
-   "url": "https://cdn.modrinth.com/data/H1sntfo8/versions/zCzBkn3R/guardvillagers-1.20.1-1.6.19.jar",
-   "sha512": "8c4aa8a0b9ea3611ebe479b42bf642fd664d34d30574d9dfe86f9d498a81ca07b889f6618f77def94625a3fca78a6d992066e3cf519587c2c09d3f599d8c3ef7",
-   "size": 204767
-  },
-  {
    "slug": "handcrafted",
    "version": "3.0.6",
    "file": "handcrafted-forge-1.20.1-3.0.6.jar",
@@ -1512,14 +1480,6 @@
    "size": 1457354
   },
   {
-   "slug": "inventoryhudplus",
-   "version": "3.4.26",
-   "file": "inventoryhud.forge.1.20.1-3.4.26.jar",
-   "url": "https://cdn.modrinth.com/data/Kp2uclYl/versions/xnDlNpNS/inventoryhud.forge.1.20.1-3.4.26.jar",
-   "sha512": "69698f4b505d070b097fab6b7bde508f8de138137f5825ed6601601a02b3a8876a4ad2f93f25667a6579367dd20dc3a5ae0465a4957bd5740a12668d6b3ad725",
-   "size": 238088
-  },
-  {
    "slug": "it-takes-a-pillage",
    "version": "1.0.3",
    "file": "takesapillage-1.0.3-1.20.1.jar",
@@ -1582,14 +1542,6 @@
    "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/gwEKpCDU/jei-1.20.1-forge-15.71.0.224.jar",
    "sha512": "b81b62e7495bab29cd5be20a6aa253b24d56d4743d1bcdb24215996b64b4989823b04f7cf055cde8c293e1bf9581027d29179f73e312ed8bee582003fb21660c",
    "size": 2393438
-  },
-  {
-   "slug": "jewelry",
-   "version": "2.4.0+1.20.1-forge",
-   "file": "jewelry-forge-2.4.0+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/sNJAIjUm/versions/xswBYA4q/jewelry-forge-2.4.0%2B1.20.1.jar",
-   "sha512": "ce41e9e8eb9975b4fbd0f4286340f4f2f37ff41d8c24618cbc7144afe4bc034ffc9556fa3141dd5791fe409f37b6004fef81d66e8d507a26fdd8bf996abec268",
-   "size": 508734
   },
   {
    "slug": "journeymap",
@@ -1806,6 +1758,14 @@
    "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/Zsh14XeQ/kotlinforforge-4.12.0-all.jar",
    "sha512": "767f40030ed4b370a3838fa65ae1b79974f31979342fff7cc834a0d5f39eb28612642519352ff2a1dd5226ce1f745f8b3156ee3625ffde01219137d064c1ee40",
    "size": 7442998
+  },
+  {
+   "slug": "ksyxis",
+   "version": "1.4.6",
+   "file": "Ksyxis-1.4.6.jar",
+   "url": "https://cdn.modrinth.com/data/2ecVyZ49/versions/kzLBJQLn/Ksyxis-1.4.6.jar",
+   "sha512": "1571cd9b15b6733002dd164beab4ad1022fab2c904414b39db6fb609a41c48cca394f1751e5634ebc555795d9bd9dba48c2c280c152d9e0f570795d47a91c1d5",
+   "size": 23873
   },
   {
    "slug": "l_enders-cataclysm",
@@ -2304,14 +2264,6 @@
    "size": 188661
   },
   {
-   "slug": "paladins-and-priests",
-   "version": "3.1.3+1.20.1-forge",
-   "file": "paladins-forge-3.1.3+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/FxXkHaLe/versions/yfIyqewm/paladins-forge-3.1.3%2B1.20.1.jar",
-   "sha512": "aa4e2cf4e556af0647df14ccfc9d7874b0866319aeea0f29d531e07d706a29e819837a4185a2ec4a78fc1d763675ad03c87fb2d5d0d430b77fb1d1facf1563c4",
-   "size": 3119695
-  },
-  {
    "slug": "particle-core",
    "version": "0.3.3+1.20.1+forge",
    "file": "particle_core-0.3.3+1.20.1+forge.jar",
@@ -2572,14 +2524,6 @@
    "size": 288408
   },
   {
-   "slug": "rogues-and-warriors",
-   "version": "3.1.3+1.20.1-forge",
-   "file": "rogues-forge-3.1.3+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/3MKqoGuP/versions/lxNUs0rP/rogues-forge-3.1.3%2B1.20.1.jar",
-   "sha512": "a212f8d1f0c9883cd986e923e597bd026c1f8ce49de6d91719839592ae5809ba4f24056a0d306fda7f45428a0995490470d0cb320e21abcd7504201912b132c4",
-   "size": 1761703
-  },
-  {
    "slug": "rubidium-extra",
    "version": "0.5.4.4+mc1.20.1-build.131",
    "file": "rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
@@ -2658,6 +2602,14 @@
    "url": "https://cdn.modrinth.com/data/Bh6ZOMvp/versions/Pg7m0oCv/smarterfarmers-1.20-2.1.2.jar",
    "sha512": "2b12bbb5a494598f62c07a8b8f9b2127eda0327b59580e6dc45ffae57f2be5d4576acff4d5adf533fcd932fdbd1b4d27b761d29e93cdcd397c08a7f6f40de5de",
    "size": 223368
+  },
+  {
+   "slug": "smooth-boot-reloaded",
+   "version": "mc1.20.1-0.0.4",
+   "file": "smoothboot(reloaded)-mc1.20.1-0.0.4.jar",
+   "url": "https://cdn.modrinth.com/data/z53V2L4P/versions/HkfL3iGO/smoothboot%28reloaded%29-mc1.20.1-0.0.4.jar",
+   "sha512": "1cf706491339f3efae0d48d0dd596f27a74fcfa8e94008d7ef55e18be8c6f3c437bb74020e48910e1cc724ad35894bffce94788fe8f765c37048d4cc532ba261",
+   "size": 41044
   },
   {
    "slug": "smooth-chunk-save",
@@ -2842,14 +2794,6 @@
    "url": "https://cdn.modrinth.com/data/ayPU0OHc/versions/EazfspJH/structure_layout_optimizer-forge-1.0.11.jar",
    "sha512": "e90a40a8a3b4f9a369d9a80bfb7dced3e42a400701d4cb76ace0db8a3eb84757ade10eaa6f9ec9e3dc78dcd4edc87173bdc19f64a4fb8fc047d24ae57ca4466d",
    "size": 246413
-  },
-  {
-   "slug": "structure-pool-api",
-   "version": "1.2.1+1.20.1-forge",
-   "file": "structure_pool_api-forge-1.2.1+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/LrYZi08Q/versions/NJgGaMco/structure_pool_api-forge-1.2.1%2B1.20.1.jar",
-   "sha512": "7aca3f69e905afe829792523f97aa726bc98bd03ee30432f656386c2dc6d00a714d8a306bc7009cdf874a4773346278104a5648ecfffc887d7753b39ac6cac15",
-   "size": 761800
   },
   {
    "slug": "stylish-effects",
@@ -3066,14 +3010,6 @@
    "url": "https://cdn.modrinth.com/data/8DfbfASn/versions/6hQpx5Tc/DungeonsArise-1.20.x-2.1.58-release.jar",
    "sha512": "021bc9558af43492c45c05874fa9f2e87f1e90298b70681f8d3b845716d29b4a5eae57d06c3c4308fd7d7cd45194dea513e78c891d1f546a8f5474acc204153d",
    "size": 8762342
-  },
-  {
-   "slug": "wizards",
-   "version": "3.1.3+1.20.1-forge",
-   "file": "wizards-forge-3.1.3+1.20.1.jar",
-   "url": "https://cdn.modrinth.com/data/NkGaQMDA/versions/fJVyOLhX/wizards-forge-3.1.3%2B1.20.1.jar",
-   "sha512": "4873f3c021cbe32a8e734195b5f8c890327ad4b5e5127a2bb659847602e6c37361a8a269aee38175c05a1850c65f722ba0b66b71c15c3506b8ae2eacf0545e02",
-   "size": 4525440
   },
   {
    "slug": "xp-tome",
