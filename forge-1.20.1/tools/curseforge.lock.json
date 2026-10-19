@@ -1,0 +1,197 @@
+{
+ "mods": [
+  {
+   "slug": "ftb-quests",
+   "version": "ftb-quests-forge-2001.4.22.jar",
+   "file": "ftb-quests-forge-2001.4.22.jar",
+   "url": "https://edge.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
+   "sha512": "7ffec667d4bb73e33e1815655361c93a7564d9040af937b26035bfa3cc26f6125962f173c623eb71cf949b0b0a49181a0459648007b3054e97150bd72fcc0bf8",
+   "size": 1255469,
+   "cf": {
+    "project": 289412,
+    "file": 8078538
+   }
+  },
+  {
+   "slug": "ftb-library",
+   "version": "ftb-library-forge-2001.2.13.jar",
+   "file": "ftb-library-forge-2001.2.13.jar",
+   "url": "https://edge.forgecdn.net/files/8226/927/ftb-library-forge-2001.2.13.jar",
+   "sha512": "433c890fc64b31f140cdb92c6f03f78400bcc105229d1026dbbecb027ff75a8e2f94af5b1eef083d7cf3d37a9afa176731bc59cfeb771d01738353f9f1c113bf",
+   "size": 780558,
+   "cf": {
+    "project": 404465,
+    "file": 8226927
+   }
+  },
+  {
+   "slug": "ftb-teams",
+   "version": "ftb-teams-forge-2001.3.2.jar",
+   "file": "ftb-teams-forge-2001.3.2.jar",
+   "url": "https://edge.forgecdn.net/files/7499/810/ftb-teams-forge-2001.3.2.jar",
+   "sha512": "45f8980fa1cfcb7cd772f6a03abb0ac680f7c502dc569839e325553dcaa9105148a2c27a214cd1f1131f6b06bca957f8dd01dfb4a1ccb8e13d49502513480cae",
+   "size": 252579,
+   "cf": {
+    "project": 404468,
+    "file": 7499810
+   }
+  },
+  {
+   "slug": "ftb-filter-system",
+   "version": "[FORGE] FTB Filter System 20.0.1 MC 1.20.1",
+   "file": "ftb-filter-system-forge-20.0.1.jar",
+   "url": "https://edge.forgecdn.net/files/6466/153/ftb-filter-system-forge-20.0.1.jar",
+   "sha512": "4344015842a0bec06ad25751d2dd7f63bf0c2d9346b1dee272fd3183a8bf2a6c30c9e3c0141bf586fe1b0f2add34c918e46119b8f9ef0a1d0ba127785c026211",
+   "size": 197884,
+   "cf": {
+    "project": 943925,
+    "file": 6466153
+   }
+  },
+  {
+   "slug": "framework",
+   "version": "Framework 0.8.0",
+   "file": "framework-forge-1.20.1-0.8.0.jar",
+   "url": "https://edge.forgecdn.net/files/7573/740/framework-forge-1.20.1-0.8.0.jar",
+   "sha512": "489320e5e5496a569b5c05e5b0b37c6a688f7d2166f42f88588fe433664a035d2ea8a6d270b32aa26a1018302c9066b88b39104507919800954b58d20ff850d7",
+   "size": 383868,
+   "cf": {
+    "project": 549225,
+    "file": 7573740
+   }
+  },
+  {
+   "slug": "goblin-traders",
+   "version": "Goblin Traders 1.11.5",
+   "file": "goblintraders-forge-1.20.1-1.11.5.jar",
+   "url": "https://edge.forgecdn.net/files/6891/922/goblintraders-forge-1.20.1-1.11.5.jar",
+   "sha512": "21dab6a7dacacace13131b753e323facc93d6050650084754fd78a370b89563c886d357c7ffa405e241c717a06f704844c2938e9694d309b7a87b6164d183f38",
+   "size": 328727,
+   "cf": {
+    "project": 363703,
+    "file": 6891922
+   }
+  },
+  {
+   "slug": "cupboard",
+   "version": "cupboard-1.20.1-4.2.jar",
+   "file": "cupboard-1.20.1-4.2.jar",
+   "url": "https://edge.forgecdn.net/files/8889/41/cupboard-1.20.1-4.2.jar",
+   "sha512": "d13cb07941f30eee083d17dd65f50bdfe32e6d62d981ba850491fe6ae58bc47069f2969a54ec1dd6e07ffde081a471bc5659a1e4f4b78206495db04155abfd64",
+   "size": 33422,
+   "cf": {
+    "project": 326652,
+    "file": 8889041
+   }
+  },
+  {
+   "slug": "chunk-sending",
+   "version": "chunksending-1.20.1-4.1.jar",
+   "file": "chunksending-1.20.1-4.1.jar",
+   "url": "https://edge.forgecdn.net/files/9051/333/chunksending-1.20.1-4.1.jar",
+   "sha512": "d6b5c539adbe695c3dfc114864457cea976b4845bb53fcaa7371158a2f360457f4d192f2873fdec3f53d943a2b7e987d99dfc7d1a730c999d95dc73423e2a4df",
+   "size": 30073,
+   "cf": {
+    "project": 831663,
+    "file": 9051333
+   }
+  },
+  {
+   "slug": "smooth-chunk-save",
+   "version": "smoothchunk-1.20.1-4.1.jar",
+   "file": "smoothchunk-1.20.1-4.1.jar",
+   "url": "https://edge.forgecdn.net/files/6296/598/smoothchunk-1.20.1-4.1.jar",
+   "sha512": "c89394b54fbc7d108632583d3984ed7aa12c4aaed0b3e4c36d2f2452175213192d19a5ed0b426ccbba9ca18bde5d9a89a9024f42c4ef95888c733dfc4435b5fb",
+   "size": 14249,
+   "cf": {
+    "project": 582327,
+    "file": 6296598
+   }
+  },
+  {
+   "slug": "fast-async-world-save",
+   "version": "fastasyncworldsave-1.20.1-2.6.jar",
+   "file": "fastasyncworldsave-1.20.1-2.6.jar",
+   "url": "https://edge.forgecdn.net/files/6935/203/fastasyncworldsave-1.20.1-2.6.jar",
+   "sha512": "c0c051c8973d50a1cc7a5b685fbb88c55e4c825a00b70f06b41e1a0b63431446b3bee9136b7bea9002605da8cab6c39241efc50b6c0dc60130eecc6d8a04fbf6",
+   "size": 14812,
+   "cf": {
+    "project": 951499,
+    "file": 6935203
+   }
+  },
+  {
+   "slug": "memory-settings",
+   "version": "memorysettings-1.20.1-6.0.jar",
+   "file": "memorysettings-1.20.1-6.0.jar",
+   "url": "https://edge.forgecdn.net/files/7934/532/memorysettings-1.20.1-6.0.jar",
+   "sha512": "3649591de31bd340b79a9f4062785a9ef86af02ff1e350f65430987fe758050dae60ba70ec812687bc091744e746d4c4f24311c3c6b96f86159b3b36dd304936",
+   "size": 23537,
+   "cf": {
+    "project": 526901,
+    "file": 7934532
+   }
+  },
+  {
+   "slug": "recipe-essentials",
+   "version": "recipeessentials-1.20.1-4.7.jar",
+   "file": "recipeessentials-1.20.1-4.7.jar",
+   "url": "https://edge.forgecdn.net/files/8463/995/recipeessentials-1.20.1-4.7.jar",
+   "sha512": "fa9be641f1f8ef9b0c79ea53c0f4b7b495373897a04dd0d55b8a705cea3e897b332f3845f7f325982c53a3f451cbb2de54d1d75e6005b8a1389867829bfc1fa6",
+   "size": 50772,
+   "cf": {
+    "project": 907856,
+    "file": 8463995
+   }
+  },
+  {
+   "slug": "structure-essentials",
+   "version": "structureessentials-1.20.1-5.0.jar",
+   "file": "structureessentials-1.20.1-5.0.jar",
+   "url": "https://edge.forgecdn.net/files/7962/587/structureessentials-1.20.1-5.0.jar",
+   "sha512": "a447bb52ef654e3d96373c75d92dd7e497506375f1387b5ac74f12902107fc56212bccac1fc2ffd34ca1d172f9b18c958952342cdceb9007214c1d1bb53d32b8",
+   "size": 62974,
+   "cf": {
+    "project": 832882,
+    "file": 7962587
+   }
+  },
+  {
+   "slug": "loot-integrations",
+   "version": "lootintegrations-1.20.1-4.7.jar",
+   "file": "lootintegrations-1.20.1-4.7.jar",
+   "url": "https://edge.forgecdn.net/files/6640/968/lootintegrations-1.20.1-4.7.jar",
+   "sha512": "6c57ac2fecb1f0d79c27a552428a138c66e6f5e4a8b2e54754aabf0eec54c646a57b4794c1950bde85509430fe3a992d3381a7fbd133746d645f5d18a5a4c24f",
+   "size": 42220,
+   "cf": {
+    "project": 580689,
+    "file": 6640968
+   }
+  },
+  {
+   "slug": "client-crafting",
+   "version": "clientcrafting-1.20.1-2.1.jar",
+   "file": "clientcrafting-1.20.1-2.1.jar",
+   "url": "https://edge.forgecdn.net/files/7920/135/clientcrafting-1.20.1-2.1.jar",
+   "sha512": "33e78c99a61ec01eaea3adc1fa84a4f12523e85e9ebcc82e67ea439b95a3105a9a9bbff4991bb3a069f3a5ce7e540319843e779a9cccb158b6a68b4b9387b492",
+   "size": 7726,
+   "cf": {
+    "project": 888790,
+    "file": 7920135
+   }
+  },
+  {
+   "slug": "biome-music",
+   "version": "biomemusic-1.20.1-4.1.jar",
+   "file": "biomemusic-1.20.1-4.1.jar",
+   "url": "https://edge.forgecdn.net/files/8318/253/biomemusic-1.20.1-4.1.jar",
+   "sha512": "498faabb9c78ed5c8e5612a65c777395fe87505403deba784a64f0e3379a4b02e13c6d8617a1fc6d767e899c8dc0f108325a8cd9e0075fde4aba47ffc9eb791a",
+   "size": 47528,
+   "cf": {
+    "project": 840873,
+    "file": 8318253
+   }
+  }
+ ],
+ "resourcepacks": []
+}

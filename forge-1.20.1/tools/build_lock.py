@@ -15,7 +15,7 @@ OUT = HERE.parent / "mods.lock.json"
 API = "https://api.modrinth.com/v2"
 UA = {"User-Agent": "lolkekazazka-maker/first-project modpack script"}
 FORGE = "47.4.10"
-BUILD = "2026-10-19-r15"  # меняется при каждом изменении набора модов: установщик печатает её
+BUILD = "2026-10-19-r18"  # меняется при каждом изменении набора модов: установщик печатает её
 
 
 def get(url):
@@ -156,7 +156,7 @@ for pid in sorted(keep, key=lambda p: slug_of[p]):
 
 
 # у этих паков свежие версии сделаны под новые игры (формат 46+), а для 1.20.1 нужна старая версия
-PACK_VERSION = {"3d-crops": "1"}  # «Grow your blossoms», pack_format 15
+PACK_VERSION = {"3d-crops": "1", "3d-equipment": "r1.0-beta1"}  # «Grow your blossoms», pack_format 15
 
 
 def packs(slugs, loaders, game):
@@ -183,8 +183,13 @@ def packs(slugs, loaders, game):
 
 
 cfg = json.loads((HERE / "slugs.json").read_text("utf-8"))
+# моды и паки, которых нет на Modrinth: их файлы с CurseForge выбирает cf_resolve.py (curseforge.json -> curseforge.lock.json)
+cf = json.loads((HERE / "curseforge.lock.json").read_text("utf-8")) if (HERE / "curseforge.lock.json").exists() else {}
+lock += [m for m in cf.get("mods", []) if m["file"] not in {x["file"] for x in lock}]
+lock.sort(key=lambda m: m["slug"])
 rp, rp_missing = packs(cfg.get("resourcepacks", []), ["minecraft"], "1.20.1")
 sp, sp_missing = packs(cfg.get("shaderpacks", []), ["iris"], None)
+rp += [m for m in cf.get("resourcepacks", []) if m["file"] not in {x["file"] for x in rp}]
 OUT.write_text(json.dumps({"minecraft": "1.20.1", "forge": FORGE, "build": BUILD, "mods": lock, "resourcepacks": rp,
                            "shaderpacks": sp}, ensure_ascii=False, indent=1), "utf-8")
 print(f"в lock: {len(lock)} модов, {sum(m['size'] for m in lock) / 1e6:.0f} МБ; ресурспаков {len(rp)}, шейдеров {len(sp)}")

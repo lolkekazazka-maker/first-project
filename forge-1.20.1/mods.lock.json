@@ -1,7 +1,7 @@
 {
  "minecraft": "1.20.1",
  "forge": "47.4.10",
- "build": "2026-10-19-r15",
+ "build": "2026-10-19-r18",
  "mods": [
   {
    "slug": "3dskinlayers",
@@ -276,14 +276,6 @@
    "size": 100436
   },
   {
-   "slug": "better-animations-collection",
-   "version": "v8.0.1-1.20.1-Forge",
-   "file": "BetterAnimationsCollection-v8.0.1-1.20.1-Forge.jar",
-   "url": "https://cdn.modrinth.com/data/OoOVj3J3/versions/3V51q1QN/BetterAnimationsCollection-v8.0.1-1.20.1-Forge.jar",
-   "sha512": "a49f4f61229f3e743310a45d59e6c33f2d493d63aed483ee84bc6b56e982ee183b9d376f1d58695ee56eb4ed5ec0a1c1c0c605c19478fd057f922274105102e0",
-   "size": 198755
-  },
-  {
    "slug": "better-archeology",
    "version": "1.2.1-1.20.1",
    "file": "betterarcheology-1.2.1-1.20.1.jar",
@@ -330,6 +322,18 @@
    "url": "https://cdn.modrinth.com/data/m5T5xmUy/versions/9bgIBvnQ/BetterGrassify-1.4.4%2Bforge.1.20.1.jar",
    "sha512": "521f795df78fec101f56b82389df769c120572a70993716ca4cca1fae99e46ff8ad845629ed635a9d4bf79646df5b1d67174b97b9832744b5cf2e6a092736110",
    "size": 330517
+  },
+  {
+   "slug": "biome-music",
+   "version": "biomemusic-1.20.1-4.1.jar",
+   "file": "biomemusic-1.20.1-4.1.jar",
+   "url": "https://edge.forgecdn.net/files/8318/253/biomemusic-1.20.1-4.1.jar",
+   "sha512": "498faabb9c78ed5c8e5612a65c777395fe87505403deba784a64f0e3379a4b02e13c6d8617a1fc6d767e899c8dc0f108325a8cd9e0075fde4aba47ffc9eb791a",
+   "size": 47528,
+   "cf": {
+    "project": 840873,
+    "file": 8318253
+   }
   },
   {
    "slug": "biomes-o-plenty",
@@ -484,6 +488,18 @@
    "size": 386531
   },
   {
+   "slug": "chunk-sending",
+   "version": "chunksending-1.20.1-4.1.jar",
+   "file": "chunksending-1.20.1-4.1.jar",
+   "url": "https://edge.forgecdn.net/files/9051/333/chunksending-1.20.1-4.1.jar",
+   "sha512": "d6b5c539adbe695c3dfc114864457cea976b4845bb53fcaa7371158a2f360457f4d192f2873fdec3f53d943a2b7e987d99dfc7d1a730c999d95dc73423e2a4df",
+   "size": 30073,
+   "cf": {
+    "project": 831663,
+    "file": 9051333
+   }
+  },
+  {
    "slug": "citadel",
    "version": "2.6.3",
    "file": "citadel-2.6.3-1.20.1.jar",
@@ -498,6 +514,18 @@
    "url": "https://cdn.modrinth.com/data/fJi8nm80/versions/uF7HyxSR/clickthrough-plus-forge-3.5.1%2B1.20.1.jar",
    "sha512": "50fa7a2da0f85651f161ed6287520aaac3d021165211774e635bb1411790eb037b53a6576632702e86666fd0cd23d82b554541a3e22d395112ad8dde820c3c86",
    "size": 248322
+  },
+  {
+   "slug": "client-crafting",
+   "version": "clientcrafting-1.20.1-2.1.jar",
+   "file": "clientcrafting-1.20.1-2.1.jar",
+   "url": "https://edge.forgecdn.net/files/7920/135/clientcrafting-1.20.1-2.1.jar",
+   "sha512": "33e78c99a61ec01eaea3adc1fa84a4f12523e85e9ebcc82e67ea439b95a3105a9a9bbff4991bb3a069f3a5ce7e540319843e779a9cccb158b6a68b4b9387b492",
+   "size": 7726,
+   "cf": {
+    "project": 888790,
+    "file": 7920135
+   }
   },
   {
    "slug": "clientsort",
@@ -674,6 +702,18 @@
    "url": "https://cdn.modrinth.com/data/GNxdLCoP/versions/yFZM1Bsc/cullleaves-forge-4.1.1%2B1.20.1.jar",
    "sha512": "3c68a290b5b546a663d38a1353485aca6f02efbb80fbd1c0e10214d93c27fadd5145f4fb74a7c616a0ce34cb4ffa1a75a62ca386c7d1041bbdf411b29626753f",
    "size": 97480
+  },
+  {
+   "slug": "cupboard",
+   "version": "cupboard-1.20.1-4.2.jar",
+   "file": "cupboard-1.20.1-4.2.jar",
+   "url": "https://edge.forgecdn.net/files/8889/41/cupboard-1.20.1-4.2.jar",
+   "sha512": "d13cb07941f30eee083d17dd65f50bdfe32e6d62d981ba850491fe6ae58bc47069f2969a54ec1dd6e07ffde081a471bc5659a1e4f4b78206495db04155abfd64",
+   "size": 33422,
+   "cf": {
+    "project": 326652,
+    "file": 8889041
+   }
   },
   {
    "slug": "curios",
@@ -1076,6 +1116,18 @@
    "size": 3311051
   },
   {
+   "slug": "fast-async-world-save",
+   "version": "fastasyncworldsave-1.20.1-2.6.jar",
+   "file": "fastasyncworldsave-1.20.1-2.6.jar",
+   "url": "https://edge.forgecdn.net/files/6935/203/fastasyncworldsave-1.20.1-2.6.jar",
+   "sha512": "c0c051c8973d50a1cc7a5b685fbb88c55e4c825a00b70f06b41e1a0b63431446b3bee9136b7bea9002605da8cab6c39241efc50b6c0dc60130eecc6d8a04fbf6",
+   "size": 14812,
+   "cf": {
+    "project": 951499,
+    "file": 6935203
+   }
+  },
+  {
    "slug": "fast-ip-ping",
    "version": "mc1.20.1-v1.0.0",
    "file": "fast-ip-ping-mc1.20.1-forge-v1.0.0.jar",
@@ -1132,6 +1184,14 @@
    "size": 28188
   },
   {
+   "slug": "female-gender",
+   "version": "1.20.1-3.0.1",
+   "file": "Female-Gender-Mod-forge-1.20.1-3.1.jar",
+   "url": "https://cdn.modrinth.com/data/bcOsQHnC/versions/R1d8TWqL/Female-Gender-Mod-forge-1.20.1-3.1.jar",
+   "sha512": "7b6b531e5e4966ce3fefbde17636a9d866c1d36b335450fbf5cf17918b882c337c02dabe2ace1e44614c09908426e6dff27c924c9958542670e312b960987a58",
+   "size": 255435
+  },
+  {
    "slug": "ferrite-core",
    "version": "6.0.1",
    "file": "ferritecore-6.0.1-forge.jar",
@@ -1180,12 +1240,72 @@
    "size": 873590
   },
   {
+   "slug": "framework",
+   "version": "Framework 0.8.0",
+   "file": "framework-forge-1.20.1-0.8.0.jar",
+   "url": "https://edge.forgecdn.net/files/7573/740/framework-forge-1.20.1-0.8.0.jar",
+   "sha512": "489320e5e5496a569b5c05e5b0b37c6a688f7d2166f42f88588fe433664a035d2ea8a6d270b32aa26a1018302c9066b88b39104507919800954b58d20ff850d7",
+   "size": 383868,
+   "cf": {
+    "project": 549225,
+    "file": 7573740
+   }
+  },
+  {
    "slug": "friends-and-foes-forge",
    "version": "forge-5.0.2+mc1.20.1",
    "file": "friendsandfoes-forge-5.0.2+mc1.20.1.jar",
    "url": "https://cdn.modrinth.com/data/BOCJKD49/versions/O00BqNSR/friendsandfoes-forge-5.0.2%2Bmc1.20.1.jar",
    "sha512": "8461a60558512e97d1e54746760b35b2390c523f20279fbb94411983f45da8a74f70858b9e982c9fca1d919a438f503520338bac4d54843dc6c6ffdb5f30a78d",
    "size": 5466479
+  },
+  {
+   "slug": "ftb-filter-system",
+   "version": "[FORGE] FTB Filter System 20.0.1 MC 1.20.1",
+   "file": "ftb-filter-system-forge-20.0.1.jar",
+   "url": "https://edge.forgecdn.net/files/6466/153/ftb-filter-system-forge-20.0.1.jar",
+   "sha512": "4344015842a0bec06ad25751d2dd7f63bf0c2d9346b1dee272fd3183a8bf2a6c30c9e3c0141bf586fe1b0f2add34c918e46119b8f9ef0a1d0ba127785c026211",
+   "size": 197884,
+   "cf": {
+    "project": 943925,
+    "file": 6466153
+   }
+  },
+  {
+   "slug": "ftb-library",
+   "version": "ftb-library-forge-2001.2.13.jar",
+   "file": "ftb-library-forge-2001.2.13.jar",
+   "url": "https://edge.forgecdn.net/files/8226/927/ftb-library-forge-2001.2.13.jar",
+   "sha512": "433c890fc64b31f140cdb92c6f03f78400bcc105229d1026dbbecb027ff75a8e2f94af5b1eef083d7cf3d37a9afa176731bc59cfeb771d01738353f9f1c113bf",
+   "size": 780558,
+   "cf": {
+    "project": 404465,
+    "file": 8226927
+   }
+  },
+  {
+   "slug": "ftb-quests",
+   "version": "ftb-quests-forge-2001.4.22.jar",
+   "file": "ftb-quests-forge-2001.4.22.jar",
+   "url": "https://edge.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
+   "sha512": "7ffec667d4bb73e33e1815655361c93a7564d9040af937b26035bfa3cc26f6125962f173c623eb71cf949b0b0a49181a0459648007b3054e97150bd72fcc0bf8",
+   "size": 1255469,
+   "cf": {
+    "project": 289412,
+    "file": 8078538
+   }
+  },
+  {
+   "slug": "ftb-teams",
+   "version": "ftb-teams-forge-2001.3.2.jar",
+   "file": "ftb-teams-forge-2001.3.2.jar",
+   "url": "https://edge.forgecdn.net/files/7499/810/ftb-teams-forge-2001.3.2.jar",
+   "sha512": "45f8980fa1cfcb7cd772f6a03abb0ac680f7c502dc569839e325553dcaa9105148a2c27a214cd1f1131f6b06bca957f8dd01dfb4a1ccb8e13d49502513480cae",
+   "size": 252579,
+   "cf": {
+    "project": 404468,
+    "file": 7499810
+   }
   },
   {
    "slug": "fzzy-config",
@@ -1250,6 +1370,18 @@
    "url": "https://cdn.modrinth.com/data/zg2tT2Vu/versions/s7gFqeVL/gml-4.0.10-all.jar",
    "sha512": "bd65648b8c9f9de97279a1e68013f7b2068c7bd4e045dab9c81f9a4a2b02630f5f367733fc312e4160e8c54648267b8ca6f586277d84b80923b2e1091f5a0928",
    "size": 11125462
+  },
+  {
+   "slug": "goblin-traders",
+   "version": "Goblin Traders 1.11.5",
+   "file": "goblintraders-forge-1.20.1-1.11.5.jar",
+   "url": "https://edge.forgecdn.net/files/6891/922/goblintraders-forge-1.20.1-1.11.5.jar",
+   "sha512": "21dab6a7dacacace13131b753e323facc93d6050650084754fd78a370b89563c886d357c7ffa405e241c717a06f704844c2938e9694d309b7a87b6164d183f38",
+   "size": 328727,
+   "cf": {
+    "project": 363703,
+    "file": 6891922
+   }
   },
   {
    "slug": "golem-spawn-fix",
@@ -1764,6 +1896,18 @@
    "size": 58508
   },
   {
+   "slug": "loot-integrations",
+   "version": "lootintegrations-1.20.1-4.7.jar",
+   "file": "lootintegrations-1.20.1-4.7.jar",
+   "url": "https://edge.forgecdn.net/files/6640/968/lootintegrations-1.20.1-4.7.jar",
+   "sha512": "6c57ac2fecb1f0d79c27a552428a138c66e6f5e4a8b2e54754aabf0eec54c646a57b4794c1950bde85509430fe3a992d3381a7fbd133746d645f5d18a5a4c24f",
+   "size": 42220,
+   "cf": {
+    "project": 580689,
+    "file": 6640968
+   }
+  },
+  {
    "slug": "luna",
    "version": "5.3.1",
    "file": "luna_minecraft-forge-5.3.1.jar",
@@ -1828,6 +1972,18 @@
    "size": 37178
   },
   {
+   "slug": "memory-settings",
+   "version": "memorysettings-1.20.1-6.0.jar",
+   "file": "memorysettings-1.20.1-6.0.jar",
+   "url": "https://edge.forgecdn.net/files/7934/532/memorysettings-1.20.1-6.0.jar",
+   "sha512": "3649591de31bd340b79a9f4062785a9ef86af02ff1e350f65430987fe758050dae60ba70ec812687bc091744e746d4c4f24311c3c6b96f86159b3b36dd304936",
+   "size": 23537,
+   "cf": {
+    "project": 526901,
+    "file": 7934532
+   }
+  },
+  {
    "slug": "memoryleakfix",
    "version": "v1.1.5",
    "file": "memoryleakfix-forge-1.17+-1.1.5.jar",
@@ -1858,14 +2014,6 @@
    "url": "https://cdn.modrinth.com/data/codAaoxh/versions/EVVb5nP3/midnightlib-forge-1.9.2%2B1.20.1.jar",
    "sha512": "a4f50d46ad30de0f5622fd6aa8415a949889d114a1dc051b2d8d15ff505273aff80f8b40d61193ca71112567a3be396899e96d0ff1c26af31e77a9c68f70e896",
    "size": 61987
-  },
-  {
-   "slug": "minecraft-comes-alive-reborn",
-   "version": "7.7.1-beta.5+1.20.1",
-   "file": "minecraft-comes-alive-7.7.1-beta.5+1.20.1-universal.jar",
-   "url": "https://cdn.modrinth.com/data/1W98a849/versions/KJixRMB5/minecraft-comes-alive-7.7.1-beta.5%2B1.20.1-universal.jar",
-   "sha512": "6f7da06646b94fd14686eda833676867fd453d159f93d4d30e8ceb3e5fff236b335f749f95d1293efae1a801c9b4daf1939697fac26682648fe427c760a788c8",
-   "size": 13386146
   },
   {
    "slug": "mining-speed-tooltips",
@@ -2332,6 +2480,18 @@
    "size": 794579
   },
   {
+   "slug": "recipe-essentials",
+   "version": "recipeessentials-1.20.1-4.7.jar",
+   "file": "recipeessentials-1.20.1-4.7.jar",
+   "url": "https://edge.forgecdn.net/files/8463/995/recipeessentials-1.20.1-4.7.jar",
+   "sha512": "fa9be641f1f8ef9b0c79ea53c0f4b7b495373897a04dd0d55b8a705cea3e897b332f3845f7f325982c53a3f451cbb2de54d1d75e6005b8a1389867829bfc1fa6",
+   "size": 50772,
+   "cf": {
+    "project": 907856,
+    "file": 8463995
+   }
+  },
+  {
    "slug": "redirected",
    "version": "forge-1.20.1-1.0.0",
    "file": "redirected-forge-1.0.0-1.20.1.jar",
@@ -2500,6 +2660,18 @@
    "size": 223368
   },
   {
+   "slug": "smooth-chunk-save",
+   "version": "smoothchunk-1.20.1-4.1.jar",
+   "file": "smoothchunk-1.20.1-4.1.jar",
+   "url": "https://edge.forgecdn.net/files/6296/598/smoothchunk-1.20.1-4.1.jar",
+   "sha512": "c89394b54fbc7d108632583d3984ed7aa12c4aaed0b3e4c36d2f2452175213192d19a5ed0b426ccbba9ca18bde5d9a89a9024f42c4ef95888c733dfc4435b5fb",
+   "size": 14249,
+   "cf": {
+    "project": 582327,
+    "file": 6296598
+   }
+  },
+  {
    "slug": "smooth-swapping",
    "version": "0.9.3.2-1.20.1",
    "file": "smoothswapping-0.9.3.2-1.20.1-forge.jar",
@@ -2650,6 +2822,18 @@
    "url": "https://cdn.modrinth.com/data/j3FONRYr/versions/fTl6NfPL/Structory_Towers_1.20.x_v1.0.7.jar",
    "sha512": "b3a04babcdac8c66f974d10b9ec0beee2d9ba33c34144adfe9dbf80ee7cdb64e1e598168160aa10778975f6e5c3dc4bba396a2520ee609793714f22bb320ebc6",
    "size": 526234
+  },
+  {
+   "slug": "structure-essentials",
+   "version": "structureessentials-1.20.1-5.0.jar",
+   "file": "structureessentials-1.20.1-5.0.jar",
+   "url": "https://edge.forgecdn.net/files/7962/587/structureessentials-1.20.1-5.0.jar",
+   "sha512": "a447bb52ef654e3d96373c75d92dd7e497506375f1387b5ac74f12902107fc56212bccac1fc2ffd34ca1d172f9b18c958952342cdceb9007214c1d1bb53d32b8",
+   "size": 62974,
+   "cf": {
+    "project": 832882,
+    "file": 7962587
+   }
   },
   {
    "slug": "structure-layout-optimizer",
@@ -3166,6 +3350,30 @@
    "size": 7614088
   },
   {
+   "slug": "melodyswitches",
+   "version": "1.0.1",
+   "file": "Melodys Cute Witches 1.0.1.zip",
+   "url": "https://cdn.modrinth.com/data/gtdL2vkh/versions/H5fRRdAK/Melodys%20Cute%20Witches%201.0.1.zip",
+   "sha512": "98882548b88ff84855db133143e424883ef73edb65c70b6e7233c4901ba0f21ced2baad2f215b1a5f2f07af147e676904f9e0296fe766bcc2447e300e53373c1",
+   "size": 392056
+  },
+  {
+   "slug": "melodysillagers",
+   "version": "1.0.1",
+   "file": "Melodys Cute Illagers 1.0.1.zip",
+   "url": "https://cdn.modrinth.com/data/J7uXWTVl/versions/3ijcaasQ/Melodys%20Cute%20Illagers%201.0.1.zip",
+   "sha512": "d54b0178bb060ebf07b5d2746a5178c7583ff7a16a636843e44c4b3ff7c69d3accd059a882584d3d0df064f6dfca14bb08e28cb726f056a28378bf4e19ff396b",
+   "size": 456828
+  },
+  {
+   "slug": "melodys-cute-girl-traders",
+   "version": "1.0.0_pre-26.1",
+   "file": "Melodys Cute Traders 1.0.0_pre-26.1.zip",
+   "url": "https://cdn.modrinth.com/data/pWGL78ur/versions/3vSAE2AK/Melodys%20Cute%20Traders%201.0.0_pre-26.1.zip",
+   "sha512": "aa48b795463c91b161cc3cdc4216569bae086c2561d12a2f1496af8a0441f10c90f1f4c730a7ddd424f8a1fe32e4675a340cdbe8dd76d2b56e02cb47c7fec73a",
+   "size": 331214
+  },
+  {
    "slug": "mikapika-s-3d-mushrooms",
    "version": "1.2.1",
    "file": "mikapika-s-3D-mushrooms-v1.2.1.zip",
@@ -3206,54 +3414,6 @@
    "size": 482938
   },
   {
-   "slug": "mizuno-better-leaves",
-   "version": "2.4",
-   "file": "Mizuno Better Flowers Leaves 2.4.zip",
-   "url": "https://cdn.modrinth.com/data/aLVbJPY1/versions/IW6CrWNO/Mizuno%20Better%20Flowers%20Leaves%202.4.zip",
-   "sha512": "837f1da95f80d1213a86e0371c808bbcef2bf79d0219aec8d43971b0c0fe27e0e1ac22412f6d1241734f2ad0a036233659edba4887321800fe87cd1414ba0472",
-   "size": 1685939
-  },
-  {
-   "slug": "mizuno-x-fresh-animations",
-   "version": "4.5",
-   "file": "Mizuno x Fresh Animations 4.5.zip",
-   "url": "https://cdn.modrinth.com/data/DCF67rmr/versions/A1H5RhS8/Mizuno%20x%20Fresh%20Animations%204.5.zip",
-   "sha512": "fe42989a00748fe281594865ff73f3d6c3818fa6735c1dedb79e34e2bebe38a1187f58b87e16635cdf73b26662055f38a99ed30da3ffad406ac3e94a166455c3",
-   "size": 769490
-  },
-  {
-   "slug": "mizuno-connected-texture",
-   "version": "2.7",
-   "file": "Mizuno Connected Texture 2.7.zip",
-   "url": "https://cdn.modrinth.com/data/gXk3JSUR/versions/7vgHCgbj/Mizuno%20Connected%20Texture%202.7.zip",
-   "sha512": "cc920aa84a8f5053c3a768283770e5cfc1128ccc8bb5842b87442d644967b24b23c0119bf7fbb5128e6f479895c231ad086041f4e90a845d1664063642526c40",
-   "size": 573029
-  },
-  {
-   "slug": "mizunos-connected-glass",
-   "version": "1.5",
-   "file": "Mizuno's Connected Glass 1.5.zip",
-   "url": "https://cdn.modrinth.com/data/qbZmMHUH/versions/bOAJQdTF/Mizuno%27s%20Connected%20Glass%201.5.zip",
-   "sha512": "8f3e8c4b3ffc7976446c8a0d2395efd743aba3703731fee3c9a0ac94ffd400509c3161793fb394c820a21b1a711b76f5ce0a3d298d7cb7b01b9444f3984f60e3",
-   "size": 114662
-  },
-  {
-   "slug": "mizunos-better-grass",
-   "version": "1.4",
-   "file": "Mizuno's Better Grass 1.4.zip",
-   "url": "https://cdn.modrinth.com/data/HcZFw2yC/versions/cvIRIqjs/Mizuno%27s%20Better%20Grass%201.4.zip",
-   "sha512": "5c946973887bb6a6f7e7f877ef419f554282fb9b499c2cd81d7692082713d4f5398c53ebf47e5bf2469bb530e972eda5686a527f3bc55378b400fe31ccb9b5b9",
-   "size": 11955
-  },
-  {
-   "slug": "mizunos-better-crops",
-   "version": "1.2",
-   "file": "Mizuno's Better Crops 1.2.zip",
-   "url": "https://cdn.modrinth.com/data/hAUAjkzE/versions/GQjcikIZ/Mizuno%27s%20Better%20Crops%201.2.zip",
-   "sha512": "ceaf760249f2b919f12a9f128ab06ed31bd1465e203b505509c53475c671434c18f3af94284868abcd6a4f095f9cabccbc5b5324d8fb40160209f51e428bd0ce",
-   "size": 75729
-  },
-  {
    "slug": "3d-food",
    "version": "1",
    "file": "3D FOOD.zip",
@@ -3268,6 +3428,14 @@
    "url": "https://cdn.modrinth.com/data/cd22pBZc/versions/ZvBEZ52U/%C2%A7f%C2%A7lActually%20%C2%A76%C2%A7l3D%20%C2%A7r%C2%A72Workbenches%C2%A77.zip",
    "sha512": "0d23b4220c0330978a9bef6d32d887fe5dc110e6f29337bb4ba9e7f851455425e130bf7249d266d61bd9ddd5fe0a0d79f4363280b1518dd04b47c0debfffce72",
    "size": 225451
+  },
+  {
+   "slug": "3d-equipment",
+   "version": "r1.0-beta1",
+   "file": "§f§lActually §6§l3D §bEquipment!§7.zip",
+   "url": "https://cdn.modrinth.com/data/GhyYdw4D/versions/VWdKm3Nx/%C2%A7f%C2%A7lActually%20%C2%A76%C2%A7l3D%20%C2%A7bEquipment%21%C2%A77.zip",
+   "sha512": "30b9a7cdf61e7e08b895401b608f8112b3a7f3de3026132696b43d2516e0a0a07a62eb9c6c4e28c9948e10fd32e1cebf6cc5112c47b971ac6197e0699e8db4bf",
+   "size": 534279
   },
   {
    "slug": "polaris-animation-for-punchy",

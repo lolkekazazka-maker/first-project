@@ -1,0 +1,21 @@
+{
+  "mods": [
+    {"id": 289412, "slug": "ftb-quests"},
+    {"id": 404465, "slug": "ftb-library"},
+    {"id": 404468, "slug": "ftb-teams"},
+    {"id": 943925, "slug": "ftb-filter-system"},
+    {"id": 549225, "slug": "framework"},
+    {"id": 363703, "slug": "goblin-traders"},
+    {"id": 326652, "slug": "cupboard"},
+    {"id": 831663, "slug": "chunk-sending"},
+    {"id": 582327, "slug": "smooth-chunk-save"},
+    {"id": 951499, "slug": "fast-async-world-save"},
+    {"id": 526901, "slug": "memory-settings"},
+    {"id": 907856, "slug": "recipe-essentials"},
+    {"id": 832882, "slug": "structure-essentials"},
+    {"id": 580689, "slug": "loot-integrations"},
+    {"id": 888790, "slug": "client-crafting"},
+    {"id": 840873, "slug": "biome-music"}
+  ],
+  "resourcepacks": []
+}

@@ -82,17 +82,13 @@ function Set-Lines($path, $pairs, $sep) {
   [IO.File]::WriteAllLines($path, $lines, $utf8)
 }
 
-# Mizuno's 16 Craft есть только на CurseForge, скачать автоматически нельзя: если файл лежит рядом с install.bat
-# (в папке forge-1.20.1) или уже в resourcepacks, подключаем его и дополнения к нему
 $rp = Join-Path $Mc 'resourcepacks'
-$mizunoRe = '(?i)mizuno.*16.*craft'
-$mizunoSkip = '(?i)addon|better|connected|fresh|variants|crops|grass|glass|eating|tinker|modern|tweaks'
-$mizuno = @(Get-ChildItem $PSScriptRoot, $rp -Filter *.zip -ErrorAction SilentlyContinue | Where-Object { $_.Name -match $mizunoRe -and $_.Name -notmatch $mizunoSkip }) | Select-Object -First 1
-if ($mizuno) {
-  if ($mizuno.DirectoryName -ne $rp) { Copy-Item -LiteralPath $mizuno.FullName -Destination $rp -Force }
-  Write-Host "  Mizuno's 16 Craft найден: $($mizuno.Name)"
-} else {
-  Write-Host "  Mizuno's 16 Craft не найден (он только на CurseForge): скачай zip вручную, положи в папку forge-1.20.1 и запусти install.bat ещё раз" -ForegroundColor Yellow
+# Mizuno убран из сборки (по просьбе): если он остался от прошлой установки, уносим в бэкап, чтобы он не лежал среди паков
+$oldMizuno = @(Get-ChildItem $rp -Filter *.zip -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '(?i)mizuno' })
+if ($oldMizuno.Count -gt 0) {
+  $mzBak = Join-Path $Mc ("resourcepacks_backup_" + (Get-Date -Format 'yyyyMMdd_HHmmss'))
+  New-Item -ItemType Directory -Force -Path $mzBak | Out-Null
+  $oldMizuno | ForEach-Object { Write-Host "  Убираю Mizuno: $($_.Name)"; Move-Item -LiteralPath $_.FullName -Destination $mzBak }
 }
 
 # Minecraft 1.20.1 молча выкидывает из options.txt паки с чужим pack_format (старше или новее 15) и не понимает supported_formats.
@@ -113,12 +109,50 @@ function Get-PackFormat($path) {
     if ($m.Success) { return [int]$m.Groups[1].Value } else { return $mcFormat }
   } finally { $z.Dispose() }
 }
-function New-FixedPack($srcPath, $dstName, $drop) {
+# в Minecraft 1.20.1 повороты элементов моделей бывают только -45, -22.5, 0, 22.5 и 45 градусов вокруг одной оси; паки, сделанные под
+# новые версии, используют любые углы и поворот сразу по трём осям, и такая модель не грузится (вместо неё фиолетовая «шашечка»).
+# Для таких паков в копии округляем угол до допустимого, а у поворота по трём осям берём главную ось
+$validAngles = @(-45.0, -22.5, 0.0, 22.5, 45.0)
+$inv = [Globalization.CultureInfo]::InvariantCulture
+function Get-SnapAngle([double]$a) {
+  $best = $script:validAngles[0]
+  foreach ($v in $script:validAngles) { if ([math]::Abs($v - $a) -lt [math]::Abs($best - $a)) { $best = $v } }
+  return [string]::Format($script:inv, '{0}', $best)
+}
+$num = '(-?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?)'
+$reMulti = '"rotation"\s*:\s*\{\s*"x"\s*:\s*' + $num + '\s*,\s*"y"\s*:\s*' + $num + '\s*,\s*"z"\s*:\s*' + $num + '\s*,\s*"origin"\s*:\s*(\[[^\]]*\])\s*\}'
+$reSingle = '("angle"\s*:\s*)' + $num
+$evalMulti = [Text.RegularExpressions.MatchEvaluator] {
+  param($m)
+  $x = [double]::Parse($m.Groups[1].Value, $script:inv); $y = [double]::Parse($m.Groups[2].Value, $script:inv); $z = [double]::Parse($m.Groups[3].Value, $script:inv)
+  $axis = 'x'; $val = $x
+  if ([math]::Abs($y) -gt [math]::Abs($val)) { $axis = 'y'; $val = $y }
+  if ([math]::Abs($z) -gt [math]::Abs($val)) { $axis = 'z'; $val = $z }
+  return ('"rotation": {"angle": ' + (Get-SnapAngle $val) + ', "axis": "' + $axis + '", "origin": ' + $m.Groups[4].Value + '}')
+}
+$evalSingle = [Text.RegularExpressions.MatchEvaluator] {
+  param($m)
+  return ($m.Groups[1].Value + (Get-SnapAngle ([double]::Parse($m.Groups[2].Value, $script:inv))))
+}
+function New-FixedPack($srcPath, $dstName, $drop, $fixModels) {
   $dst = Join-Path $rp $dstName
   Copy-Item -LiteralPath $srcPath -Destination $dst -Force
   $zip = [IO.Compression.ZipFile]::Open($dst, [IO.Compression.ZipArchiveMode]::Update)
   try {
     foreach ($e in @($zip.Entries)) { foreach ($re in $drop) { if ($e.FullName -match $re) { $e.Delete(); break } } }
+    if ($fixModels) {
+      foreach ($e in @($zip.Entries)) {
+        if ($e.FullName -notmatch '^assets/[^/]+/models/.+\.json$') { continue }
+        $name = $e.FullName
+        $old = Read-ZipText $e
+        $new = [regex]::Replace([regex]::Replace($old, $script:reMulti, $script:evalMulti), $script:reSingle, $script:evalSingle)
+        if ($new -ne $old) {
+          $e.Delete()
+          $sw = New-Object IO.StreamWriter(($zip.CreateEntry($name)).Open(), $utf8)
+          try { $sw.Write($new) } finally { $sw.Dispose() }
+        }
+      }
+    }
     $m = $zip.GetEntry('pack.mcmeta')
     if ($m) {
       $txt = [regex]::Replace((Read-ZipText $m), '"pack_format"\s*:\s*\d+', ('"pack_format": ' + $mcFormat))
@@ -130,47 +164,33 @@ function New-FixedPack($srcPath, $dstName, $drop) {
   return $dstName
 }
 $iconsEntry = @('^assets/minecraft/textures/gui/icons\.png$')
-# овца целиком берётся из Mizuno (модель, текстура и лицо одного автора), а не из Fresh Animations / Mizuno x FA
-$sheepRe = @('(^|/)assets/minecraft/(optifine/cem/sheep|optifine/random/entity/sheep/|textures/entity/sheep/)')
 
 # порядок: от нижнего слоя к верхнему (последний в списке перекрывает остальные)
-$enable = @()
-if ($mizuno) { $enable += '@mizuno' }
-# Mizuno x Fresh Animations заменяет модель и текстуру овцы и других мобов: вместе с Fresh Animations Extensions/Details
-# части моделей перемешиваются, и у окрашенных овец пропадает лицо. Поэтому с Mizuno ставим только базовый Fresh Animations
-$enable += @('fresh-animations')
-if (-not $mizuno) { $enable += @('fresh-animations-extensions', 'fresh-animations-details') }
-$enable += @('fa-player-extension', 'polaris-animation-for-punchy', 'blacksea-animation-for-punchy')
-if ($mizuno) { $enable += 'mizuno-x-fresh-animations' }
-$enable += @('3d-workbenches')
-$enable += @('better-lanterns', 'fancy-crops', '3d-crops')
-if ($mizuno) { $enable += 'mizunos-better-crops' }
-$enable += @('rays-3d-ladders', 'rays-3d-rails', 'simple-grass-flowers')
-if ($mizuno) { $enable += @('mizunos-better-grass', 'mizuno-connected-texture', 'mizunos-connected-glass') }
-$enable += @('fresh-flower-pots', 'just-expressions', '3d-food', 'mikapika-s-3d-mushrooms', 'cutegirlvillagers', 'iron-girl',
-             'overgrown-flowery-gui', 'overgrown-flowery-hotbar')
-$enable += $(if ($mizuno) { 'mizuno-better-leaves' } else { 'better-leaves' })
+$enable = @('fresh-animations', 'fresh-animations-extensions', 'fresh-animations-details', 'fa-player-extension',
+            'polaris-animation-for-punchy', 'blacksea-animation-for-punchy', '3d-workbenches', '3d-equipment',
+            'better-lanterns', 'fancy-crops', '3d-crops', 'rays-3d-ladders', 'rays-3d-rails', 'simple-grass-flowers',
+            'fresh-flower-pots', 'just-expressions', '3d-food', 'mikapika-s-3d-mushrooms', 'cutegirlvillagers', 'melodyswitches', 'melodysillagers', 'melodys-cute-girl-traders', 'iron-girl',
+            'overgrown-flowery-gui', 'overgrown-flowery-hotbar', 'better-leaves')
 $packs = @('"vanilla"')
 foreach ($s in $enable) {
-  if ($s -eq '@mizuno') { $file = $mizuno.Name }
-  else {
-    $p = $lock.resourcepacks | Where-Object { $_.slug -eq $s } | Select-Object -First 1
-    if (-not $p) { continue }
-    $file = $p.file
-  }
+  $p = $lock.resourcepacks | Where-Object { $_.slug -eq $s } | Select-Object -First 1
+  if (-not $p) { continue }
+  $file = $p.file
   $path = Join-Path $rp $file
   $drop = @()
   if ($s -eq 'overgrown-flowery-gui' -or $s -eq 'overgrown-flowery-hotbar') { $drop = $iconsEntry }
-  if ($mizuno -and ($s -eq 'fresh-animations' -or $s -eq 'mizuno-x-fresh-animations')) { $drop = $sheepRe }
-  if ((Get-PackFormat $path) -ne $mcFormat -or $drop.Count -gt 0) {
-    $file = New-FixedPack $path ([IO.Path]::GetFileNameWithoutExtension($file) + ' [1.20.1].zip') $drop
+  $fixModels = ($s -eq '3d-equipment')
+  if ((Get-PackFormat $path) -ne $mcFormat -or $drop.Count -gt 0 -or $fixModels) {
+    $file = New-FixedPack $path ([IO.Path]::GetFileNameWithoutExtension($file) + ' [1.20.1].zip') $drop $fixModels
   }
   $packs += ('"file/' + $file + '"')
 }
-# карта JourneyMap на клавишу M (по умолчанию J; J освобождаем, чтобы она не прятала миникарту)
+# карта JourneyMap на клавишу M (по умолчанию J; J освобождаем, чтобы она не прятала миникарту);
+# на G по умолчанию висят Curios, справочник More Villagers и меню Female Gender Mod, а K занята Oculus (шейдеры), Pro Placer и Dungeon Config:
+# меню Female Gender Mod переносим на ], справочник снимаем
 # без строки version Minecraft считает options.txt очень старым, не понимает имя клавиши и сбрасывает все настройки
 $optPath = Join-Path $Mc 'options.txt'
-$opts = [ordered]@{ 'lang' = 'ru_ru'; 'renderDistance' = '12'; 'key_key.journeymap.map_toggle_alt' = 'key.keyboard.m'; 'key_key.journeymap.minimap_toggle_alt' = 'key.keyboard.unknown'; 'resourcePacks' = ('[' + ($packs -join ',') + ']') }
+$opts = [ordered]@{ 'lang' = 'ru_ru'; 'renderDistance' = '12'; 'key_key.journeymap.map_toggle_alt' = 'key.keyboard.m'; 'key_key.journeymap.minimap_toggle_alt' = 'key.keyboard.unknown'; 'key_key.more_villargers.guide_gui' = 'key.keyboard.unknown'; 'key_key.wildfire_gender.gender_menu' = 'key.keyboard.right.bracket'; 'resourcePacks' = ('[' + ($packs -join ',') + ']') }
 if (-not ((Test-Path -LiteralPath $optPath) -and (Select-String -LiteralPath $optPath -Pattern '^version:' -Quiet))) { $opts['version'] = '3465' }
 Set-Lines $optPath $opts ':'
 New-Item -ItemType Directory -Force -Path (Join-Path $Mc 'config') | Out-Null
@@ -195,19 +215,6 @@ if ((Test-Path $bundle) -and -not (Test-Path $cfgMarker)) {
     }
     Copy-Item -LiteralPath $f.FullName -Destination $to -Force
     $n++
-  }
-  # MCA Reborn: без стартового экрана «Кто ты?» и истории (Destiny) и без редактора внешности игрока:
-  # он менял форму тела, а скин не сохранялся, и игрок становился «Стивом другой формы»
-  $mca = Join-Path $cfg 'mca.json'
-  if (Test-Path -LiteralPath $mca) {
-    $txt = [IO.File]::ReadAllText($mca)
-    foreach ($k in @('enableVillagerPlayerModel', 'forceVillagerPlayerModel', 'launchIntoDestiny', 'allowFullPlayerEditor', 'allowLimitedPlayerEditor')) {
-      if ($txt -match ('"' + $k + '"\s*:')) { $txt = [regex]::Replace($txt, '("' + $k + '"\s*:\s*)(true|false)', '${1}false') }
-      else { $txt = [regex]::Replace($txt, '^\s*\{', ('{' + [Environment]::NewLine + '  "' + $k + '": false,'), 1) }
-    }
-    [IO.File]::WriteAllText($mca, $txt, $utf8)
-  } else {
-    [IO.File]::WriteAllText($mca, "{`n  `"enableVillagerPlayerModel`": false,`n  `"forceVillagerPlayerModel`": false,`n  `"launchIntoDestiny`": false,`n  `"allowFullPlayerEditor`": false,`n  `"allowLimitedPlayerEditor`": false`n}`n", $utf8)
   }
   New-Item -ItemType File -Force -Path $cfgMarker | Out-Null
   Write-Host "  Настройки скопированы: $n файлов (прежние версии, если были, в $bak)"
